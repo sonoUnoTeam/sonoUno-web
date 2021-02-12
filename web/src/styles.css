@@ -1,0 +1,43 @@
+body{
+    background-color: #8d98a0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.bg-sonouno{
+    background-color:#042556;
+    color: white;
+}
+
+.btn-sonouno{
+    background-color:#042556;
+    color: white;
+}
+
+.btn-sonouno:hover{
+    background-color:white;
+    color: #042556;
+}
+
+.btn-sonouno-white{
+    background-color:#fff;
+    color: #042556;
+}
+
+.bg-range{
+    background-color:#042556;
+    color: white;
+    border-radius: 10px;
+}
+
+.background-white{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.text-blue{
+    color: #042556;
+}
+
+.heigth{
+    height: 42vh;
+}

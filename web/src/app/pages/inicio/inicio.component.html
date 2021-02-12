@@ -1,0 +1,195 @@
+<img class="img-fluid mt-5 mb-5" src="./assets/img/grafico.png">
+
+<div class="row">
+    <div class="col-12 text-center mb-5">
+        <button class="btn btn-sonouno mr-5">PLAY</button>
+        <button class="btn btn-sonouno mr-5">STOP</button>
+        <button class="btn btn-sonouno mr-5">MARK POINT</button>
+        <button class="btn btn-sonouno mr-5">DELETE MARK</button>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col-5 bg-range mr-6 p-3 mr-2">
+
+        <form>
+            <div class="form-group">
+              <label class="rangeColor" for="formControlRange">ABSCISSA POSITION</label>
+              <input type="range" class="form-control-range" id="formControlRange">
+            </div>
+          </form>
+
+      </div>
+      <div class="col-1"></div>
+      <div class="col-5 bg-range float-right p-3">
+
+        <form>
+            <div class="form-group">
+              <label class="rangeColor" for="formControlRange">TEMPO</label>
+              <input type="range" class="form-control-range" id="formControlRange">
+            </div>
+          </form>
+
+      </div>
+</div>
+
+<div class="row mb-5">
+  <div class="col-5 bg-range mr-6 p-3 mr-2">
+
+      <form>
+          <div class="form-group">
+            <label class="rangeColor" for="formControlRange">SOUND CONFIGURATION</label><br><br>
+            <label class="rangeColor" for="formControlRange">Volume</label>
+            <input type="range" class="form-control-range" id="formControlRange">
+          </div>
+        </form>
+          
+          <div class="text-center">
+          <button class="btn btn-sonouno-white mt-3">SET LOGARITHMIC SCALE</button>
+          <button class="btn btn-sonouno-white mt-3">SET CONTINUOUS SOUND</button>
+        </div>
+
+
+          <div class="form-check mt-3">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              SET FRECUENCY MAPPING
+            </label>
+          </div>
+           <div>
+          <div class="form-check mt-3">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              SET MIN FRECUENCY
+            </label>
+          </div>
+        </div>
+        <div>
+          <div class="form-check mt-3">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              SET MAX FRECUENCY
+            </label>
+          </div>
+        </div>
+        <div class="form-check mt-3">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            SET FRECUENCY MAPPING
+          </label>
+        </div>
+        
+        <div class="form-check mt-3 background-white pt-3 pb-3 pl-5">
+          <div class="text-blue mt-3">
+            SELECT SOUND TYPE:
+          </div>
+          <br>
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label text-blue" for="defaultCheck1">
+            SINE
+          </label>
+          <br>
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label text-blue" for="defaultCheck1">
+            SYNTHWAVE
+          </label>
+          <br>
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label text-blue" for="defaultCheck1">
+            FLUTE
+          </label>
+          <br>
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label text-blue" for="defaultCheck1">
+            PIANO
+          </label>
+          <br>
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label text-blue" for="defaultCheck1">
+            CELESTA
+          </label>
+        </div>
+
+        <div class="form-check mt-3">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            SOUND ENVELOPE CONFIG.          
+          </label>
+        </div>
+
+        <form class="mt-5">
+          <div class="form-group">
+            <label class="rangeColor" for="formControlRange">ATTACK</label>
+            <input type="range" class="form-control-range" id="formControlRange">
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <label class="rangeColor" for="formControlRange">DECAY</label>
+            <input type="range" class="form-control-range" id="formControlRange">
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <label class="rangeColor" for="formControlRange">SUSTAIN</label>
+            <input type="range" class="form-control-range" id="formControlRange">
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <label class="rangeColor" for="formControlRange">RELEASE</label>
+            <input type="range" class="form-control-range" id="formControlRange">
+          </div>
+        </form>
+        
+
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5 bg-range float-right p-3 heigth">
+
+      <div class="mt-4 mb-4">PLOT CONFIGURATION</div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">LINE STYLE</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>SOLID LINE</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">MAKER STYLE</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>ANY</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">COLOR STYLE</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>BLUE</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="form-check mt-3">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            GRID OPTIONS
+          </label>
+        </div>
+
+    </div>
+</div>
+
