@@ -1,195 +1,233 @@
-<img class="img-fluid mt-5 mb-5" src="./assets/img/grafico.png">
+<nav class="justify-content-center navbar navbar-expand-lg navbar-dark bg-sonouno">
+	<!-- <a class="navbar-brand" href="#">SONOUNO</a> -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+								     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		<div class="navbar-nav">
+			<div class="nav-item dropdown m-2 mr-3">
+				<a class="navlink dropdown-toggle" id="File Actions" data-toggle="dropdown" aria-haspopup="true"
 
+										aria-expanded="false">FILE</a>
+				<div class="dropdown-menu" aria-labeledby="dropdown01">
+					<input type="file" (change)="onChange($event.target.files)" class="nav-link active mr-5">
+					<a class="dropdown-item dropdown-toggle dropright" id="SampleDataOptions" data-toggle="dropdown" aria-haspopup="true" 
+												aria-expanded="false">SAMPLE DATA</a>
+						<div class="dropdown-menu dropdown-menu1" aria-labeledby="dropdown02">
+							<a class="dropdown-item"  (click)="leerDummyData('1')">Glitch (1126409678.84375 TS)</a>
+							<!--a class="dropdown-item"  (click)="leerDummyData('2')">SAMPLEDATA2</a-->
+							<a class="dropdown-item"  (click)="leerDummyData('3')">Sloan SDSSJ151806</a>
+							<a class="dropdown-item"  (click)="leerDummyData('4')">EGO noise</a>
+							<a class="dropdown-item"  (click)="leerDummyData('5')">Variable star</a>
+						
+					</div>	
+					<a class="dropdown-item"  (click)="grabarArchivo()">SAVE SOUND</a>
+					<a class="dropdown-item"  (click)="descargarMarcadores()">SAVE MARKERS</a>
+			
+					
+						
+				</div>
+				
+			</div>
+			
+			<!--a class="nav-link active mr-5" href="#">DATA DISPLAY</a>
+	   <a class="nav-link active mr-5" href="#">DATA OPERATIONS</a>
+	   <a class="nav-link active mr-5" href="#">PANELS</a>
+	   <a class="nav-link active mr-5" href="#">SETINGS</a-->
+	   <a class="nav-link active float-right" routerLink="/help">HELP</a>
+		</div>
+	</div>
+</nav>
+
+
+<plotly-plot divId="grafico" [data]="data" [layout]="layout" (relayout)="zoom()"></plotly-plot>
 <div class="row">
-    <div class="col-12 text-center mb-5">
-        <button class="btn btn-sonouno mr-5">PLAY</button>
-        <button class="btn btn-sonouno mr-5">STOP</button>
-        <button class="btn btn-sonouno mr-5">MARK POINT</button>
-        <button class="btn btn-sonouno mr-5">DELETE MARK</button>
-    </div>
+	<div class="col-12 text-center mb-5">
+		<button class="btn btn-sonouno mr-5" (click)="PlayPause()">{{!play ? 'Play' : 'Pause'}}</button>
+		<button class="btn btn-sonouno mr-5" (click)="Stop()">STOP</button>
+		<button class="btn btn-sonouno mr-5" (click)="addMarcador()">MARK POINT</button>
+		<button class="btn btn-sonouno mr-5"(click)="deleteMarcador()">DELETE MARK</button>
+	</div>
 </div>
 
 <div class="row mb-5">
-    <div class="col-5 bg-range mr-6 p-3 mr-2">
+	<div class="col-5 bg-range mr-6 p-3 mr-2">
 
-        <form>
-            <div class="form-group">
-              <label class="rangeColor" for="formControlRange">ABSCISSA POSITION</label>
-              <input type="range" class="form-control-range" id="formControlRange">
-            </div>
-          </form>
+		<div class="form-group" tabindex="1">
+			<label class="rangeColor" for="formControlRange">ABSCISSA POSITION</label>
+			<input type="range" class="form-control-range" id="Slider Abscisa" [(ngModel)]="indiceGrafico"
+						  (mouseup)="sliderAbscisa()">
+		</div>
 
-      </div>
-      <div class="col-1"></div>
-      <div class="col-5 bg-range float-right p-3">
+	</div>
+	<div class="col-1"></div>
+	<div class="col-5 bg-range float-right p-3">
 
-        <form>
-            <div class="form-group">
-              <label class="rangeColor" for="formControlRange">TEMPO</label>
-              <input type="range" class="form-control-range" id="formControlRange">
-            </div>
-          </form>
+		<div class="form-group">
+			<label class="rangeColor" for="formControlRange">TEMPO</label>
+			<input type="range" class="form-control-range" id="Slider Tempo" [(ngModel)]="tempoSlider"
+						  (mouseup)="ToolbarPlay()">
+		</div>
 
-      </div>
+	</div>
 </div>
 
 <div class="row mb-5">
-  <div class="col-5 bg-range mr-6 p-3 mr-2">
+	<div class="col-5 bg-range mr-6 p-3 mr-2">
 
-      <form>
-          <div class="form-group">
-            <label class="rangeColor" for="formControlRange">SOUND CONFIGURATION</label><br><br>
-            <label class="rangeColor" for="formControlRange">Volume</label>
-            <input type="range" class="form-control-range" id="formControlRange">
-          </div>
-        </form>
-          
-          <div class="text-center">
-          <button class="btn btn-sonouno-white mt-3">SET LOGARITHMIC SCALE</button>
-          <button class="btn btn-sonouno-white mt-3">SET CONTINUOUS SOUND</button>
-        </div>
+		<form>
+			<div class="form-group" tabindex="1" aria-activedescendant="formControlRange" >
+				<label class="rangeColor" for="formControlRange">SOUND CONFIGURATION</label><br><br>
+				<label class="rangeColor" for="formControlRange">Volume</label>
+				<input type="range" class="form-control-range" id="Slider Volumen" [(ngModel)]="volumen" name="volumen"
+											     (mouseup)="sliderVolumen()">
+			</div>
+		</form>
+
+		<div class="text-center">
+			<button class="btn btn-sonouno mt-3" (click)="logaritmico()">SET LOGARITHMIC SCALE</button>
+			<button class="btn btn-sonouno mt-3">SET CONTINUOUS SOUND</button>
+		</div>
 
 
-          <div class="form-check mt-3">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              SET FRECUENCY MAPPING
-            </label>
-          </div>
-           <div>
-          <div class="form-check mt-3">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              SET MIN FRECUENCY
-            </label>
-          </div>
-        </div>
-        <div>
-          <div class="form-check mt-3">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              SET MAX FRECUENCY
-            </label>
-          </div>
-        </div>
-        <div class="form-check mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label" for="defaultCheck1">
-            SET FRECUENCY MAPPING
-          </label>
-        </div>
-        
-        <div class="form-check mt-3 background-white pt-3 pb-3 pl-5">
-          <div class="text-blue mt-3">
-            SELECT SOUND TYPE:
-          </div>
-          <br>
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label text-blue" for="defaultCheck1">
-            SINE
-          </label>
-          <br>
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label text-blue" for="defaultCheck1">
-            SYNTHWAVE
-          </label>
-          <br>
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label text-blue" for="defaultCheck1">
-            FLUTE
-          </label>
-          <br>
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label text-blue" for="defaultCheck1">
-            PIANO
-          </label>
-          <br>
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label text-blue" for="defaultCheck1">
-            CELESTA
-          </label>
-        </div>
+		<div class="form-check mt-3">
+			<input class="form-check-input" type="checkbox" value="" id="Frecuency Mapping">
+			<label class="form-check-label" for="defaultCheck1">
+				SET FRECUENCY MAPPING
+			</label>
+		</div>
+		<div>
+			<div class="form-group mt-3">
+				<label class="rangeColor" for="formControlRange">SET MIN FREQUENCY</label>
+				<input type="range" class="form-control-range" id="Slider Min Frequency" [(ngModel)]="minFreqGraph"
+						   name="minFreq" (mouseup)="setMinMax()">
+			</div>
+		</div>
+		<div>
+			<div class="form-group mt-3">
+				<label class="rangeColor" for="formControlRange">SET MAX FREQUENCY</label>
+				<input type="range" class="form-control-range" id="Slider Max Frequency" [(ngModel)]="maxFreqGraph"
+						   name="maxFreq" (mouseup)="setMinMax()">
+			</div>
+		</div>
 
-        <div class="form-check mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label" for="defaultCheck1">
-            SOUND ENVELOPE CONFIG.          
-          </label>
-        </div>
+		<div class="form-check mt-3 background-white pt-3 pb-3 pl-5">
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<label class="input-group-text" for="inputGroupSelect01">SELECT INSTRUMENT</label>
+				</div>
+				<select (change)="seleccionarInstrumento($event.target.value)" class="custom-select" id="Instrument">
+					<option selected value="sine">SINE</option>
+					<option value="synthwave">SYNTHWAVE</option>
+					<option value="flute">FLUTE</option>
+					<option value="piano">PIANO</option>
+					<option value="celesta">CELESTA</option>
+				</select>
+			</div>
+		</div>
 
-        <form class="mt-5">
-          <div class="form-group">
-            <label class="rangeColor" for="formControlRange">ATTACK</label>
-            <input type="range" class="form-control-range" id="formControlRange">
-          </div>
-        </form>
-        <form>
-          <div class="form-group">
-            <label class="rangeColor" for="formControlRange">DECAY</label>
-            <input type="range" class="form-control-range" id="formControlRange">
-          </div>
-        </form>
-        <form>
-          <div class="form-group">
-            <label class="rangeColor" for="formControlRange">SUSTAIN</label>
-            <input type="range" class="form-control-range" id="formControlRange">
-          </div>
-        </form>
-        <form>
-          <div class="form-group">
-            <label class="rangeColor" for="formControlRange">RELEASE</label>
-            <input type="range" class="form-control-range" id="formControlRange">
-          </div>
-        </form>
-        
+		<div class="form-check mt-3">
+			<input class="form-check-input" type="checkbox" value="" id="Envelope Filter Toggle" [(ngModel)]="filtroEnabled"
+							    [ngModelOptions]="{standalone: true}" (change)="sliderADSR()">
+			<label class="form-check-label" for="defaultCheck1">
+				SOUND ENVELOPE CONFIG.
+			</label>
+		</div>
 
-    </div>
-    <div class="col-1"></div>
-    <div class="col-5 bg-range float-right p-3 heigth">
+		<form class="mt-5">
+			<div class="form-group">
+				<label class="rangeColor" for="formControlRange">ATTACK</label>
+				<input type="range" class="form-control-range" id="Slider Attack" [(ngModel)]="attack" name="attack"
+											   (mouseup)="sliderADSR()">
+			</div>
+		</form>
+		<form>
+			<div class="form-group">
+				<label class="rangeColor" for="formControlRange">DECAY</label>
+				<input type="range" class="form-control-range" id="Slider Decay" [(ngModel)]="decay" name="decay"
+											 (mouseup)="sliderADSR()">
+			</div>
+		</form>
+		<form>
+			<div class="form-group">
+				<label class="rangeColor" for="formControlRange">SUSTAIN</label>
+				<input type="range" class="form-control-range" id="Slider sustain" [(ngModel)]="sustain" name="sustain"
+											     (mouseup)="sliderADSR()">
+			</div>
+		</form>
+		<form>
+			<div class="form-group">
+				<label class="rangeColor" for="formControlRange">RELEASE</label>
+				<input type="range" class="form-control-range" id="slider Release" [(ngModel)]="release" name="release"
+											     (mouseup)="sliderADSR()">
+			</div>
+		</form>
 
-      <div class="mt-4 mb-4">PLOT CONFIGURATION</div>
 
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect01">LINE STYLE</label>
-          </div>
-          <select class="custom-select" id="inputGroupSelect01">
-            <option selected>SOLID LINE</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect01">MAKER STYLE</label>
-          </div>
-          <select class="custom-select" id="inputGroupSelect01">
-            <option selected>ANY</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect01">COLOR STYLE</label>
-          </div>
-          <select class="custom-select" id="inputGroupSelect01">
-            <option selected>BLUE</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
+	</div>
+	<div class="col-1"></div>
+	<div class="col-5 bg-range float-right p-3 heigth">
 
-        <div class="form-check mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label" for="defaultCheck1">
-            GRID OPTIONS
-          </label>
-        </div>
+		<div class="mt-4 mb-4">PLOT CONFIGURATION</div>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<label class="input-group-text" for="inputGroupSelect01">LINE STYLE</label>
+			</div>
+			<select (change)="seleccionarTipoLinea($event.target.value)" class="custom-select" id="Line Style">
+				<option selected value="solid">SOLID</option>
+				<option value="dash">DASH</option>
+				<option value="dot">DOT</option>
+				<option value="dashdot">DASH-DOT</option>
+			</select>
+		</div>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<label class="input-group-text" for="inputGroupSelect01">MARKER STYLE</label>
+			</div>
+			<select (change)="seleccionarMarkerStyle($event.target.value)" class="custom-select" id="Marker Style">
 
-    </div>
+				<option value="x">X</option>
+				<option value="star-triangle-up">STAR</option>
+				<option selected value="">CIRCLE</option>
+				<option value="diamond">DIAMOND</option>
+			</select>
+		</div>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<label class="input-group-text" for="inputGroupSelect01">COLOR STYLE</label>
+			</div>
+			<select (change)="seleccionarColorLinea($event.target.value)" class="custom-select" id="inputGroupSelect04">
+				<option selected value="#b55400">ORANGE</option>
+				<option value="#3B83BD">BLUE</option>
+				<option value="#FF3b3b">RED</option>
+				<option value="#3bFF3b">GREEN</option>
+				<option value="#e0e03b">YELLOW</option>
+
+			</select>
+		</div>
+		<div class="input-group mb-3">
+			<label class="input-group-text">GRAPH TITLE</label>
+			<input type="text" class="form-control" placeholder="GRAPH TITLE" aria-label="Title input" aria-describedby="basic-addon1" [(ngModel)]="graphTitle" (keyup)="handleTitles($event,'1')">
+		</div>  
+		<div class="input-group mb-3">
+			<label class="input-group-text">ABSCISSA TITTLE</label>
+			<input type="text" class="form-control" placeholder="ABSCISSA" aria-label="ABSCISSA TITTLE" aria-describedby="basic-addon1" [(ngModel)]="abscissaTitle" (keyup)="handleTitles($event,'2')">
+		</div>
+
+		<div class="input-group mb-3">
+			<label class="input-group-text">ORDINATE TITTLE</label>
+			<input type="text" class="form-control" placeholder="ORDINATE" aria-label="ORDINATE TITTLE" aria-describedby="basic-addon1" [(ngModel)]="ordinateTitle" (keyup)="handleTitles($event,'3')" >
+		</div>
+
+
+
+			<div class="form-check mt-3">
+				<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+				<label class="form-check-label" for="defaultCheck1">
+					GRID OPTIONS
+				</label>
+			</div>
+
+	</div>
 </div>
-

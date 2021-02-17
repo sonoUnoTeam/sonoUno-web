@@ -1,3 +1,15 @@
 .rangeColor{
     color: white;
 }
+a{
+    color: white;
+}
+
+.centrar-texto
+{
+    text-align: center;
+}
+.dropdown-menu{
+    background-color:#042556;
+
+}

@@ -24,9 +24,13 @@
               "src/assets"
             ],
             "styles": [
+              "../web/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../web/node_modules/jquery/dist/jquery.min.js",
+              "../web/node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -89,9 +93,13 @@
               "src/assets"
             ],
             "styles": [
+              "../web/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../node_modules/jquery/dist/jquery.min.js",
+              "../node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           }
         },
         "lint": {
@@ -120,6 +128,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "web"
 }
