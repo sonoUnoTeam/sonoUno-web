@@ -3,8 +3,9 @@ import { Component, HostListener, OnInit, } from '@angular/core';
 
 import * as ToneJS from 'tone'
 import * as funciones from './utils'
-import * as dummyData from './dummyData'
-
+import * as sampleData from './sampleData'
+import * as Plotly from 'plotly.js';
+import { variable } from '@angular/compiler/src/output/output_ast';
 //declare var Tone: any;
 
 @Component({
@@ -25,11 +26,12 @@ export class InicioComponent implements OnInit {
 
 
   //VARIABLES
+  finalReproduccion=0;
   graphTitle = "Plot title"
   abscissaTitle = "Abscissa Title"
   ordinateTitle = "Ordinate Title"
   markerStyle = "";
-  tipoLinea = "solid";
+  tipoLinea:Plotly.Dash = "solid";
   colorLinea = "#b55400"
   marcadores: any[] = [];
   datos: number[] = [];
@@ -100,7 +102,8 @@ export class InicioComponent implements OnInit {
     },
     uirevision: 'true',
     xaxis: {
-      autorange: true, title: {
+      range:[Math.min(...this.datos_x),Math.max(...this.datos_x)],
+      autorange: false, title: {
         text: this.abscissaTitle, font: { family: "Nunito, sans-serif", size: 18 }
       }
     },
@@ -146,7 +149,11 @@ export class InicioComponent implements OnInit {
     let bpm = 60 / (this.duration / 1350 + 0.05);  //TODO: Corregir velocidad total
     this.generarFrecuencias();
     this.zoom();
-    let frecuencias = this.frecuencias.slice(this.rangoMin, this.rangoMax + 1);
+    console.log(this.frecuencias);
+    
+    let frecuencias = this.frecuencias.slice(this.rangoMin-Math.min(...this.datos_x), (this.rangoMax -Math.min(...this.datos_x))+ 1);
+    console.log(frecuencias);
+    
     let duracion = frecuencias.length * (this.duration / 1350 + 0.05);
 
     let promesa = ToneJS.Offline(({ transport }) => {
@@ -183,16 +190,41 @@ export class InicioComponent implements OnInit {
 
   zoom() {
     //Corrige las posiciones del indice en el grafico y la sección de datos a reproducir utilizando los rangos del layout del grafico
-    this.rangoMin = this.layout["xaxis"]["autorange"] ? 0 : this.layout["xaxis"]['range'][0];
-    this.rangoMax = this.layout["xaxis"]["autorange"] ? this.datos.length : this.layout["xaxis"]['range'][1];
-    this.GlobalIndex = Math.round((this.indiceGrafico / 100 * (Math.ceil(this.layout['xaxis']["range"][1]) - this.rangoMin)) + this.rangoMin);
+    this.rangoMin = this.layout["xaxis"]['range'][0];
+    this.rangoMax = this.layout["xaxis"]['range'][1];
+    //this.indiceGrafico=0;
+    this.GlobalIndex = Math.round((this.indiceGrafico / 100 * (this.rangoMax - this.rangoMin)) + this.rangoMin);
     this.generarFrecuencias();
-
+    this.updateGraph();
   }
   sliderAbscisa() {
-    this.zoom();
-    this.GlobalIndex = Math.round((this.indiceGrafico / 100 * (Math.ceil(this.layout['xaxis']["range"][1]) - this.rangoMin)) + this.rangoMin);
-    this.reproducirTono(0, false);
+  
+    if(!this.play){
+      this.zoom();
+      this.reproducirTono(0, false,this.findIndex()); }
+    
+    else{
+      this.Pause();
+      this.zoom();
+      this.play=true;
+      this.Play();
+
+    }
+
+  }
+  findIndex(){
+    var indice;
+    
+    for (let index = 0; index < this.datos_x.length; index++) {
+     if(this.datos_x[index]>=this.GlobalIndex){
+       this.GlobalIndex=this.datos_x[index];
+      
+       indice=index;
+       break
+     }
+      
+    }
+    return indice;
   }
   sliderVolumen() {
     this.volume = new ToneJS.Volume((this.volumen - 50) / 4).toDestination();
@@ -227,7 +259,8 @@ export class InicioComponent implements OnInit {
           width: 2
         }
       },
-      y: [this.datos[this.GlobalIndex], this.datos[this.GlobalIndex]],
+
+      y: [this.datos[this.findIndex()], this.datos[this.findIndex()]],
       x: [this.GlobalIndex, this.GlobalIndex]
     })
 
@@ -240,18 +273,28 @@ export class InicioComponent implements OnInit {
     this.updateGraph();
   }
   updateGraph() {
+    if(this.datos_x.length!=this.datos.length){
+      this.datos_x=null;
+    }
     //Redibujar el grafico cuando cambia alguna característica: color, añadir o quitar marcadores, tipo de linea, etc
 
-    this.layout.yaxis.range[0]=Math.min(...this.datos)-1;
-    this.layout['yaxis']['range'][1]=Math.max(...this.datos)+1;
+    //Usar un porcentaje entre el rango minimo y maximo de los datos para que tenga cierto espacio
+    var padding_y= ((Math.max(...this.datos)-Math.min(...this.datos))*0.05);
+    var padding_x= 0;
+
+    this.layout.yaxis.range[0]=Math.min(...this.datos)- padding_y;
+    this.layout['yaxis']['range'][1]=Math.max(...this.datos)+padding_y;
+    this.layout['xaxis']['range'][0]= this.datos_x!=null ? Math.min(...this.datos_x)-padding_x: 0;
+    this.layout['xaxis']['range'][1]=this.datos_x!=null ? Math.max(...this.datos_x)+padding_x:this.datos.length; //*0.9 y 1.1 para darle un poco de margen a los valores... Quizás debería mejorarse
+
  
-    this.bar_x = [];
+    this.bar_x = [this.datos_x[this.GlobalIndex], this.datos_x[this.GlobalIndex]];
     this.bar_y = [this.layout.yaxis.range[0], this.layout.yaxis.range[1]]; //Esto hace que la barra de la reproducción siempre esté en sobre el min y el max de la onda
     //Pero, deja margen arriba y abajo debido a que el grafico está en autorange
-
-    this.bar_x = [this.GlobalIndex, this.GlobalIndex];
+    
+    
     this.data = [
-      { mode: "lines", line: { color: this.colorLinea, dash: this.tipoLinea, width: 4 }, y: this.datos },
+      { mode: "lines", line: { color: this.colorLinea, dash: this.tipoLinea, width: 4 }, x:this.datos_x,y: this.datos },
       { mode: 'lines', line: { color: "#393e46" }, y: this.bar_y, x: [this.GlobalIndex, this.GlobalIndex] },
 
     ];
@@ -264,10 +307,10 @@ export class InicioComponent implements OnInit {
 
   }
 
-  reproducirTono(duration, error: boolean) { //Reproduce un tono. Index valor donde se dibujará el cursor. Value tono a reproducir
+  reproducirTono(duration, error: boolean, index:number) { //Reproduce un tono. Index valor donde se dibujará el cursor. Value tono a reproducir
 
     this.updateGraph();
-    this.synthA.frequency.value = this.frecuencias[this.GlobalIndex];
+    this.synthA.frequency.value = this.frecuencias[index];
     // this.synthA.frequency.value =  this.minFreq + (this.maxFreq-this.minFreq) * (this.datos[this.GlobalIndex]- this.min) / (this.max - this.min);
     if (error) {
       this.synthA.frequency.value = 160
@@ -282,34 +325,36 @@ export class InicioComponent implements OnInit {
   }
 
   Play() {
+   
     this.zoom();
     this.duration = 2 * (100 - this.tempoSlider) + 10;
-    let fin = Math.ceil(this.layout['xaxis']["range"][1]);
-    this.GlobalIndex = this.GlobalIndex == 0 ? Math.floor(this.layout["xaxis"]["range"][0]) : this.GlobalIndex;
-    this.generarFrecuencias()
+    var fin=this.rangoMax;
+  
     this.datos.forEach((value, index) => {
-      
-      if (((index) <= (fin)) && (index >= this.GlobalIndex)) {
+  
+      if ((this.datos_x[index] <= (fin)) && (this.datos_x[index] >= this.GlobalIndex)) {
+       
+       
         this.timeouts.push(setTimeout(
           () => {
             if (this.datos_x.length) {
-              this.GlobalIndex = index;
+              this.GlobalIndex = this.datos_x[index];
               this.indiceGrafico = (this.GlobalIndex - this.rangoMin) * 100 / (this.rangoMax - this.rangoMin);
               this.updateGraph()
             } else {
-              this.GlobalIndex = index;
+              this.GlobalIndex = this.datos_x[index];
               this.indiceGrafico = (this.GlobalIndex - this.rangoMin) * 100 / (this.rangoMax - this.rangoMin);
               this.updateGraph()
 
             }
 
-
-            this.reproducirTono(this.duration, false);
-            if (this.GlobalIndex == fin) {
-              this.GlobalIndex = 0;
-              this.indiceGrafico = 0;
+            
+            this.reproducirTono(this.duration, false,index);
+            if (this.datos_x[index] >= fin) {
+              this.Stop();
             }
-            if (index == fin) {
+           
+            if (this.datos_x[index] >= fin) {
               setTimeout(() => {
                 this.play = false;
                 this.inplay = false;
@@ -317,6 +362,7 @@ export class InicioComponent implements OnInit {
             }
             if (index == 0) {
               this.inplay = true;
+              this.play=true;
             }
           }, (index - this.GlobalIndex) * this.duration
         )
@@ -328,9 +374,11 @@ export class InicioComponent implements OnInit {
   Pause() {
     this.timeouts.forEach(function (to) { clearTimeout(to); })
     this.inplay = false;
+    this.play=false;
   }
 
   PlayPause() {
+    
     if (!this.play) {
       this.Play();
       this.play = true;
@@ -346,11 +394,11 @@ export class InicioComponent implements OnInit {
     }
   }
   Stop() {
-
+    this.inplay=false;
     this.play = false;
     this.timeouts.forEach((to) => { clearTimeout(to); })
     this.indiceGrafico = 0;
-    this.GlobalIndex = 0;
+    this.GlobalIndex = Math.min(... this.datos_x);
     this.bar_y = [];
     this.bar_x = [];
     this.updateGraph();
@@ -363,16 +411,29 @@ export class InicioComponent implements OnInit {
   }
 
 
-  leerDummyData(numeroData: string) {
-    this.datos = dummyData.getDummyData(numeroData);
+  leerSampleData(numeroData: string) {
+   
+    var objeto={"x":[],"y":[]}
+    objeto = sampleData.getSampleData(numeroData);
+    this.datos=objeto.y;
+    this.datos_x=objeto.x;
+    if(this.datos_x.length!=this.datos.length){ //Para evitar que el array de datos_x quede vacío lo completamos con los indices 
+      for (let index = 0; index < this.datos.length; index++) {
+        this.datos_x[index]=index;
+        
+      }
+    }
+  
+    this.zoom();
     this.generarFrecuencias();
     this.updateGraph();
-
+    this.Stop();
   }
 
   fileContent: string = '';
 
   lines: any;
+
   public onChange(fileList: FileList): void {
     let file = fileList[0];
     let fileReader: FileReader = new FileReader();
@@ -400,15 +461,23 @@ export class InicioComponent implements OnInit {
           this.layout.yaxis.title.text = linea[1];
         }else{ 
           if(linea[1]!=null){
+        this.datos_x.push(Number(linea[0]))
         this.datos.push(Number(linea[1]));}}
-//TODO: Arreglar caso de ultimo enter. inserta un no numero Quizás lo arregla ese if null
+
       }
 
       );
-      
-      console.log(this.datos);
-      this.updateGraph();
-  
+       if(this.datos_x.length!=this.datos.length){ //Para evitar que el array de datos_x quede vacío lo completamos con los indices
+      for (let index = 0; index < this.datos.length; index++) {
+        this.datos_x[index]=index;
+        
+      }
+    }
+   
+    this.zoom();
+    this.generarFrecuencias();
+    this.updateGraph();
+    this.Stop();
 
     }
     fileReader.readAsText(file);
@@ -455,6 +524,7 @@ export class InicioComponent implements OnInit {
       this.synthA = new ToneJS.OmniOscillator(440, "sine").connect(this.env);
     } } else {
       //Volver a la config ADSR default
+ 
       console.log("Está inhabilitado el filtro");
       this.ADSR={
         "attack": 0,
@@ -480,7 +550,7 @@ export class InicioComponent implements OnInit {
     if (this.maxFreq < this.minFreqGraph * 30 || this.minFreq > this.maxFreqGraph * 60) {
       this.minFreqGraph = this.minFreq / 30;
       this.maxFreqGraph = this.maxFreq / 60;
-      this.reproducirTono(1, true);
+      this.reproducirTono(1, true,0);
     }
     else {
       this.minFreq = this.minFreqGraph * 30;
@@ -497,7 +567,7 @@ export class InicioComponent implements OnInit {
       this.generarFrecuencias();
     }
   }
-  seleccionarTipoLinea(tipo: string) {
+  seleccionarTipoLinea(tipo: Plotly.Dash) {
     this.tipoLinea = tipo;
     this.updateGraph();
 
@@ -515,30 +585,31 @@ export class InicioComponent implements OnInit {
     this.updateGraph();
 
   }
+  clickearOnEnter(){
+    
+    var x = document.activeElement.id;
+    if(x!=""){
+    var elemento =document.getElementById(x);
 
+    elemento.click();
+  }
+}
   @HostListener('document:keyup', ['$event'])
   public onKeyUp(eventData: KeyboardEvent) {
     if (this.frecuencias[0] == null) {
       this.zoom();
     }
     switch (eventData.key) {
-      case "ArrowLeft":
-        this.GlobalIndex -= 1;
-        this.indiceGrafico = (this.GlobalIndex - this.rangoMin) * 100 / (this.rangoMax - this.rangoMin);
-        this.reproducirTono(5, false);
-        break;
-      case "ArrowRight":
-        this.GlobalIndex += 1;
-        this.indiceGrafico = (this.GlobalIndex - this.rangoMin) * 100 / (this.rangoMax - this.rangoMin);
-        this.reproducirTono(5, false);
-        break;
+      //Elimino el dasplazamiento con las flechas porque es el nativo cuando el elemento tiene focus
+      case "Enter": this.clickearOnEnter()
+        break
       case "S":
         this.Stop();
         break;
       case "D":
         this.deleteMarcador();
         break;
-      case "f":
+      case "M":
         this.addMarcador();
         break;
       case "O":
@@ -557,4 +628,54 @@ export class InicioComponent implements OnInit {
     this.layout.title.text = this.graphTitle;
     this.updateGraph();
   }
+   guardarImagen(){
+    (window as any).global = window;
+    var trace:Plotly.Data=  { mode: "lines", line: { color: this.colorLinea, dash: this.tipoLinea, width: 4 }, x:this.datos_x,y: this.datos };
+  
+    
+    var data: Plotly.Data[] = [trace,];
+    if (this.marcadores != null) {
+      this.marcadores.forEach(element => {
+        data.push(element)
+
+      })
+    };
+    var layout = this.layout;
+    var opciones:Plotly.ToImgopts={format:"png",height:300,width:600, scale: 11};
+    
+    Plotly.newPlot(
+      document.getElementById("plotly_div"),
+       data,
+       layout)
+    
+   // static image in jpg format
+    
+    .then(
+        function(gd)
+         {
+          Plotly.toImage(gd,opciones)
+             .then(
+                 function(url)
+             {
+              const link = document.createElement("a");
+              link.href = url;
+              link.download = "imagen.png";
+            
+             // Append link to the body
+              document.body.appendChild(link);
+              link.dispatchEvent(
+                new MouseEvent('click', {
+                  bubbles: true,
+                  cancelable: true,
+                  view: window
+                })
+              );
+            
+             // Remove link from body
+              document.body.removeChild(link);
+             }
+             )
+        });
+    
+    }
 }
