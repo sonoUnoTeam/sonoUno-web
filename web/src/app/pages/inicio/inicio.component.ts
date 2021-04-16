@@ -5,7 +5,7 @@ import * as ToneJS from 'tone'
 import * as funciones from './utils'
 import * as sampleData from './sampleData'
 import * as Plotly from 'plotly.js';
-import { variable } from '@angular/compiler/src/output/output_ast';
+
 //declare var Tone: any;
 
 @Component({
