@@ -13,6 +13,8 @@ import { PlotComponent } from './pages/plot/plot.component';
 
 import { PlotlyViaCDNModule } from 'angular-plotly.js';
 import { HelpComponent } from './pages/help/help.component';
+import { LandingComponent } from './pages/landing/landing.component';
+import { QuickstartComponent } from './pages/quickstart/quickstart.component';
 PlotlyViaCDNModule.setPlotlyVersion('latest'); // 
 PlotlyViaCDNModule.setPlotlyBundle('basic'); // '
 @NgModule({
@@ -21,7 +23,9 @@ PlotlyViaCDNModule.setPlotlyBundle('basic'); // '
     InicioComponent,
     NavbarComponent,
     PlotComponent,
-    HelpComponent
+    HelpComponent,
+    LandingComponent,
+    QuickstartComponent
   ],
   imports: [
     BrowserModule,
