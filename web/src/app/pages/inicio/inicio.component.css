@@ -13,3 +13,8 @@ a{
     background-color:#042556;
 
 }
+.right {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+  }

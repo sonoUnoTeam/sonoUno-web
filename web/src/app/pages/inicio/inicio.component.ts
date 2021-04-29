@@ -603,18 +603,18 @@ export class InicioComponent implements OnInit {
       //Elimino el dasplazamiento con las flechas porque es el nativo cuando el elemento tiene focus
       case "Enter": this.clickearOnEnter()
         break
-      case "S":
+      case "s":
         this.Stop();
         break;
-      case "D":
+      case "d":
         this.deleteMarcador();
         break;
-      case "M":
+      case "m":
         this.addMarcador();
         break;
-      case "O":
+      case "o":
         console.log("carga archivos"); //TODO: Implementar
-      case "P":
+      case "p":
         this.PlayPause();  
       default:
         //console.log(eventData.key)
