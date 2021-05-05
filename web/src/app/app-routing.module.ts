@@ -4,6 +4,7 @@ import {InicioComponent} from './pages/inicio/inicio.component';
 import {HelpComponent} from './pages/help/help.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { QuickstartComponent } from './pages/quickstart/quickstart.component';
+import {LandingPageGuard} from "./login.guard";
 
 const routes: Routes = [
 
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'help', component: HelpComponent },
   { path: 'quickstart', component: QuickstartComponent },
   { path: 'landing', component: LandingComponent },
+  { path: '', component: LandingComponent, canActivate: [LandingPageGuard]},
   { path: '**', pathMatch: 'full', redirectTo: 'landing'}
 
 ];
