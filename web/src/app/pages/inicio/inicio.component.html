@@ -1,4 +1,13 @@
-<nav class="justify-content-center navbar navbar-expand-lg navbar-dark bg-sonouno">
+<div aria-label="This main page has a menu, a plot area, a sound configuration area and a plot configuration area. Please use your screen reader to move forward to get to navigation links to these areas."></div>
+
+<div id="skip">
+<a [routerLink]="'.'" [fragment]="'navigation'">Menu</a>
+<a [routerLink]="'.'" [fragment]="'plot'">Plot area</a>
+<a [routerLink]="'.'" [fragment]="'plot-configuration'">Plot configuration area</a>
+<a [routerLink]="'.'" [fragment]="'sound-configuration'">Sound configuration area</a>
+</div>
+
+<nav id="navigation" class="justify-content-center navbar navbar-expand-lg navbar-dark bg-sonouno">
 	<!-- <a class="navbar-brand" href="#">SONOUNO</a> -->
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
 								     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,13 +20,13 @@
 
 										aria-expanded="false">INPUT</div>
 				<ul class="dropdown-menu" aria-label="File Dropdown " id="dropdown-file" role="group">
-				
-				
+
+
 				<li>	<input type="file" (change)="onChange($event.target.files)" class="nav-link mr-5" id="Input-file" tabindex="0"></li>
-				
-			
+
+
 				</ul>
-				
+
 			</div>
 
 			<div class="nav-item dropdown m-2 mr-3" >
@@ -28,9 +37,9 @@
 				<li class="btn dropdown-item btn-sonouno" tabindex="0" (click)="grabarArchivo()" id="SaveSound button" >SAVE SOUND</li>
 				<li class="btn dropdown-item btn-sonouno" tabindex="0" (click)="descargarMarcadores()" id="SaveMarkers button">SAVE MARKERS</li>
 				<li class="btn dropdown-item btn-sonouno" tabindex="0" (click)="guardarImagen()" id="SavePlot button" >SAVE PLOT </li>
-			
+
 				</ul>
-				
+
 			</div>
 
 			<div class="nav-item dropdown m-2 mr-3" >
@@ -38,34 +47,34 @@
 
 										aria-expanded="false">SAMPLE DATA</div>
 				<ul class="dropdown-menu" aria-label="File Dropdown " id="dropdown-file" role="group">
-					<li><button type="button" tabindex='0' aria-label="Glitch" class="btn btn-sonouno mt-3"  (click)="leerSampleData('1')">Glitch (1126409678.84375 TS)</button></li>		
+					<li><button type="button" tabindex='0' aria-label="Glitch" class="btn btn-sonouno mt-3"  (click)="leerSampleData('1')">Glitch (1126409678.84375 TS)</button></li>
 					<li><button type="button" tabindex='0' aria-label="Sloan" class="btn btn-sonouno mt-3" (click)="leerSampleData('3')">Sloan SDSSJ151806</button></li>
 					<li><button type="button" tabindex='0' aria-label="Ego" class="btn btn-sonouno mt-3" (click)="leerSampleData('4')">EGO noise</button></li>
 					<li><button type="button" tabindex='0' aria-label="Variable Star" class="btn btn-sonouno mt-3" (click)="leerSampleData('5')">Variable star</button></li>
-				
-				
-				
+
+
+
 				</ul>
-				
+
 			</div>
 
 
 
 
-			
+
 			<!--a class="nav-link active mr-5" href="#">DATA DISPLAY</a>
 	   <a class="nav-link active mr-5" href="#">DATA OPERATIONS</a>
 	   <a class="nav-link active mr-5" href="#">PANELS</a>
 	   <a class="nav-link active mr-5" href="#">SETINGS</a-->
 	   <div class="nav-link active float-right" routerLink="/help"  tabindex="0" id="HELP LINK">HELP</div>
-		 
+
 			   <div class="nav-link active float-right" routerLink="/quickstart" tabindex="0" id="QUICKSTART LINK">QUICKSTART</div>
 		</div>
 
 	</div>
 </nav>
 
-
+<div id="plot">
 <plotly-plot tabindex='-1' focusable="false" aria-hidden="true" id="grafico" [data]="data" [layout]="layout"  (relayout)="zoom()"></plotly-plot>
 <div class="row" id="row Reproduction" aria-label="Play Options Row">
 	<div class="col-12 text-center mb-5">
@@ -80,9 +89,9 @@
 	<div class="col-5 bg-range mr-6 p-3 mr-2">
 
 		<div class="form-group">
-			<label class="rangeColor" for="formControlRange">ABSCISSA POSITION</label> 
-			<label class="rangeColor right">{{indiceGrafico}}%</label> 
-			
+			<label class="rangeColor" for="formControlRange">ABSCISSA POSITION</label>
+			<label class="rangeColor right">{{indiceGrafico}}%</label>
+
 			<input type="range" class="form-control-range" id="Slider Abscisa" aria-label="Abscisa Slider" [(ngModel)]="indiceGrafico"
 						  (change)="sliderAbscisa()">
 		</div>
@@ -93,17 +102,18 @@
 
 		<div class="form-group">
 			<label class="rangeColor" for="formControlRange">TEMPO</label>
-			<label class="rangeColor right">{{tempoSlider}}%</label> 
+			<label class="rangeColor right">{{tempoSlider}}%</label>
 			<input type="range" class="form-control-range" id="Slider Tempo" aria-label="Tempo Slider" [(ngModel)]="tempoSlider"
 						  (mouseup)="ToolbarPlay()">
 		</div>
 
 	</div>
 </div>
+</div>
 
 <div class="row mb-5">
-	
-	<div class="col-5 bg-range mr-6 p-3 mr-2">
+
+	<div id="sound-configuration" class="col-5 bg-range mr-6 p-3 mr-2">
 		<button class="btn btn-sonouno mt-3" type="button" data-toggle="collapse" data-target="#collapseSoundConfiguration" aria-expanded="false" aria-controls="collapseSoundConfiguration">
 			SOUND CONFIGURATION
 		  </button>
@@ -117,7 +127,7 @@
 			<div>
 				<div class="form-group mt-3">
 					<label class="rangeColor" for="formControlRange">SET MIN FREQUENCY</label>
-					<label class="rangeColor right">{{minFreq}} Hz</label> 
+					<label class="rangeColor right">{{minFreq}} Hz</label>
 					<input type="range" class="form-control-range" id="Slider Min Frequency" aria-label="Min Frequency Slider" [(ngModel)]="minFreqGraph"
 							   name="minFreq" (mouseup)="setMinMax()">
 				</div>
@@ -125,7 +135,7 @@
 			<div>
 				<div class="form-group mt-3">
 					<label class="rangeColor" for="formControlRange">SET MAX FREQUENCY</label>
-					<label class="rangeColor right">{{maxFreq}} Hz</label> 
+					<label class="rangeColor right">{{maxFreq}} Hz</label>
 					<input type="range" class="form-control-range" id="Slider Max Frequency" aria-label="Max Frequency Slider" [(ngModel)]="maxFreqGraph"
 							   name="maxFreq" (mouseup)="setMinMax()">
 				</div>
@@ -134,7 +144,7 @@
 			<div class="form-group mt-4" >
 				<!-- <label class="rangeColor" for="formControlRange">SOUND CONFIGURATION</label> -->
 				<label class="rangeColor" for="formControlRange">Volume</label>
-				<label class="rangeColor right">{{volumen}}%</label> 
+				<label class="rangeColor right">{{volumen}}%</label>
 				<input type="range" class="form-control-range" id="Slider Volume" aria-label="Volume slider" [(ngModel)]="volumen" name="volumen"
 											     (mouseup)="sliderVolumen()">
 			</div>
@@ -171,7 +181,7 @@
 		<form class="mt-5">
 			<div class="form-group">
 				<label class="rangeColor" for="formControlRange">ATTACK</label>
-				<label class="rangeColor right">{{attack}}</label> 
+				<label class="rangeColor right">{{attack}}</label>
 				<input type="range" class="form-control-range" id="Slider Attack" aria-label="Attack Slider" [(ngModel)]="attack" name="attack"
 											   (mouseup)="sliderADSR()">
 			</div>
@@ -179,7 +189,7 @@
 		<form>
 			<div class="form-group">
 				<label class="rangeColor" for="formControlRange">DECAY</label>
-				<label class="rangeColor right">{{decay}}</label> 
+				<label class="rangeColor right">{{decay}}</label>
 				<input type="range" class="form-control-range" id="Slider Decay" aria-label="Decay Slider"[(ngModel)]="decay" name="decay"
 											 (mouseup)="sliderADSR()">
 			</div>
@@ -187,7 +197,7 @@
 		<form>
 			<div class="form-group">
 				<label class="rangeColor" for="formControlRange">SUSTAIN</label>
-				<label class="rangeColor right">{{sustain}}</label> 
+				<label class="rangeColor right">{{sustain}}</label>
 				<input type="range" class="form-control-range" id="Slider sustain" aria-label="Sustain Slider" [(ngModel)]="sustain" name="sustain"
 											     (mouseup)="sliderADSR()">
 			</div>
@@ -195,7 +205,7 @@
 		<form>
 			<div class="form-group">
 				<label class="rangeColor" for="formControlRange">RELEASE</label>
-				<label class="rangeColor right">{{release}}</label> 
+				<label class="rangeColor right">{{release}}</label>
 				<input type="range" class="form-control-range" id="slider Release" aria-label="Release Slider" [(ngModel)]="release" name="release"
 											     (mouseup)="sliderADSR()">
 			</div>
@@ -204,7 +214,7 @@
 </div>
 	</div>
 	<div class="col-1"></div>
-	<div class="col-5 bg-range float-right p-3 heigth">
+	<div id="plot-configuration" class="col-5 bg-range float-right p-3 heigth">
 		<button class="btn btn-sonouno mt-3" type="button" data-toggle="collapse" data-target="#collapsePlotConfiguration" aria-expanded="false" aria-controls="collapsePlotConfiguration">
 			PLOT CONFIGURATION
 		  </button>
@@ -249,7 +259,7 @@
 		<div class="input-group mb-3">
 			<label class="input-group-text">GRAPH TITLE</label>
 			<input type="text" class="form-control" placeholder="GRAPH TITLE" aria-label="Title input" [(ngModel)]="graphTitle" (keyup)="handleTitles($event,'1')">
-		</div>  
+		</div>
 		<div class="input-group mb-3">
 			<label class="input-group-text">ABSCISSA TITTLE</label>
 			<input type="text" class="form-control" placeholder="ABSCISSA" aria-label="ABSCISSA TITTLE" [(ngModel)]="abscissaTitle" (keyup)="handleTitles($event,'2')">
@@ -275,7 +285,7 @@
 <div id="plotly_div" style="width: 1px; height: 1px;"></div>
 <div id="modalSampleData" class="modal fade" role="dialog" tabindex="-1">
 	<div class="modal-dialog">
-  
+
 	  <!-- Modal content-->
 	  <div class="modal-content">
 		<div class="modal-header">
@@ -283,7 +293,7 @@
 		  <h4 class="modal-title">SAMPLE DATA SELECTION</h4>
 		</div>
 		<ul style="list-style-type:none" class="modal-body">
-			<li><button type="button" tabindex='0' aria-label="Glitch" class="btn btn-sonouno mt-3" data-dismiss="modal" (click)="leerSampleData('1')">Glitch (1126409678.84375 TS)</button></li>		
+			<li><button type="button" tabindex='0' aria-label="Glitch" class="btn btn-sonouno mt-3" data-dismiss="modal" (click)="leerSampleData('1')">Glitch (1126409678.84375 TS)</button></li>
 			<li><button type="button" tabindex='0' aria-label="Sloan" class="btn btn-sonouno mt-3" data-dismiss="modal" (click)="leerSampleData('3')">Sloan SDSSJ151806</button></li>
 			<li><button type="button" tabindex='0' aria-label="Ego" class="btn btn-sonouno mt-3" data-dismiss="modal" (click)="leerSampleData('4')">EGO noise</button></li>
 			<li><button type="button" tabindex='0' aria-label="Variable Star" class="btn btn-sonouno mt-3" data-dismiss="modal" (click)="leerSampleData('5')">Variable star</button></li>
@@ -292,6 +302,6 @@
 		  <button type="button" tabindex='0' class="btn btn-sonouno mt-3" data-dismiss="modal">CLOSE</button>
 		</div>
 	  </div>
-  
+
 	</div>
   </div>

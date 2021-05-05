@@ -9,14 +9,14 @@ const routes: Routes = [
 
   { path: 'inicio', component: InicioComponent },
   { path: 'help', component: HelpComponent },
-  { path: 'quickstart', component: QuickstartComponent },  
+  { path: 'quickstart', component: QuickstartComponent },
   { path: 'landing', component: LandingComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'landing'}
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {anchorScrolling: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
