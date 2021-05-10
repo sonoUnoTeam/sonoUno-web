@@ -15,7 +15,8 @@ import { PlotlyViaCDNModule } from 'angular-plotly.js';
 import { HelpComponent } from './pages/help/help.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { QuickstartComponent } from './pages/quickstart/quickstart.component';
-PlotlyViaCDNModule.setPlotlyVersion('latest'); // 
+import {LandingPageGuard} from "./login.guard";
+PlotlyViaCDNModule.setPlotlyVersion('latest'); //
 PlotlyViaCDNModule.setPlotlyBundle('basic'); // '
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ PlotlyViaCDNModule.setPlotlyBundle('basic'); // '
     PlotlyViaCDNModule,
     FormsModule
   ],
-  providers: [],
+  providers: [LandingPageGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
