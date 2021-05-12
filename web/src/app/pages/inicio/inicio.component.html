@@ -209,8 +209,8 @@
   [data]="data"
   [layout]="layout"
   (relayout)="zoom()"
-  [config]="{displayModeBar: false}"
-></plotly-plot>
+  [config]="{displayModeBar: false}">
+</plotly-plot>
 <div class="row" id="row Reproduction" aria-label="Play Options Row">
   <div class="col-12 text-center mb-5">
     <button
@@ -283,7 +283,64 @@
     </div>
   </div>
 </div>
-
+<div class="row mb-5">
+  <div class="col-11 bg-range p-3">
+    <button
+      class="btn btn-sonouno mt-3"
+      type="button"
+      data-toggle="collapse"
+      data-target="#collapseMathFunctions"
+      aria-expanded="false"
+      aria-controls="collapseMathFunctions"
+    >
+      MATH FUNCTIONS
+    </button> 
+    <div id="collapseMathFunctions" class="collapse">
+<div class="col-5">
+      <button
+        class="btn btn-sonouno mt-3"
+        (click)="logarithmicData()"
+        id="Logarithmic function button"
+        aria-label="Logarithmic function button"
+      >
+        LOGARITHMIC
+      </button></div>
+      <div class="col-5">
+      <button
+        class="btn btn-sonouno mt-3 mb-3"
+        (click)="quadraticData()"
+        id="Quadratic function button"
+        aria-label="Quadratic function button"
+      >
+        QUADRATIC
+      </button></div>
+      <div class="row ml-3">
+      <button
+        class="btn btn-sonouno"
+        (click)="smoothData()"
+        id="Moving average smoothing button"
+        aria-label="Moving average smoothing button"
+      >
+        SMOOTH
+      </button>
+      <div class="row ml-3">
+        
+        <label class="input-group-text ">SMOOTH GATE</label>
+        <div class="col5">
+          <input
+            type="number"
+	    value="5"
+            class="form-control ml-1"
+            placeholder="GATE SMOOTH"
+            aria-label="MOVING AVERAGE GATE"
+            [(ngModel)]="gate"
+          />
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
 <div class="row mb-5">
   <div class="col-5 bg-range mr-6 p-3 mr-2">
     <button
@@ -396,95 +453,94 @@
         ADVANCED SOUND CONFIGURATION
       </button>
       <div id="collapseAdvancedSoundConfiguration" class="collapse">
-        
         <button
-        class="btn btn-sonouno mt-3"
-        type="button"
-        data-toggle="collapse"
-        data-target="#collapseADSRConfiguration"
-        aria-expanded="false"
-        aria-controls="collapseSoundConfiguration"
-      >
-        ADSR
-      </button>
-      <div id="collapseADSRConfiguration" class="collapse">
-        <div class="form-check mt-3">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="Envelope Filter Toggle"
-            aria-label="Envelope Filter Checkbox"
-            [(ngModel)]="filtroEnabled"
-            [ngModelOptions]="{ standalone: true }"
-            (change)="sliderADSR()"
-          />
-          <label class="form-check-label" for="Envelope Filter Toggle">
-            SOUND ENVELOPE CONFIG.
-          </label>
-        </div>
+          class="btn btn-sonouno mt-3"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapseADSRConfiguration"
+          aria-expanded="false"
+          aria-controls="collapseSoundConfiguration"
+        >
+          ADSR
+        </button>
+        <div id="collapseADSRConfiguration" class="collapse">
+          <div class="form-check mt-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="Envelope Filter Toggle"
+              aria-label="Envelope Filter Checkbox"
+              [(ngModel)]="filtroEnabled"
+              [ngModelOptions]="{ standalone: true }"
+              (change)="sliderADSR()"
+            />
+            <label class="form-check-label" for="Envelope Filter Toggle">
+              SOUND ENVELOPE CONFIG.
+            </label>
+          </div>
 
-        <form class="mt-5">
-          <div class="form-group">
-            <label class="rangeColor" for="formControlRange">ATTACK</label>
-            <label class="rangeColor right">{{ attack }}</label>
-            <input
-              type="range"
-              class="form-control-range"
-              id="Slider Attack"
-              aria-label="Attack Slider"
-              [(ngModel)]="attack"
-              name="attack"
-              (mouseup)="sliderADSR()"
-            />
-          </div>
-        </form>
-        <form>
-          <div class="form-group">
-            <label class="rangeColor" for="formControlRange">DECAY</label>
-            <label class="rangeColor right">{{ decay }}</label>
-            <input
-              type="range"
-              class="form-control-range"
-              id="Slider Decay"
-              aria-label="Decay Slider"
-              [(ngModel)]="decay"
-              name="decay"
-              (mouseup)="sliderADSR()"
-            />
-          </div>
-        </form>
-        <form>
-          <div class="form-group">
-            <label class="rangeColor" for="formControlRange">SUSTAIN</label>
-            <label class="rangeColor right">{{ sustain }}</label>
-            <input
-              type="range"
-              class="form-control-range"
-              id="Slider sustain"
-              aria-label="Sustain Slider"
-              [(ngModel)]="sustain"
-              name="sustain"
-              (mouseup)="sliderADSR()"
-            />
-          </div>
-        </form>
-        <form>
-          <div class="form-group">
-            <label class="rangeColor" for="formControlRange">RELEASE</label>
-            <label class="rangeColor right">{{ release }}</label>
-            <input
-              type="range"
-              class="form-control-range"
-              id="slider Release"
-              aria-label="Release Slider"
-              [(ngModel)]="release"
-              name="release"
-              (mouseup)="sliderADSR()"
-            />
-          </div>
-        </form>
-      </div>
+          <form class="mt-5">
+            <div class="form-group">
+              <label class="rangeColor" for="formControlRange">ATTACK</label>
+              <label class="rangeColor right">{{ attack }}</label>
+              <input
+                type="range"
+                class="form-control-range"
+                id="Slider Attack"
+                aria-label="Attack Slider"
+                [(ngModel)]="attack"
+                name="attack"
+                (mouseup)="sliderADSR()"
+              />
+            </div>
+          </form>
+          <form>
+            <div class="form-group">
+              <label class="rangeColor" for="formControlRange">DECAY</label>
+              <label class="rangeColor right">{{ decay }}</label>
+              <input
+                type="range"
+                class="form-control-range"
+                id="Slider Decay"
+                aria-label="Decay Slider"
+                [(ngModel)]="decay"
+                name="decay"
+                (mouseup)="sliderADSR()"
+              />
+            </div>
+          </form>
+          <form>
+            <div class="form-group">
+              <label class="rangeColor" for="formControlRange">SUSTAIN</label>
+              <label class="rangeColor right">{{ sustain }}</label>
+              <input
+                type="range"
+                class="form-control-range"
+                id="Slider sustain"
+                aria-label="Sustain Slider"
+                [(ngModel)]="sustain"
+                name="sustain"
+                (mouseup)="sliderADSR()"
+              />
+            </div>
+          </form>
+          <form>
+            <div class="form-group">
+              <label class="rangeColor" for="formControlRange">RELEASE</label>
+              <label class="rangeColor right">{{ release }}</label>
+              <input
+                type="range"
+                class="form-control-range"
+                id="slider Release"
+                aria-label="Release Slider"
+                [(ngModel)]="release"
+                name="release"
+                (mouseup)="sliderADSR()"
+              />
+            </div>
+          </form>
+        </div>
         <div class="text-center">
           <button
             class="btn btn-sonouno mt-3"

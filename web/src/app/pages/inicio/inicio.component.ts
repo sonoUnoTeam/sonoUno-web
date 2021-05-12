@@ -76,6 +76,7 @@ export class InicioComponent implements OnInit {
   volume = new ToneJS.Volume(0).toDestination();
   //Variables ENVELOPE
   attack: number = 0;
+  gate:number=5;
   decay: number = 10;
   sustain: number = 100;
   release: number = 16;
@@ -119,7 +120,50 @@ export class InicioComponent implements OnInit {
   rangoMin: number = 0;
   rangoMax: number = 0;
 
+//FUNCIONES MATEMATICAS//
+quadraticData(){
+  for(var i=0;i<this.datos.length;i++){
+  this.datos[i]=this.datos[i]*this.datos[i];
+}
 
+this.zoom();
+}
+
+
+logarithmicData(){
+ 
+ for(var i=0;i<this.datos.length;i++){
+   this.datos[i]=Math.log10(this.datos[i]);
+ }
+ 
+ this.zoom();
+}
+
+smoothData(){
+  
+  for(var i=0;i<this.datos.length;i++){
+    var aux:number=0;
+    if(i < this.datos.length-this.gate){
+      for(var j=0;j<=this.gate;j++){
+        aux+=this.datos[i+j];
+      }
+      this.datos[i]=aux/this.gate;
+      
+    }else{
+      for(var j=0;j < this.datos.length-i;j++){
+        aux+=this.datos[i+j];
+      }
+      this.datos[i]=aux/(this.datos.length-i);
+      console.log(this.datos[i]);
+    }
+
+  }
+  this.zoom();
+}
+
+
+
+//FIN FUNCIONES MATEMATICAS//
 
   generarFrecuencias() {
     this.min=Math.min(...this.datos);
@@ -137,7 +181,7 @@ export class InicioComponent implements OnInit {
       //console.log("normal");
       this.datos.forEach(element => {
         let frecuencia = this.minFreq + (this.maxFreq - this.minFreq) * (element - this.min) / (this.max - this.min);
-        // console.log(frecuencia);
+        //console.log(frecuencia);
         this.frecuencias.push(frecuencia)
       });
     }
