@@ -122,9 +122,15 @@ export class InicioComponent implements OnInit {
 
 //FUNCIONES MATEMATICAS//
 quadraticData(){
+var salida="";
+  
   for(var i=0;i<this.datos.length;i++){
-  this.datos[i]=this.datos[i]*this.datos[i];
+  
+  this.datos[i]=((this.datos[i])*(this.datos[i]));
+  salida+=this.datos_x[i]+",";
+  
 }
+console.log(salida);
 
 this.zoom();
 }
@@ -342,6 +348,7 @@ smoothData(){
       { mode: 'lines', line: { color: "#393e46" }, y: this.bar_y, x: [this.GlobalIndex, this.GlobalIndex] },
 
     ];
+    //Si hay marcadores en el array que los agregue al layout
     if (this.marcadores != null) {
       this.marcadores.forEach(element => {
         this.data.push(element)
