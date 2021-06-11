@@ -1,0 +1,21 @@
+.reinforce{
+    height: 200;
+    width: 600
+
+}
+.achicar{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 1093px;
+    height:570px;
+}
+body{
+    background-color: #8d98a0;
+    font-family: 'Nunito', sans-serif;
+}
+.epigrafe{
+    font-size:small;
+    text-align:center;
+    font-style: italic;
+}

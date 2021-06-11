@@ -243,7 +243,9 @@ smoothData(){
     this.rangoMin = this.layout["xaxis"]['range'][0];
     this.rangoMax = this.layout["xaxis"]['range'][1];
     //this.indiceGrafico=0;
-    this.GlobalIndex = Math.round((this.indiceGrafico / 100 * (this.rangoMax - this.rangoMin)) + this.rangoMin);
+   
+    this.GlobalIndex = ((this.indiceGrafico / 100 * (this.rangoMax - this.rangoMin)) + this.rangoMin);
+    
     this.generarFrecuencias();
     this.updateGraph();
   }
@@ -359,7 +361,7 @@ smoothData(){
   }
 
   reproducirTono(duration, error: boolean, index:number) { //Reproduce un tono. Index valor donde se dibujará el cursor. Value tono a reproducir
-
+    
     this.updateGraph();
     this.synthA.frequency.value = this.frecuencias[index];
     // this.synthA.frequency.value =  this.minFreq + (this.maxFreq-this.minFreq) * (this.datos[this.GlobalIndex]- this.min) / (this.max - this.min);
@@ -376,31 +378,25 @@ smoothData(){
   }
 
   Play() {
-   
+    
     this.zoom();
     this.duration = 2 * (100 - this.tempoSlider) + 10;
     var fin=this.rangoMax;
-  
+
     this.datos.forEach((value, index) => {
-  
+ 
       if ((this.datos_x[index] <= (fin)) && (this.datos_x[index] >= this.GlobalIndex)) {
-       
-       
+      
+        
         this.timeouts.push(setTimeout(
           () => {
-            if (this.datos_x.length) {
-              this.GlobalIndex = this.datos_x[index];
-              this.indiceGrafico = (this.GlobalIndex - this.rangoMin) * 100 / (this.rangoMax - this.rangoMin);
-              this.updateGraph()
-            } else {
-              this.GlobalIndex = this.datos_x[index];
-              this.indiceGrafico = (this.GlobalIndex - this.rangoMin) * 100 / (this.rangoMax - this.rangoMin);
-              this.updateGraph()
-
-            }
-
             
+              this.GlobalIndex = this.datos_x[index];
+              this.indiceGrafico = (this.GlobalIndex - this.rangoMin) * 100 / (this.rangoMax - this.rangoMin);
+              this.updateGraph() 
+              
             this.reproducirTono(this.duration, false,index);
+           
             if (this.datos_x[index] >= fin) {
               this.Stop();
             }
@@ -415,17 +411,21 @@ smoothData(){
               this.inplay = true;
               this.play=true;
             }
-          }, (index - this.GlobalIndex) * this.duration
-        )
-        )
+          }, (index-(this.datos_x.length*this.indiceGrafico/100)) * this.duration
+        ),
+        );
       }
+   
     });
+    
   }
 
   Pause() {
+    
     this.timeouts.forEach(function (to) { clearTimeout(to); })
     this.inplay = false;
     this.play=false;
+  
   }
 
   PlayPause() {

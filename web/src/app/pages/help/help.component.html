@@ -1,557 +1,885 @@
-<nav class="justify-content-center navbar navbar-expand-lg navbar-dark bg-sonouno">
-    <!-- <a class="navbar-brand" href="#">SONOUNO</a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active mr-5" routerLink="/inicio">SONOUNO</a>
-        <a class="nav-link active mr-5" routerLink="/quickstart">QUICKSTART</a>        
-      </div>
+<nav
+  class="justify-content-center navbar navbar-expand-lg navbar-dark bg-sonouno"
+>
+  <!-- <a class="navbar-brand" href="#">SONOUNO</a> -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active mr-5" routerLink="/inicio">SONOUNO</a>
+      <a class="nav-link active mr-5" routerLink="/quickstart">QUICKSTART</a>
     </div>
-  </nav>
+  </div>
+</nav>
+
+<img class="reinforce" src="/assets/images/reinforce.png" alt="image" />
+
+<table class="table table-sm table-responsive mt-2">
+  <tbody>
+    <tr>
+      <td>Project Title</td>
+      <td>REsearch INfrastructures FOR Citizens in Europe</td>
+    </tr>
+
+    <tr>
+      <td>Project Acronym</td>
+
+      <td>REINFORCE</td>
+    </tr>
+
+    <tr>
+      <td>Grant Agreement No.</td>
+
+      <td>872859</td>
+    </tr>
+
+    <tr>
+      <td>Start Date of Project</td>
+
+      <td>01.12.2019</td>
+    </tr>
+
+    <tr>
+      <td>Duration of Project</td>
+
+      <td>36 Months</td>
+    </tr>
+
+    <tr>
+      <td>Project Website</td>
+      <td>www.reinforceeu.eu</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>D0.0 User Manual: WebVersion</h1>
+
+<table class="table table-sm table-responsive mt-2 center">
+  <tbody>
+    <tr>
+      <td>Work Package</td>
+      <td>
+        WP00 SonoUno: Sonification Software for astronomical data files
+        presented in table format.
+      </td>
+    </tr>
+
+    <tr>
+      <td>Lead Author (Org)</td>
+
+      <td>Bioing. Johanna Casado</td>
+    </tr>
+
+    <tr>
+      <td>Contributing Author(s) (Org)</td>
+
+      <td>
+        <tr>
+          Dr. Beatriz García
+        </tr>
+        <tr>
+          Dr. Wanda Diaz Merced
+        </tr>
+        <tr>
+          Bioing. Aldana Palma
+        </tr>
+        <tr>
+          Bioing. Julieta Carricondo Robino
+        </tr>
+        <tr>
+          Mg. Ing. Gonzalo A. De la Vega
+        </tr>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Due Date</td>
+
+      <td>DD.MM.YYY</td>
+    </tr>
+
+    <tr>
+      <td>Date</td>
+
+      <td>DD.MM.YYY</td>
+    </tr>
+
+    <tr>
+      <td>Version</td>
+      <td>V1.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  Disemination level
+</p>
+<!-- TODO: terminar de hacer los checkbox -->
+
+<h2 id="versioning">Versioning and contribution history</h2>
+
+<table class="table table-responsive mt-2 center">
+  <thead>
+    <tr>
+      <th scope="col">Version</th>
+      <th scope="col">Date</th>
+      <th scope="col">Author</th>
+      <th scope="col">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">0.1</th>
+      <td>DD.MM.YYY</td>
+      <td></td>
+      <td>Table of Contents (TOC)</td>
+    </tr>
+    <tr>
+      <th scope="row">0.2</th>
+      <td>DD.MM.YYY</td>
+      <td></td>
+      <td>Additional TOC sections</td>
+    </tr>
+    <tr>
+      <th scope="row">0.3</th>
+      <td>DD.MM.YYY</td>
+      <td></td>
+      <td>Contents for Executive Summary, section 1 and 1.1</td>
+    </tr>
+    <tr>
+      <th scope="row">0.4</th>
+      <td>DD.MM.YYY</td>
+      <td></td>
+      <td>Contents for section 2 and2.2</td>
+    </tr>
+    <tr>
+      <th scope="row">0.5</th>
+      <td>DD.MM.YYY</td>
+      <td></td>
+      <td>Contents for sections 3, 4, 4.1-6</td>
+    </tr>
+    <tr>
+      <th scope="row">0.6</th>
+      <td>DD.MM.YYY</td>
+      <td></td>
+      <td>Contents for section 5</td>
+    </tr>
+    <tr>
+      <th scope="row">0.7</th>
+      <td>DD.MM.YYY</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">1.0</th>
+      <td>DD.MM.YYY</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Deliverable Abstract</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+  <div class="border">
+    <div class="px-3 py-2">
+    <h3>Disclaimer</h3>
+    <p>This document contains information which is proprietary to the REINFORCE Consortium. Neither this
+      document nor the information contained herein shall be used, duplicated or communicated by any means
+      to a third party, in whole or parts, except with the prior consent of the REINFORCE Consortium.</p>
+  </div>
+</div>
 
 
-    <h1>User Manual – Index</h1>
+<h2 class="mt-2" id="indice">Table of contents</h2>
 
-    <p>NOTE: if you lost the way, at the end of each section o subsection, you will find the buttons to Back to Index or to Back to Home</p>
+<a class="nav-link active mr-5" (click)="anchorNav('1')"
+  >1. SOFTWARE DESCRIPTION</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('2')"
+  >2. OPENING THE SOFTWARE</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('2.1')"
+  >2.1. QUICK START GUIDE</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('2.2')"
+  >2.2. HOME PAGE</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('2.3')"
+  >2.3. TESTING SONOUNO WEB</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('2.4')"
+  >2.4. THINGS TO KEEP IN MIND</a
+>
 
-    <h2 id="indice">Index</h2>
+<a class="nav-link active mr-5" (click)="anchorNav('3')"
+  >3. OPENING A FILE</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('3.1')"
+  >3.1 MARK AND DELETE ALL MARKS BUTTON</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('4')"
+  >4. SAVE FILES</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('5')"
+  >5. EXIT THE SONOUNO</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('6')"
+  >6. FUNCTIONALITIES</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('6.1')"
+  >6.1. ABSCISSAS POSITION</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('6.2')"
+  >6.2. TEMPO SELECTION</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('6.3')"
+  >6.3. PLAY AND PAUSE BUTTON</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('6.4')"
+  >6.4. STOP BUTTON</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('6.5')"
+  >6.5. MARK POINT BUTTON</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('6.6')"
+  >6.6. DELETE LAST MARK BUTTON</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('7')"
+  >7. PLOT AND SOUND CONFIGURATIONS</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('7.1')"
+  >7.1 SOUND CONFIGURATION</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('7.2')"
+  >7.2. PLOT CONFIGURATIONS</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('7.2.1')"
+  >7.2.1. STYLES OF THE DATA PLOT</a
+>
+<a class="nav-link active mr-5" (click)="anchorNav('7.2.2')">7.2.2 MODIFYING THE TITLES.</a>
+<a class="nav-link active mr-5" (click)="anchorNav('8.1')"
+  >8.1 SHORTCUT KEYS-COMMENTS</a>
+<h2 class="mt-2" id="indice">List of Images</h2>
+<p>IMAGE 1 THE IMAGE SHOWS FIREFOX BROWSER AND THE WEB PAGE OF SONOUNO</p>
+<p>IMAGE 2. SONOUNO HOME PAGE</p>
+<p>IMAGE 3 REPRODUCTION OF THE DATA FILE AFTER PRESSING THE BUTTON PLAY.</p>
+<p>IMAGE 4 SHOWS THE ITEMS ON THE MENU FILE AND THE FOCUS OF THE KEYBOARD IS ON THE OPEN ITEM.</p>
+<p>IMAGE 5 POP-UP WINDOW OF THE FILE EXPLORER, SHOWN AFTER SELECTING THE ITEM. </p>
+<p>IMAGE 6 THE SONOUNO FRAMEWORK WITH THE GRAPH OF THE IMPORTED DATA. </p>
+<p>IMAGE 7 DISPLAY THE SONOUNO INTERFACE WITH AN OPENED DATA FILE, IN THE PLOT THERE IS ONE VERTICAL BLACK LINE (POSITION OF THE PLAYING COORDINATE) AND SEVERAL BLUE CIRCLES MARKING POINTS OF INTEREST ON THE GRAPH. </p>
+<p>IMAGE 8 SHOWS THE FILE MENU OPENED IN THE NAVIGATION BAR AND THE SAVE SOUND OPTION SELECTED</p>
+<p>IMAGE 9 SHOWS THE POP UP PANEL THAT OPENS AFTER PRESSING SAVE SOUND. IF NO POP-UP IS OPENED, YOU MAY HAVE CHECKED THE AUTO DOWNLOAD OPTION ON YOUR BROWSER AND YOUR FILE SHOULD BE IN YOUR DOWNLOADS FOLDER. </p>
+<p>IMAGE 10 SHOWS THE SAVE MARKERS OPTION FOCUSED ON THE FILE MENU. </p>
+<p>IMAGE 11 POP-UP WINDOW OF THE COMPUTER FILE SYSTEM SAVING THE MARKERS CSV FILE. </p>
+<p>IMAGE 12 THE INTERFACE IS SHOWN BEFORE AND AFTER CLICKING THE “SAVE MARKERS” BUTTON. THE PLAY BAR IS KEPT IN PLACE BUT MARKERS ARE ERASED AFTER SAVING THEM TO A CSV FILE. </p>
+<p>IMAGE 13 A VIEW OF THE FILE EXPLORER AND BOTH, MARKERS AND AUDIO FILES OPENED.</p>
+<p>IMAGE 14 SHOWS THE SLIDER, WHILE BEING SELECTED IS POSSIBLE TO MOVE IT LEFT AND RIGHT WITH YOUR KEYBOARD ARROWS </p>
+<p>IMAGE 15 AS YOU CAN SEE THE PERCENTAGE OF THE “ABSCISSA POSITION SLIDER” CORRESPONDS TO THE POSITION OF THE BLACK LINE ON THE PLOT. </p>
+<p>IMAGE 16 THE TEMPO SLIDER IS ON THE BOTTOM RIGHT OF THE IMAGE. </p>
+<p>IMAGE 17 THE PLAY BUTTON IS FOUND ON THE BOTTOM LEFT OF THE IMAGE, UNDER THE GRAPH, BEING THE FIRST BUTTON </p>
+<p>IMAGE 18 THE STOP BUTTON IS PLACED NEXT TO THE PLAY BUTTON. </p>
+<p>IMAGE 19 THE MARK POINT BUTTON IS FOUND UNDER THE GRAPH, NEXT TO THE STOP BUTTON. </p>
+<p>IMAGE 20 THE DELETE LAST MARK BUTTON IS FOUND ON THE BOTTOM RIGHT OF THE GRAPH SECTION. IT’S THE FOURTH BUTTON FROM LEFT TO RIGHT. </p>
+<p>IMAGE 21 EVERYTHING BELOW ABSCISSA AND TEMPO SLIDERS ARE USER MODIFIABLE CONFIGURATIONS. </p>
+<p>IMAGE 22 A SLIDER ALLOWS TO MODIFY THE VOLUME OF THE SOUND AND TWO BUTTONS, THE FIRST ONE SETS A LOGARITHMIC SCALE FOR THE DATA PROCESSING AND A SECOND BUTTON CAN BE USED TO LOAD SOME SOUND PRESET CONFIGURATION BETTER SUITED FOR PLAYING CONTINUOUS SOUNDS OR DISCRETE SOUND STEPS. </p>
+<p>IMAGE 23 SHOWS THE PLOT CONFIGURATION SECTION </p>
+<p>IMAGE 24 THE STYLE SECTION OF THE PLOT CONFIGURATION COUNTS WITH THREE COMBO BOXES THAT ALLOWS YOU TO SELECT FROM A LIST OF DIFFERENT OPTIONS TO MODIFY THE WAY THE GRAPH LOOKS. </p>
+<p>IMAGE 25 THE LINE STYLE ELEMENT IS A DROP-DOWN LIST WITH FOUR DIFFERENT STYLES.IN THE IMAGE THE DASH-DOT LINE OPTION IS SELECTED.</p>
+<p>IMAGE 26 THE MARKER STYLE ELEMENT IS A DROP-DOWN LIST, WHERE ARE DIFFERENT OPTIONS. IN THE IMAGE THE DIAMOND MARKER STYLE IS SELECTED. </p>
+<p>IMAGE 27 THE COLOR STYLE ELEMENT IS A DROP-DOWN LIST, WHERE ARE SEVEN OPTIONS. IN THE IMAGE THE ORANGE COLOR STYLE IS SELECTED. IN ADDITION, THE DOTTED LINE STYLE AND CIRCLE MARKER HAVE BEEN CHOSEN.</p>
 
-    <a class="nav-link active mr-5" (click)="anchorNav('1.0')">1. Software description</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('2.0')">2. Opening de software</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('3.0')">3. Things to keep in mind</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.1.1')">4.1.1 Opening a file</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.1.2')">4.1.2 Delete all marks button</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.1.3')">4.1.3 Save files</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.1.4')">4.1.4. Exit the sonoUno</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.2.1')">4.2.1. Abscissas position</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.2.2')">4.2.2. Tempo selection</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.2.3')">4.2.3. Play and Pause button</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.2.4')">4.2.4. Stop button</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.2.5')">4.2.5 Mark point button</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.2.6')">4.2.6. Delete last mark button</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.3')">4.3 Configurations</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.3.1')">4.3.1 Sound configuration</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.3.2')">4.3.2. Plot configurations</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.3.2.1')">4.3.2.1. Styles of the data plot</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.3.2')">4.3.2.2 Modifying the titles</a>
-    <a class="nav-link active mr-5" (click)="anchorNav('4.4')">4.4 Help options</a>
-    
+<h2 class="mt-2" id="indice">List of Tables</h2>
+<a class="nav-link active mr-5" (click)="anchorNav('Table1')">Table 1</a>
 
-    <h1 id="1.0">1. Software description</h1>
-    <p>
-      SonoUno is a sonification software for astronomical data presented on a table
-      (txt or csv files). The software is being developed based on the study of
-      other software (Sonification Sandbox, MathTrax and xSonify) and standards of
-      accessibility like the ISO 9241-171:2008 (Guidance on software accessibility)
-      and the Web Accessibility Initiative &ndash; Accessible Rich Internet
-      Applications (WAI-ARIA) guidelines. In order to develop the first approach of
-      a graphical user interface, we perform a theoretical framework based on
-      bibliography of user cases, focused on blind and visual impa people.
-    </p>
-    <p>
-      The development framework is Angular which promotes modularity, in order to do
-      collaborative work. This version of SonoUno, being web based, is accessible
-      from nearly any platform; the development team worked with this aim in mind.
-      The main goal of SonoUno is to allow the user to open data files (txt or csv
-      extension), show the plot and sonify the data. At the moment, the sonification
-      is performed by variation of pitch and the sonification settings allow to
-      change the volume and the timbre.
-    </p>
-    <p>
-      Additionally, SonoUno allows users to select a specific range of data on the
-      &lsquo;x&rsquo; axis, mark and save points of interest in the data, apply
-      predefined mathematical functions (for example, logarithm and square) and
-      manipulate the data arrays with an Octave interface. In the settings section,
-      the user can configure the plot and some features of the sound.
-    </p>
-    <p>
-      Finally, the software allows the user to save the plot, a text file with the
-      points marked on the data and a csv file with the plotted data.
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="2.0">2. Opening the software</h1>
-    <p>
-      Being a web based application accessing to sonoUno it&rsquo;s as easy as to
-      type the url on your preferred browser:
-    </p>
-    <p>http://190.15.198.99:8083/</p>
-    <p>
-      &nbsp;Angular&rsquo;s support extends to the latest Edge, Firefox, Chrome and
-      Safari versions, so it&rsquo;s advised to update your browser. (Image 1). If
-      after entering the url you don&rsquo;t get the sonoUno&rsquo;s homepage first
-      check:
-    </p>
-    <ol>
-      <li>Check that you have typed the correct url.</li>
-      <li>Check your network connection and access to the internet.</li>
-    </ol>
-    <p>
-      If after that you still can&rsquo;t establish a connection send a message to
-      the development team via e-mail:
-    </p>
-    <p>sonounoteam@gmail.com</p>
-    <img src="/assets/help/image1.png" alt="image">
-    <p>Image 1. The image shows Firefox browser and the web page of sonoUno</p>
-    <p>The home page of sonoUno greets you with four distinct sections:</p>
-    <ol>
-      <li>
-        The navigation bar with the access to the File and Sample Data
-        functionalities and a button that takes you to the help guide. This design
-        was based on a user cases study.
-      </li>
-      <li>
-        The graph with four buttons to control &ldquo;Play/Pause&rdquo;,
-        &ldquo;Stop&rdquo;, &ldquo;Mark Point&rdquo; and &ldquo;delete
-        markpoint&rdquo; and two sliders to control the abscissa position and the
-        tempo.
-      </li>
-      <li>
-        The sound configuration section has the tools to modify the way audio is
-        processed.
-      </li>
-      <li>
-        The plot configuration section allows you to modify the way the data is
-        displayed in the graph.
-      </li>
-    </ol>
-    <p>
-      Every section will be explained in detail in further chapters of this help
-      guide.
-    </p>
-    <img src="/assets/help/image2.png" alt="image">
-    <p>Image 2. sonoUno home page</p>
-    <p>
-      You can start testing the SonoUno functionalities with the sample data that's
-      provided under the modal menu &ldquo;Sample Data&rdquo; under the file dropdown menu. Just selecting any
-      of the data samples in this modal menu will load the data in your graph and set the audio ready to play
-    </p>
-    <img class="achicar" src="/assets/help/image2-1.png" alt="image">
-    <p>Image 3. The modal menu with the buttons to select the provided sample data.</p>
-    <p>
-      In order to listen to the graph just press the button &ldquo;Play&rdquo; under
-      the graph. You should see an orange bar moving from left to right indicating
-      the progress on the data being played and hear the pitch variations matching
-      the data.
-    </p>
-    <img src="/assets/help/image3.png" alt="image">
-    <p>Image 4. Reproduction of the data file after pressing the button Play.</p>
-    <p>
-      If you can see the black bar moving but still no sound comes out from your
-      headphones or speakers:
-    </p>
-    <ol>
-      <li>Check your speakers or headphones connection to your PC.</li>
-      <li>Check your sound configuration: volume level and mute.</li>
-      <li>
-        Check if your browser has blocked the sound reproduction and that the tab is
-        not muted.
-      </li>
-    </ol>
-    <p>
-      &nbsp;If the problems continue or you have another problem, please inform this
-      to the developer team.
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="3.0">3. Things to keep in mind</h1>
-    <ul>
-      <li>
-        Some widgets, like warnings or confirmations buttons may be in your browser
-        configured language. Otherwise, the software language is always English. In
-        the future the team is looking forward to unifying the languages.&nbsp;
-      </li>
-      <li>
-        In the files to import the first column must have continuous values, it is
-        used as a coordinate dependent axis.&nbsp;
-      </li>
-      <li>
-        All screenshots and images shown are for illustration purposes only, the
-        real image can change a little depending on the web browser.
-      </li>
-    </ul>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="4.1.1">4.1.1 Opening a file</h1>
-    <p>
-      To open a .csv or .txt file, you can use the option &ldquo;Browse..&rdquo;
-      under the File dropdown menu. This action will open a pop-up window with your
-      operating system&rsquo;s file explorer(Image 7), where you can search and open
-      the data file.
-    </p>
-    <img class="achicar" src="/assets/help/image4.png" alt="image">
-    <p>
-      Image 6 &ndash; Shows the items on the menu File and the focus of the
-      keyboard is on the Open item.
-    </p>
-    <img src="/assets/help/image5.png" alt="image">
-    <p>
-      Image 7 &ndash; Pop-up window of the File explorer, shown after selecting the
-      item.
-    </p>
-    <p>
-      When you have the data file selected, press the button Open or the Enter key.
-      The sonoUno will generate the graph(Image 8) and update the abscissa&rsquo;s
-      slide bar. Everything is ready, pressing the &ldquo;Play&rdquo; button should
-      start the reproduction.
-    </p>
-    <img src="/assets/help/image6.png" alt="image">
-    <p>
-      Image 8 &ndash; The sonoUno framework with the graph of the imported data.
-    </p>
-    <p>
-      The shortcut for opening a file is Shift+O. After pressing the shortcut the
-      process is identical to selecting the option in the navigation bar.
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1  id="4.1.2">4.1.2 Delete all marks button</h1>
-    <p>
-      Before starting with this functionality, we must explain that the sonoUno
-      allows the user to mark points of interest on the data, and store the
-      coordinates on a vector or file. These marks are shown with a diverse amount
-      of user selectable symbols over the plot.(Image 11).
-    </p>
-    <img src="/assets/help/image7.png" alt="image">
-    <p>
-      Image 11 &ndash; Display the sonoUno interface with an opened data file, in
-      the plot there is one vertical black line (position of the playing coordinate)
-      and several blue diamonds marking points of interest on the graph.&nbsp;
-    </p>
-    <p>
-      The functionality of the Delete button placed under the graph(Image 11), is to
-      erase the last added mark point on the data.&nbsp;
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="4.1.3">4.1.3 Save files</h1>
-    <p>
-      There are two ways to save files: one is in the file dropdown menu, the save
-      sound option; and the other is the shortcut Shift+W. Both methods have the
-      same results.
-    </p>
-    <p>
-      A way the user can store the sound from the data provided to sonoUno is the
-      &ldquo;Save Sound&rdquo; feature. The software will process the sound
-      corresponding to the actual data displayed in the plot but with some standard
-      sound configuration and then store it in your computer on a .wav file. In
-      order to save the sound, the user has to press the save sound item on the File
-      menu.
-    </p>
-    <img class="achicar" src="/assets/help/image8.png" alt="image">
-    <p>
-      Image 14 &ndash; Shows the file menu opened in the navigation bar and the save
-      sound option selected&nbsp;
-    </p>
-    <img class="achicar" src="/assets/help/image9.png" alt="image">
-    <p>
-      Image 15. Shows the pop up panel that opens after pressing save sound. If no
-      pop-up is opened, you may have checked the auto download option on your
-      browser and your file should be in your Downloads folder
-    </p>
-    <p><br /><br /><br /><br /><br /></p>
-    <p>
-      Before continuing with the save methods, remember that the software allows to
-      do marks of interest on the data, saving the coordinates inside an array, this
-      topic is explained in the corresponding section. We mention it here because in
-      the next lines the save marks method is described.
-    </p>
-    <img class="achicar" src="/assets/help/image10.png" alt="image">
-    <p>Image 17 &ndash; Shows the Save Markers option focused on the file menu.</p>
-    <p>
-      In order to save the values of the marks performed on the data array the user
-      have to press the save marks item, placed on the File menu.(Image 17).
-    </p>
-    <p>
-      The save marks option shows a pop-up window of the file system (Image 18) that
-      allows the user to select the directory and the name of the text file. After
-      saving them, the marks are deleted from the sonoUno and the plot (Image 19).
-    </p>
-    <p>
-      The save markers option shows a similar pop-up window to the &ldquo;save
-      sound&rdquo; feature, and then downloads the .csv file. The format of the name
-      is the plot&rsquo;s title plus &ldquo; markers.csv&rdquo;.
-    </p>
-    <p>
-      It's important to remember that the array of markers should have at least one
-      marker in order for this to work properly.
-    </p>
-    <img class="achicar" src="/assets/help/image11.png" alt="image">
-    <p>
-      Image 15 &ndash; Pop-up window of the computer file system saving the markers
-      csv file.
-    </p>
-    <img src="/assets/help/image12.png" alt="image">
-    <p><br /><br /></p>
-    <img src="/assets/help/image13.png" alt="image">
-    <p>
-      Image 19 &ndash; The interface is shown before and after clicking the
-      &ldquo;save markers&rdquo; button. The play bar is kept in place but markers
-      are erased after saving them to a csv file.
-    </p>
-    <img src="/assets/help/image14.png" alt="image">
-    <p>
-      The resulting files in your downloads folders should look something like this.
-      The original .csv file with the provided data, a .csv file with the markers
-      and a .wav file with the sound.
-    </p>
-    <img src="/assets/help/image15.png" alt="image">
-    <p>
-      Image 18: A view of the file explorer and both, markers and audio files
-      opened.
-    </p>
-    <img class="achicar" src="/assets/help/image16.png" alt="image">
-    <p>
-      If the user opens the markers.csv file with a text editor the coordinates of
-      that marks is going to be displayed with two columns separated by a coma
-      corresponding to the x and y coordinates of that particular mark.
-    </p>
-    <img class="achicar" src="/assets/help/image17.png" alt="image">
-    <p>
-      And opening the wav file is going to start playing it in the default media
-      player of your operating system, in the image a screenshot of the mac music
-      player.
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="4.1.4">4.1.4. Exit the sonoUno</h1>
-    <img class="achicar" src="/assets/help/image18.png" alt="image">
-    <p>
-      Being web based, exiting sonoUno is as simple as closing your current tab
-      hitting the &ldquo;X&rdquo; at the end of the tabs title. The default shortcut
-      for most browsers is Ctrl+W or Cmd+W depending on your operating system this
-      may vary.&nbsp;
-    </p>
-    <p>
-      Important: Be sure to store every piece of data you want to save before
-      closing the tab to avoid data loss.
-    </p>
-    <p>
-      You can also quit sonoUno by closing your browser, just keep in mind that you
-      are going to close every other tab opened at the time.
-    </p>
+<h2>TERMINOLOGY</h2>
 
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="4.2.1">4.2.1. Abscissas position</h1>
-    <p>
-      The slider of abscissa position allows the user to shift the point of data
-      being played.
-    </p>
-    <img class="achicar" src="/assets/help/image19.png" alt="image">
-    <p>
-      Image 28 &ndash; Shows the slider, while being selected is possible to move it
-      left and right with your keyboard arrows
-    </p>
-    <img src="/assets/help/image20.png" alt="image">
-    <p>
-      Image 29 - As you can see the percentage of the &ldquo;Abscissa Position
-      Slider&rdquo; corresponds to the position of the black line on the plot.
-    </p>
-    <p>
-      The abscissa position can be modified before, during and after the
-      reproduction of the data. If the reproduction is in progress, after change the
-      reproduction continues from the new set value.
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="4.2.2">4.2.2. Tempo selection</h1>
-    <p>
-      This slider controls the duration of each tone. The range goes from 0% to
-      100%, being 100 the shortest and 0 the longest time.&nbsp;
-    </p>
-    <p>
-      It&rsquo;s placed under the plot and to the right of the abscissa slider
-      (Image 31). The operation is analogous to the abscissa position slider.&nbsp;
-    </p>
-    <img src="/assets/help/image21.png" alt="image">
-    <p>Image 31 &ndash;The tempo slider is on the bottom right of the image.</p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="4.2.3">4.2.3. Play and Pause button</h1>
-    <p>
-      It&rsquo;s the first button under the graph. When pressed, it changes its name
-      to Pause and starts the reproduction of the data, the vertical black line and
-      the abscissa position slider start to go forward, indicating the coordinates
-      of the data being played.
-    </p>
-    <img src="/assets/help/image22.png" alt="image">
-    <p>
-      Image 33 &ndash; The play button is found on the bottom left of the image,
-      under the graph, being the first button
-    </p>
-    <p>
-      Another way to start the reproduction is with the shortcut key
-      &rdquo;Shift+P&rdquo;. This way of interacting differs from the previous two,
-      because when pressed produces the effect directly, without modifying the
-      keyboard focus.
-    </p>
-    <p>
-      To pause the reproduction of the data you have to press the same button or the
-      same shortcut key, this action maintains the vertical red line position to be
-      able to resume it later with the play button.
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="4.2.4">4.2.4. Stop button</h1>
-    <p>
-      Its function is to stop the reproduction and restart the process, which means
-      that it sets the abscissa position to zero and delete the vertical red line
-      from the plot. 
-    </p>
-      <img src="/assets/help/image23.png" alt="image">
-    <p>Image 35 &ndash; The stop button is placed next to the Play
-      button.
-    </p>
-    <p>
-      Another way to stop the reproduction is with the shortcut key
-      &lsquo;Shift+S&rsquo;.
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="4.2.5">4.2.5 Mark point button</h1>
-    <p>
-      This button allows the user to mark a specific point from the data. When the
-      button is pressed sonoUno saves the current position on a vector and displays
-      it on the graph with a symbol.&nbsp;
-    </p>
-    <img src="/assets/help/image24.png" alt="image">
-    <p>
-      Image 37 &ndash; The mark point button is found under the graph, next to the
-      stop button.
-    </p>
-    <p>
-      In parallel, the user can mark a point on the graph with the shortcut key
-      &lsquo;Shift+M&rsquo;. The shortcut has the same effect as pressing the button
-      but without modifying the keyboard focus.
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="4.2.6">4.2.6 Delete last mark button</h1>
-    <p>
-      This functionality allows the user to erase the last mark made with the mark point element. It’s useful when the user has made a mark without intention or the place is incorrect. The button is placed beneath the graph, it’s the fourth button, next to the mark point button (Image 39).
-    </p>
-    <img src="/assets/help/image25.png" alt="image">
-    <p>
-     
-Image 39 – The delete last mark button is found on the bottom right of the graph section. It’s the fourth button from left to right.
-
-    </p>
-    <p>
-      Another way to erase the last mark point is with the shortcut key
-      &lsquo;Shift+D&rsquo;.
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="4.3">4.3 Configurations</h1>
-    <p>
-      SonoUno allows the user to adjust some sound and plot settings,these options
-      are on the bottom of the page (Image 65).
-    </p>
-    <img src="/assets/help/image2.png" alt="image">
-    <p>
-      Image 65 &ndash; Everything below abscissa and tempo sliders are user
-      modifiable configurations.
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="4.3.1">4.3.1 Sound configuration</h1>
-    <p>
-      The location of the sound configurations its on the bottom left of the page.
-    </p>
-    <img class="achicar" src="/assets/help/image28.png" alt="image">
-    <p>
-      The sound configuration can be divided into 3 distincts parts. The first one
-      having the volume and the buttons to set logarithmic scale and continuous
-      sound, the second modifying the frequency range and instruments and the last
-      one allowing you to modify the envelope filter configuration.
-    </p>
-    <img class="achicar" src="/assets/help/image29.png" alt="image">
-    <p>
-      Image 21- A slider allows to modify the volume of the sound and two buttons,
-      the first one sets a logarithmic scale for the data processing and a second
-      button can be used to load some sound preset configuration better suited for
-      playing continuous sounds or discrete sound steps.
-    </p>
-    <img class="achicar" src="/assets/help/image30.png" alt="image">
-    <p>
-      A checkbox allows for the selection of frequency mapping and the two sliders
-      beneath it modify the minimum and maximum frequency used in the variable
-      mapping.
-    </p>
+<table class="table table-responsive mt-2 center">
+  <thead>
+    <tr>
+      <th scope="col">Terminology/Acronym</th>
+      <th scope="col">Description</th>
+   
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">CNRS</th>
+      <td>Centre National De La Recherche Scientifique</td>
   
-    <p>
-      The next combo box, with a list, allows the user to choose between some sound
-      types to use. These sounds are not intended to sound like real instruments,
-      but rather just loosely recall those instrument&rsquo;s sounds in order to
-      present the user with some distinguishable options.
-    </p>
-    <img class="achicar" src="/assets/help/image31.png" alt="image">
-    <p>
-      The last part has the configuration of  envelope filter. A checkbox is used
-      to enable and disable the filter. After checking it you can use the attack,
-      decay, sustain and release sliders to modify the resulting sound.
-    </p>
-    <p>
-      NOTE: All the sliders inside the mapping configuration must be enabled and
-      disabled with check boxes, this is to ensure a better navigation with the
-      screen reader and a lower memory overload.
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="4.3.2">4.3.2. Plot configurations</h1>
-    <p>
-      The plot configurations are located on the bottom right of the page and are
-      the line style, the marker style and the color, you can also edit the plot,
-      abscissa axis and ordinate axis title.
-    </p>
-    <img class="achicar" src="/assets/help/image32.png" alt="image">
-    <p>Image 72 &ndash; Shows the plot configuration section</p>
-    <img class="achicar" src="/assets/help/image33.png" alt="image">
-    <p>
-      Image 74 &ndash;The style section of the plot configuration counts with three
-      combo boxes that allows you to select from a list of different options to
-      modify the way the graph looks.
-    </p>
-    <p>
-      If you wish, you can also change the titles of the different parts of the
-      graph. This are simple text boxes with the name that is actually displayed and
-      you can choose to edit the name that is displayed or erase and type a new one.
-      (No need to type enter after modifying it.)
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1  id="4.3.2.1">4.3.2.1. Styles of the data plot</h1>
-    <p>
-      On the plot configuration panel, after the line style label, is placed the
-      drop-down list box with five options of style, which are: solid line, dashed
-      line, dash-dot line and dotted line. In the example of the Image 75 the
-      dash-dot line style is shown, with blue color and without markers.
-    </p>
-    <img class="achicar" src="/assets/help/image34.png" alt="image">
-    <img class="achicar" src="/assets/help/image35.png" alt="image">
-    <p>
-      Image 75 &ndash; The line style element is a drop-down list with four
-      different styles.In the image the dash-dot line option is selected.
-    </p>
+    </tr>
+    <tr>
+      <th scope="row">CSA</th>
+      <td>Coordination and Support Action</td>
+  
+    </tr>
+    <tr>
+      <th scope="row">DoA</th>
+      <td>Description of Action</td>
+  
+    </tr>
+    <tr>
+      <th scope="row">EA</th>
+      <td>Ellinogermanik i Agogi Scholi Panagea</td>
+
+    </tr>
+    <tr>
+      <th scope="row">EC</th>
+      <td>European Commission</td>
+  
+    </tr>
+    <tr>
+      <th scope="row">EGO</th>
+      <td>European Gravitational Observatory</td>
     
-    <p>
-      The marker style option works analogously to the &ldquo;line style&rdquo;.
-      It&rsquo;s found just below the line style and offers some marker options: X,
-      Circle, Star and diamond.In the Image 76 is used the Diamond down marker, with
-      the dotted line style.
-    </p>
-    <img class="achicar" src="/assets/help/image36.png" alt="image">
-    <img class="achicar" src="/assets/help/image37.png" alt="image">
-    <p>
-      Image 76 &ndash; The marker style element is a drop-down list, where are
-      different options. In the image the diamond marker style is selected.
-    </p>
-    <p>
-      Next to the color style label, is placed the drop-down list with five colors:
-      blue, orange, red, green and yellow.
-    </p>
-    <img class="achicar" src="/assets/help/image38.png" alt="image">
-    <img class="achicar" src="/assets/help/image39.png" alt="image">
-    <p>
-      Image 77 &ndash; The color style element is a drop-down list, where are seven
-      options. In the image the orange color style is selected. In addition, the dotted
-      line style and circle marker have been chosen.
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1 id="4.3.2.2">4.3.2.2 Modifying the titles.</h1>
-    <img class="achicar" src="/assets/help/image40.png" alt="image">
-    <p>
-      To modify the title just edit the text inside the text box next to the label
-      of the title you want to edit. The changes apply immediately after every
-      keystroke and there's no need to type &ldquo;enter&rdquo; after editing it.
-    </p>
-    <a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
-    <h1  id="4.4">4.4. Help options</h1>
-    
+    </tr>
+    <tr>
+      <th scope="row">EU</th>
+      <td>European Union</td>
+     
+    </tr>
+    <tr>
+      <th scope="row">GA</th>
+      <td>Grant Agreement to the project</td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">IASA</th>
+      <td>Institute of Accelerating Systems and Applications</td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">KPI</th>
+      <td>Key Performance Indicator</td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">LC</th>
+      <td>Grant Agreement to the project</td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">LC</th>
+      <td>The Lisbon Council For Economic</td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">OU</th>
+      <td>The Open University</td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">REA</th>
+      <td>Research Executive Agency</td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">REINFORCE</th>
+      <td>REsearch Infrastructure FOR Citizens in Europe</td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">UOXF</th>
+      <td>University of Oxford</td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">WP</th>
+      <td>Work Package</td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">ZSI</th>
+      <td>Zentrum Fur Soziale Innovation</td>
+ 
+    </tr>
+ 
+  </tbody>
+</table>
+<h1 id="1">1. Software description</h1>
+<p>
+  SonoUno is a sonification software for astronomical data presented on a
+  table (txt or csv files). The software is being developed based on the
+  study of other software (Sonification Sandbox, MathTrax and xSonify) and
+  standards of accessibility like the ISO 9241-171:2008 (Guidance on
+  software accessibility) and the Web Accessibility Initiative &ndash;
+  Accessible Rich Internet Applications (WAI-ARIA) guidelines. In order to
+  develop the first approach of a graphical user interface, we perform a
+  theoretical framework based on bibliography of user cases, focused on
+  blind and visually impa people.
+</p>
+<p>
+  The development framework is Angular which promotes modularity, in
+        order to do collaborative work. Being this version of SonoUno web based,
+        is accessible from nearly any platform; the development team worked with
+        this aim in mind. The main goal of SonoUno is to allow the user to open
+        data files (txt or csv extension), show the plot and sonify the data. At
+        the moment, the sonification is performed by variation of pitch and the sonification settings allow to change the volume and the timbre.
+</p>
+<p>
+  Additionally, SonoUno allows users to select a specific range of data
+        on the &lsquo;x&rsquo; axis, mark and save points of interest in the
+        data, apply predefined mathematical functions (for example, logarithm
+        and square) and manipulate the data arrays with an Octave interface. In
+        the settings section, the user can configure the plot and some features
+        of the sound.
+</p>
+<p>
+  Finally, the software allows the user to save the plot, a text file
+        with the points marked on the data and a csv file with the plotted
+        data.
+</p>
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+<h1 id="2">2. Opening the software</h1>
+<p>
+  Being a web based
+        application accessing to sonoUno it&rsquo;s as easy as to type the url
+        on your preferred browser:
+</p>
+<a class="nav-link active mr-5" href='http://190.15.198.99:8083/'
+  >http://190.15.198.99:8083/</a
+>
+<p>This link opens the landing page for the web version of sonoUno</p>
+<p>
+  &nbsp;Angular&rsquo;s support extends to the latest Edge, Firefox, Chrome and
+  Safari versions, so it&rsquo;s advised to update your browser. (Image 1). If
+  after entering the url you don&rsquo;t get the sonoUno&rsquo;s homepage first
+  check:
+</p>
+<ol>
+  <li>Check that you have typed the correct url.</li>
+  <li>Check your network connection and access to the internet.</li>
+</ol>
+<p>
+  If after that you still can&rsquo;t establish a connection send a message to
+  the development team via e-mail:
+</p>
+<p>sonounoteam@gmail.com</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen1.png" alt="image" /></div>
+  <p class="epigrafe">Image 1. The image shows Firefox browser and the web page of sonoUno</p>
+
+<p>At the landing page it is possible to select between HOME and QUICK
+  START and also decide if not to show this page again.</p>
+
+  <h1 id="2.1">2.1. QUICK START Guide</h1>
+  <p>The recommendation is for the new users  to go first to the QUICK START (Figure 2), where a short explanation of each section of the web interface (on the screen) and functionalities setting by default are detailed.</p>
+
+  <div class="border"><img class='achicar' src="/assets/images/imagen2.png" alt="image" /></div>
+  <p class="epigrafe">Image 2. The image shows Firefox browser and the Quickstart Guide of sonoUno</p>
+
+
+  <h1 id="2.2">2.2. Home page</h1>
+
+<p>The home page of sonoUno greets you with four distinct sections:</p>
+<ol>
+  <li>
+    The navigation bar with the access to the File functionalities; Input/Output functions, Sample data and the access to the Help and the Quickstart guides. This design was based on a user case study (Image 3)
+
+  </li>
+  <li>
+    The graph has four buttons to control “Play/Pause”, “Stop”, “Mark Point” and “Delete Mark” and two sliders to control the abscissa position and the tempo (Image 4).
+
+  </li>
+  <li>
+    Below the sliders, a MathFunctions bar permits selecting between simple mathematical functions to apply to the data (Image 4)
+  </li>
+  <li>
+    The sound configuration section has the tools to modify the way audio is processed, if you press on this button you will see all the Sound configuration options (Image 5). 
+  </li>
+  <li>The plot configuration section allows you to modify the way the data is displayed in the graph, if you press on this button you will see all the Plot configuration options (Image 6).   </li>
+</ol>
+<p>
+  Every section will be explained in detail in further chapters of this help
+  guide.
+</p>
+
+<div class="border"><img class='achicar' src="/assets/images/imagen3.png" alt="image" /></div>
+  <p class="epigrafe">Image 3. sonoUno home page. Plot area and menu</p>
+
+  <div class="border"><img class='achicar' src="/assets/images/imagen4.png" alt="image" /></div>
+  <p class="epigrafe">Image 4. sonoUno home page. Plot area functionalities and Abscissa and Tempo sliders. Bellow, Math Functions bar and bellow that bar, Sound and Plot configuration buttons </p>
+  <div class="border"><img class='achicar' src="/assets/images/imagen5.png" alt="image" /></div>
+  <p class="epigrafe">Image 5. sonoUno home page. Sound functionalities and configurations</p>
+  <div class="border"><img class='achicar' src="/assets/images/imagen6.png" alt="image" /></div>
+  <p class="epigrafe">Image 6. sonoUno home page. Plot functionalities and configurations</p>
+
+  <h1 id="2.3">2.3. Testing sonoUno web</h1>  
+<p>
+  You can start testing the SonoUno functionalities with the sample data that's provided under the dropdown menu “Sample Data”.  Just select any of the options under this menu to get the data (Image 7) automatically loaded on your graph area  and the audio be ready to play.
+</p>
+<p>In order to listen to the graph just press the button “Play” under the graph. You should see an orange bar moving from left to right indicating the progress on the data being played and hear the pitch variations matching the data.</p>
+
+<div class="border"><img class='achicar' src="/assets/images/imagen7.png" alt="image" /></div>
+<p class="epigrafe">Image 7. sonoUnoweb  Sample Data Menu</p>
+<p>
+  If you can see the black bar moving but still no sound comes out from your
+  headphones or speakers:
+</p>
+<ol>
+  <li>Check your speakers or headphones connection to your PC.</li>
+  <li>Check your sound configuration: volume level and mute.</li>
+  <li>
+    Check if your browser has blocked the sound reproduction and that the tab is
+    not muted.
+  </li>
+</ol>
+
+<p>
+  If the problems continue or you have another problem, please inform this
+  to the developer team.
+</p>
+
+
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+
+
+<h1 id="2.4">2.4. Things to keep in mind</h1>
+<ul>
+  <li>
+    Some widgets, like warnings or confirmation buttons may be in your browser configured language. Otherwise, the software language is always English. In the future the team is looking forward to unifying the languages. 
+  </li>
+  <li>
+    In the files to import the first column must have continuous values, it is used as a coordinate dependent axis. 
+
+  </li>
+  <li>
+    All screenshots and images shown are for illustration purposes only, the real image can change a little depending on the web browser.
+
+  </li>
+</ul>
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+
+<h1 id="3.0">3.0. Opening a file</h1>
+<p>
+  To open a .csv or .txt file, you can use the option “Browse.” under the File dropdown menu (Image 8). This action will open a pop-up window with your operating system’s file explorer (Image 9), where you can search and open any data file.
+</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen8.png" alt="image" /></div>
+<p class="epigrafe">Image 8 Shows the items on the menu File and the focus of the keyboard is on the Open item.</p>
+
+<div class="border"><img class='achicar' src="/assets/images/imagen9.png" alt="image" /></div>
+<p class="epigrafe">Image 9 Pop-up window of the File explorer, shown after selecting the item.</p>
+
+<p>
+  When you have the data file selected, press the button Open or the Enter key. The sonoUno will generate the graph (Image 10) and update the abscissa’s slide bar. Everything is ready, pressing the “Play” button should start the reproduction.
+
+</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen10.png" alt="image" /></div>
+<p class="epigrafe">Image 10. The sonoUno framework with the graph of the imported data, in this case a GW glitch.</p>
+
+<p>
+  The shortcut for opening a file is Shift+O. After pressing the shortcut the process is identical to selecting the option in the navigation bar.
+</p>
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+<h1 id="3.1">3.1. Mark and Delete all marks button</h1>
+<p>
+  Before starting with this functionality, we must explain that the sonoUno allows the user to mark points of interest on the data, and store the coordinates on a vector or file. These marks are shown with a diverse amount of user selectable symbols over the plot (Image 11). 
+</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen11.png" alt="image" /></div>
+<p class="epigrafe">Image 11 Displays the sonoUno interface with an opened data file, in the plot there is one vertical black line (position of the playing coordinate) and several blue circles  marking points of interest on the graph.</p>
+
+<p>
+  The functionality of the “Delete Mark” button placed under the graph (Image11), is to erase the last added mark point on the data.  
+</p>
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+<h1 id="4">4. Save files</h1>
+<p>
+  There are two ways to save files
+</p>
+<ul>
+  <li>
+    In the  dropdown menu, the option “Output” deploys the list of options to save:  Sound, Marked Points, Plot (from top to bottom)  (Image 12).
+    <div class="border"><img class='achicar' src="/assets/images/imagen12.png" alt="image" /></div>
+<p class="epigrafe">Image 12 Displays the sonoUno interface with an opened data file. At the top Menu, the Output button displays the Save Sound, Save Markers , Save Plot possibilities.
+</p>
+
+  </li>
+ 
+  <li>
+    The other is the shortcut Shift+W.
+
+  </li>
+</ul>
+<p>Both methods have the same results.</p>
+
+<p>
+  A way the user can store the sound from the data provided to sonoUno is the “Save Sound” feature  (Image 13).  T In order to save the sound, the user has to press the save sound item on the File menu
+</p>
+<p>
+  The software will process the sound corresponding to the actual data displayed in the plot but with some standard sound configuration and then store it in your computer on a .wav file  (image 14). 
+</p>
+<p>The process to save the sound depends on the data file and can take some minutes.</p>
+
+<div class="border"><img class='achicar' src="/assets/images/imagen13.png" alt="image" /></div>
+<p class="epigrafe">Image 13 Shows the file menu opened in the navigation bar and the Save Sound option selected</p>
+
+
+<div class="border"><img class='achicar' src="/assets/images/imagen14.png" alt="image" /></div>
+<p class="epigrafe">Image 14  Shows the pop up panel that opens after pressing save sound for a Mac. If no pop-up is opened, you may have checked the auto download option on your browser and your file should be in your Downloads folder.</p>
+
+<p>Before continuing with the save methods, remember that the software allows to do marks of interest on the data (Image 15), saving the coordinates inside an array, this topic is explained in the corresponding section. We mention it here because in the next lines the save marks method is described.
+</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen15.png" alt="image" /></div>
+<p class="epigrafe">Image 15 Shows the Save Markers option focused on the file menu.</p>
+
+<p>
+  In order to save the values of the marks performed on the data array the user has to press the save markers item, placed on the File menu (Image 15).
+</p>
+<p>
+  The save marks option shows a pop-up window of the file system (Image 16) that allows the user to select the directory and the name of the text file. After saving them, the marks are deleted from the sonoUno and the plot (Image 17). 
+</p>
+<p>
+  The save markers option shows a similar pop-up window to the “save sound” feature, and then downloads the .csv file. The format of the name is the plot’s title plus “ markers.csv”. 
+</p>
+<p>
+  It's important to remember that the array of markers should have at least one marker in order for this to work properly. 
+</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen16.png" alt="image" /></div>
+<p class="epigrafe">Image 16 Pop-up window of the computer file system saving the markers csv file  (Mac OS)</p>
+
+<div class="border"><img class='achicar' class="achicar" src="/assets/images/imagen12.png" alt="image" /><img class='achicar'  class="achicar" src="/assets/images/imagen17-1.png" alt="image" /></div>
+<p class="epigrafe">Image 17 The interface is shown before and after clicking the “save markers” button. The play bar is kept in place but markers are erased after saving them to a csv file (Ubuntu OS)</p>
+
+<div class="border"><img class='achicar' src="/assets/images/imagen18.png" alt="image" /></div>
+<p class="epigrafe">Image 18 Data saved from sonoUno web</p>
+<p>The resulting files in your downloads folders should look something like in Image 18. The original .csv file with the provided data, a .csv file with the markers and a .wav file with the sound.</p>
+
+
+<div class="border"><img class='achicar' src="/assets/images/imagen19.png" alt="image" /></div>
+<p class="epigrafe">Image 19 A view of the file explorer and both, markers and audio files opened.</p>
+
+<div class="border"><img class='achicar' src="/assets/images/imagen20a.png" alt="image" /></div>
+<p class="epigrafe">Image 20 A view of the saved “Markers.cvs” file</p>
+
+<p>If the user opens the markers.csv file with a text editor the coordinates of that mark are going to be displayed with two columns separated by a comma corresponding to the x and y coordinates of that particular mark (Image 20).
+</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen20b.png" alt="image" /></div>
+
+<p>And opening the wav file is going to start playing it in the default media player of your operating system, in the image a screenshot of the mac music player.</p>
+
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+
+<h1 id="5">5. Exit the sonoUno</h1>
+<div class="border"><img  class="achicar" src="/assets/help/imagen20c.png" alt="image" /></div>
+<p>
+  Being web based, exiting sonoUno is as simple as closing your current tab hitting the “X” at the end of the tabs title. The default shortcut for most browsers is Ctrl+W or Cmd+W depending on your operating system, this may vary.
+</p>
+<p>
+  Important: Be sure to store every piece of data you want to save before closing the tab to avoid data loss. 
+</p>
+<p>
+  You can also quit sonoUno by closing your browser, just keep in mind that you are going to close every other tab opened at the time. 
+</p>
+
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+<h1 id="6">6. Functionalities</h1>
+<h1 id="6.1">6.1. Abscissas position</h1>
+<p>
+  The slider of abscissa position allows the user to shift the point of data being played (Image 21). The slider shows the posicion (with a number) and also is possible to move it wuth the keyboard arrows if the mouse is on  this button .
+</p>
+<div class="border"><img  class="achicar" src="/assets/help/imagen21.png" alt="image" /></div>
+<p>
+  Image 21 Shows the slider, while being selected is possible to move it left and right with your keyboard arrows 
+</p>
+<div class="border"><img  class="achicar" src="/assets/help/imagen22.png" alt="image" /></div>
+<p>
+  Image 22 As you can see the percentage of the “Abscissa Position Slider” corresponds to the position of the black line on the plot.
+</p>
+
+
+<p>
+  The abscissa position can be modified before, during and after the reproduction of the data. If the reproduction is in progress, after change the reproduction continues from the new set value. 
+</p>
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+<h1 id="6.2">6.2. Tempo selection</h1>
+<p>
+  This slider controls the duration of each tone. The range goes from 0% to 100%, being 100 the shortest and 0 the longest time.
+</p>
+<p>
+  It’s placed under the plot and to the right of the abscissa slider (Image 23). The operation is analogous to the abscissa position slider.  
+</p>
+<div class="border"><img class="achicar" src="/assets/help/imagen23.png" alt="image" /></div>
+<p>
+  Image 23  The tempo slider is on the bottom right of the image.
+</p>
+
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+<h1 id="6.3">6.3. Play and Pause button</h1>
+<p>
+  It’s the first button under the graph (Image 24). When pressed, it changes its name to “Pause” and starts the reproduction of the data, the vertical black line and the abscissa position slider start to go forward, indicating the coordinates of the data being played. 
+</p>
+<div class="border"><img class="achicar" src="/assets/help/imagen24.png" alt="image" /></div>
+<p>
+  Image 24  The play button is found on the bottom left of the image, under the graph, being the first button
+</p>
+
+<p>
+  Another way to start the reproduction is with the shortcut key ”Shift+P”. This way of interacting differs from the previous two, because when pressed produces the effect directly, without modifying the keyboard focus. 
+</p>
+<p>
+  To pause the reproduction of the data you have to press the same button or the same shortcut key, this action maintains the vertical red line position to be able to resume it later with the play button. 
+</p>
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+<h1 id="6.4">6.4. Stop button</h1>
+<p>
+  Its function is to stop the reproduction and restart the process, which means that it sets the abscissa position to zero and deletes the vertical red line from the plot (Image 25). Another way to stop the reproduction is with the shortcut key ‘Shift+S’. 
+
+</p>
+
+<div class="border"><img class="achicar" src="/assets/help/imagen25.png" alt="image" /></div>
+<p>
+  Image 25  The stop button is placed next to the Play button.
+</p>
+
+
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+<h1 id="6.5">6.5. Mark point button</h1>
+<p>
+  This button allows the user to mark a specific point from the data. When the button is pressed sonoUno saves the current position on a vector and displays it on the graph with a symbol. (Image 26) 
+</p>
+<img class='achicar' src="/assets/help/image26.png" alt="image" />
+<p>
+  Image 26  The mark point button is found under the graph, next to the stop button.
+</p>
+<p>
+  In parallel, the user can mark a point on the graph with the shortcut key ‘Shift+M’. The shortcut has the same effect as pressing the button but without modifying the keyboard focus. 
+</p>
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+<h1 id="6.6">6.6. Delete last mark button</h1>
+<p>
+  This functionality allows the user to erase the last mark made with the mark point element. It’s useful when the user has made a mark without intention or the place is incorrect. The button is placed beneath the graph, it’s the fourth button, next to the mark point button (Image 27). 
+</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen27.png" alt="image" /></div>
+<p class="epigrafe">Image 27  The delete last mark button is found on the bottom right of the graph section. It’s the fourth button from left to right.</p>
+<p>
+  Another way to erase the last mark point is with the shortcut key ‘Shift+D’. 
+</p>
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+
+
+
+<h1 id="7">7. Plot and Sound Configurations</h1>
+<p>
+  SonoUno web allows the user to adjust some sound and plot settings,these options are at the bottom of the page (Image 28). 
+</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen4.png" alt="image" /></div>
+<p class="epigrafe">Image 28  Below Abscissa, Tempo and Math sliders are user modifiable configurations for Sound and Plot.</p>
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+<h1 id="7.1">7.1. Sound configuration</h1>
+<p>
+  The location of the sound configurations is on the bottom left of the page </p>
+  <p>The sound configuration can be divided into 3 distincts parts. </p>
+
+
+  <ul>
+    <li>
+      frequency range and sound types selection  (Image 29),
+    </li>
+   
+    <li>
+      volume and buttons to set logarithmic scale and continuous sound (Image 30),  
+    </li>
+    <li>
+      advanced functions configuration, which includes the logarithmic scale, discrete or continuous sound and envelop (Image 31)
+    </li>
+  </ul>
+  <div class="border"><img class='achicar' src="/assets/images/imagen29.png" alt="image" /></div>
+<p class="epigrafe">Image 29  A slider allows to modify the frequency</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen30.png" alt="image" /></div>
+<p class="epigrafe">Image 30  A slider allows to modify the volume of the sound and the sound type</p>
+
+
+<p>
+  A checkbox allows for the selection of frequency mapping and the two sliders beneath it modify the minimum and maximum frequency used in the variable mapping. 
+</p>
+<p>
+  The next combo box, with a list, allows the user to choose between some sound types to use. These sounds are not intended to sound like real instruments, but rather just loosely recall those instrument’s sounds in order to present the user with some distinguishable options.
+</p>
+
+<div class="border"><img class='achicar' src="/assets/images/imagen31.png" alt="image" /></div>
+<p class="epigrafe">Image 31  Advanced Sound Configuration</p>
+<p>The Advanced Sound Configurations includes the configuration of envelope filters (Image 31). A checkbox is used to enable and disable the filter. After checking it you can use the attack, decay, sustain and release sliders to modify the resulting sound. </p>
+<p>NOTE: All the sliders inside the mapping configuration must be enabled and disabled with check boxes, this is to ensure a better navigation with the screen reader and a lower memory overload. </p>
+
+
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+<h1 id="7.2">7.2. Plot configurations</h1>
+<p>
+  The plot configurations are located on the bottom right of the page. This tool are divide in.
+</p>
+<ul>
+  <li>
+    basic: title of the plot, name of the axes  (Image 32),
+  </li>
+ 
+  <li>
+    advanced configurations: line, marker and color styles (Image 33): 
+  </li>
+ 
+</ul>
+<div class="border"><img class='achicar' src="/assets/images/imagen32.png" alt="image" /></div>
+<p class="epigrafe">Image 32  Shows the basic plot configuration section</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen33.png" alt="image" /></div>
+<p class="epigrafe">Image 33  The style section of the plot configuration counts with three combo boxes that allows users to select from a list of different options to modify the way the graph looks.</p>
+
+
+<p>
+  If you wish, you can also change the titles of the different parts of the graph. These are simple text boxes with the name that is actually displayed and you can choose to edit the name that is displayed or erase and type a new one. (No need to type enter after modifying it.)</p>
+
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+
+<h1 id="7.2.1">7.2.1. Styles of the data plot</h1>
+<p>
+  On the plot configuration panel, after the line style label, is placed the drop-down list box with five options of style, which are: solid line, dashed line, dash-dot line and dotted line. In the example of the Image 34 the dash-dot line style is shown, with blue color and without markers. 
+</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen34.png" alt="image" /><img class='achicar' src="/assets/images/imagen34a.png" alt="image" /></div>
+<p class="epigrafe">Image 34  The line style element is a drop-down list with four different styles.In the image the dash-dot line option is selected.</p>
+
+
+<p>
+  The marker style option works analogously to the “line style”. It’s found just below the line style and offers some marker options: X, Circle, Star and diamond.In the Image 35 is used the Diamond down marker, with the dotted line style. 
+</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen35a.png" alt="image" /><img class='achicar' src="/assets/images/imagen35b.png" alt="image" /></div>
+<p class="epigrafe">Image 35  The marker style element is a drop-down list, where are different options. In the image the diamond marker style is selected.
+</p>
+
+<p>
+  Next to the color style label, is placed the drop-down list with five colors: blue, orange, red, green and yellow. 
+</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen36a.png" alt="image" /><img class='achicar' src="/assets/images/imagen36b.png" alt="image" /></div>
+<p class="epigrafe">Image 36  The color style element is a drop-down list, where there are seven options. In the image the orange color style is selected. In addition, the dotted line style and circle marker have been chosen.</p>
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+
+
+<h1 id="7.2.2">7.2.2. Modifying the titles.</h1>
+<div class="border"><img class='achicar' src="/assets/images/imagen37.png" alt="image" /><img class='achicar' src="/assets/images/imagen37b.png" alt="image" /></div>
+<p class="epigrafe">Image 37 Plot and axes names</p>
+
+
+<p>
+  To modify the title just edit the text inside the text box next to the label of the title you want to edit (Image 37). The changes apply immediately after every keystroke and there's no need to type “enter” after editing it (Image 38)
+</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen38.png" alt="image" /></div>
+<p class="epigrafe">Image 38. New color and  Plot and axes names</p>
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
+
+<h1 id="8">8. Mathematical Functions</h1>
+
+<p>Thee last version of sonoUno web includes the possibility to apply predefined  mathematical functions, as logarithm, square and smooth (Image 39),  to the data. It is the first approach to the next step, which will permit to use any function</p>
+<div class="border"><img class='achicar' src="/assets/images/imagen39.png" alt="image" /></div>
+<p class="epigrafe">Image 39.Pre defined  mathematical functions
+</p>
+<a class="nav-link active mr-5" (click)="anchorNav('indice')">Back to index</a>
