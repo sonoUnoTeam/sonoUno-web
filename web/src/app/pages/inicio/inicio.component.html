@@ -662,6 +662,20 @@
           (keyup)="handleTitles($event, '3')"
         />
       </div>
+      <div class="form-check mt-3">
+        <input
+        [(ngModel)]="displayGrid"
+          class="form-check-input"
+          type="checkbox"
+        
+          id="Display Grid"
+          aria-label="Display grid checkbox"
+          (change)="grid()"
+        />
+        <label class="form-check-label" for="Display grid">
+         DISPLAY GRID
+        </label>
+      </div>
       <button
         class="btn btn-sonouno mt-3"
         type="button"
@@ -670,6 +684,8 @@
         aria-expanded="false"
         aria-controls="collapseSoundConfiguration"
       >
+
+     
         ADVANCED PLOT CONFIGURATION
       </button>
       <div id="collapseAdvancedPlotConfiguration" class="collapse mt-3">

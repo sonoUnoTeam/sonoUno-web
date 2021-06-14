@@ -49,7 +49,7 @@ export class InicioComponent implements OnInit {
   maxFreq: number = 1200;
   minFreqGraph: number = 10;
   maxFreqGraph: number = 20;
-
+  displayGrid:boolean=false;
   ADSR: {} = {
     "attack": 0,
     "decay": 0.2,
@@ -103,12 +103,18 @@ export class InicioComponent implements OnInit {
     },
     uirevision: 'true',
     xaxis: {
+      showgrid: false,
+      gridcolor: '#bdbdbd',
+      gridwidth: 1,
       range:[Math.min(...this.datos_x),Math.max(...this.datos_x)],
       autorange: false, title: {
         text: this.abscissaTitle, font: { family: "Nunito, sans-serif", size: 18 }
       }
     },
     yaxis: {
+      gridcolor: '#bdbdbd',
+      gridwidth: 1,
+      showgrid: false,
       range:[(Math.min(...this.datos)),
         (Math.max(...this.datos))],
       autorange: false, title: {
@@ -322,6 +328,12 @@ smoothData(){
 
   deleteMarcador() {
     this.marcadores.pop();
+    this.updateGraph();
+  }
+  grid(){
+    
+    this.layout['xaxis']['showgrid']=this.displayGrid;
+    this.layout['yaxis']['showgrid']=this.displayGrid;
     this.updateGraph();
   }
   updateGraph() {

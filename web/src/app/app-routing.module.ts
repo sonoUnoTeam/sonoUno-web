@@ -8,7 +8,7 @@ import {LandingPageGuard} from "./login.guard";
 
 const routes: Routes = [
 
-  { path: 'inicio', component: InicioComponent },
+  { path: 'home', component: InicioComponent },
   { path: 'help', component: HelpComponent },
   { path: 'quickstart', component: QuickstartComponent },
   { path: 'landing', component: LandingComponent },
