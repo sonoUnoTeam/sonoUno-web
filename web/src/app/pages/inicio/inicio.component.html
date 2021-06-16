@@ -259,6 +259,7 @@
 </nav>
 
 <plotly-plot
+  divId="mainPlot"
   tabindex="-1"
   focusable="false"
   aria-hidden="true"
@@ -266,7 +267,7 @@
   [data]="data"
   [layout]="layout"
   (relayout)="zoom()"
-  [config]="{displayModeBar: false}">
+  [config]="{displayModeBar: true}">
 </plotly-plot>
 <div class="row" id="row Reproduction" aria-label="Play Options Row">
   <div class="col-12 text-center mb-5">
@@ -304,6 +305,16 @@
       id="delete mark point button"
     >
       <span style="text-decoration: underline">D</span>ELETE MARK
+    </button>
+    <!-- Boton reset zoom -->
+    <button
+      class="btn btn-sonouno mr-5"
+      aria-label="Reset zoom Shortcut R"
+      (click)="resetZoom()"
+      tabindex="0"
+      id="reset zoom button"
+    >
+      <span style="text-decoration: underline">R</span>ESET PLOT RANGE
     </button>
   </div>
 </div>

@@ -5,6 +5,7 @@ import * as ToneJS from 'tone'
 import * as funciones from './utils'
 import * as sampleData from './sampleData'
 import * as Plotly from 'plotly.js';
+import { PlotlyService } from 'angular-plotly.js';
 
 //declare var Tone: any;
 
@@ -17,10 +18,11 @@ import * as Plotly from 'plotly.js';
 export class InicioComponent implements OnInit {
 
 
-
+  constructor(public plotly: PlotlyService)  {}
 
   ngOnInit() {
-
+    const Plotly = this.plotly.getPlotly();
+    
   }
 
 
@@ -136,7 +138,7 @@ var salida="";
   salida+=this.datos_x[i]+",";
   
 }
-console.log(salida);
+
 
 this.zoom();
 }
@@ -243,10 +245,14 @@ smoothData(){
     this.GlobalIndex = 0;
 
   }
-
+  resetZoom(){    
+    Plotly.relayout("mainPlot",{xaxis:{autorange:true},yaxis:{autorange:true}});
+    this.zoom();    
+  }
   zoom() {
     //Corrige las posiciones del indice en el grafico y la sección de datos a reproducir utilizando los rangos del layout del grafico
     this.rangoMin = this.layout["xaxis"]['range'][0];
+    
     this.rangoMax = this.layout["xaxis"]['range'][1];
     //this.indiceGrafico=0;
    
@@ -675,10 +681,15 @@ smoothData(){
       case "m":
         this.addMarcador();
         break;
+        case "r":
+        this.resetZoom();
+        break;
       case "o":
-        console.log("carga archivos"); //TODO: Implementar
+        console.log("carga archivos");
+        break; //TODO: Implementar
       case "p":
         this.PlayPause();  
+        break;
       default:
         //console.log(eventData.key)
         break;
