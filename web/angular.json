@@ -1,10 +1,19 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "1418b861-cbcb-4823-b8b5-95dbac4c3a5c"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "web": {
       "projectType": "application",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "es": "src/locale/messages.es.xlf"
+        }
+      },
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
@@ -13,22 +22,39 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
             "outputPath": "dist/web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
-              "src/favicon.ico",
+              "src/assets/favicon.png",
               "src/assets"
             ],
             "styles": [
+              "../web/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../web/node_modules/jquery/dist/jquery.min.js",
+              "../web/node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
+            "es": {
+              "localize": [
+                "es"
+              ],
+              "main": "src/main.ts"
+            },
+            "en": {
+              "localize": [
+                "en-US"
+              ],
+              "main": "src/main.ts"
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -39,9 +65,7 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -66,6 +90,12 @@
             "browserTarget": "web:build"
           },
           "configurations": {
+            "es": {
+              "browserTarget": "web:build:es"
+            },
+            "en": {
+              "browserTarget": "web:build:en"
+            },
             "production": {
               "browserTarget": "web:build:production"
             }
@@ -85,13 +115,18 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
+              "src/assets/favicon.png",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "../web/node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css",
+              "../web/src/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../node_modules/jquery/dist/jquery.min.js",
+              "../node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           }
         },
         "lint": {
@@ -120,6 +155,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "web"
 }

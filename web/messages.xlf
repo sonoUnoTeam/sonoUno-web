@@ -1,0 +1,3264 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="747d685619a8a8f05e71312467995c514528551d" datatype="html">
+        <source>Editable version for screen reader</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">75,88</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="c18fb9aa94787772e01456258082426043e53693" datatype="html">
+        <source>D0.0 User Manual: WebVersion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">88,105</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="e557dba66ab13888e50e92b29fc7442a14438034" datatype="html">
+        <source><x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button type=&quot;button&quot; class=&quot;btn btn-sonouno ml-2&quot;&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+          href=&quot;./assets/REINFORCE - D7.1 - Sonification Platform and Training Courses v1.docx&quot; download&gt;"/> Download .docx<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">126,67</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="0b2c1d2f8b99c9c36d8dd9c78304af4520e150ee" datatype="html">
+        <source>Work Package</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">134,143</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="2e8989faee1f152aa7c8ef12fb79e49c29da9390" datatype="html">
+        <source>Due Date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">137,145</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="5aef23246d9c05b027c882eab6f118d26b32e937" datatype="html">
+        <source> WP00 SonoUno: Sonification Software for astronomical data files presented in table format. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">160,174</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="1bd0d6984fcbd31564c151459ca9f14f4b272999" datatype="html">
+        <source>DD.MM.YYY</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">162,169</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">203,207</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">284,288</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">324,334</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">411,415</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">452,456</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">494,502</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">532,536</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">585,592</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">611,618</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="2f933b826a570836cab04f683970a2d22068458c" datatype="html">
+        <source>Date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">182,192</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">255,257</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="623c0a15f5881742954dc155ed7dbaa65068f079" datatype="html">
+        <source>Lead Author (Org)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">188,200</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="9de54163c7aadfd681c0df60b53cbb11485830ec" datatype="html">
+        <source>Bioing. Johanna Casado</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">205,211</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="8fe73a4787b8068b2ba61f54ab7e0f9af2ea1fc9" datatype="html">
+        <source>Version</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">217,220</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">248,251</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="614e2c51df8da0be55f5effe87622972965e5b09" datatype="html">
+        <source>Contributing Author(s) (Org)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">220,223</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="369062545b5797e8c534141cc8a34b97874ce7ca" datatype="html">
+        <source>V1.0</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">226,228</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="0e1144801655bb537a3456d92c9a09a7403c8d7a" datatype="html">
+        <source> Disemination level
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">233,236</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="358ae1efb17b9f21d2fac72b996fe35112f19a62" datatype="html">
+        <source><x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/> Dr. Beatriz García <x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/><x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/> Dr. Wanda Diaz Merced <x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/><x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/> Bioing. Aldana Palma <x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/><x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/> Bioing. Julieta Carricondo Robino <x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/><x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/> Mg. Ing. Gonzalo A. De la Vega <x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">234,95</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="c009003cecae04c0bb0477c27c31c88825adb14c" datatype="html">
+        <source>Versioning and contribution history</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">240,243</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="d7293b61e9088c66421df2e367e0ccc00346cf9f" datatype="html">
+        <source>Author</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">262,264</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="fcde58253a4cfd52c228eebdae74e1be7a1ab714" datatype="html">
+        <source>Notes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">268,270</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="d6a95b72e2acbae5e96f8f90eee57f03adf9e8d9" datatype="html">
+        <source>0.1</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">275,279</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="e7f4a4a4961d388c3ada417f673dd135b5202f21" datatype="html">
+        <source>Table of Contents (TOC)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">293,296</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="c2b799410bedbe04a756e67c3cf266cfa44ddfe8" datatype="html">
+        <source>0.2</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">302,305</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="2f8e62ad743923f65c4dde9f29f5d0b97672e6cf" datatype="html">
+        <source>Additional TOC sections</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">352,364</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="c38bce0c84489636088d70dd089e2ac85bab3491" datatype="html">
+        <source>0.3</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">380,390</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="9ddfb53811becbf4ba8e3471f7f3dd84fda196bd" datatype="html">
+        <source>Contents for Executive Summary, section 1 and 1.1</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">424,428</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="8365426d4894b417caed43acae548f1a8dda66c1" datatype="html">
+        <source>0.4</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">436,441</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f80fc929063648f1db20d36362c26d872404a82f" datatype="html">
+        <source>Contents for section 2 and2.2</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">466,472</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="35ceb81f83185e505042761405471f5eb467bbb2" datatype="html">
+        <source>0.5</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">480,486</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="274a4953b652142f91db19a05d844bd9a9cc757f" datatype="html">
+        <source>Contents for sections 3, 4, 4.1-6</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">510,517</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="636925b06e8f1846279f72936b08b98f1b419dce" datatype="html">
+        <source>0.6</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">521,525</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="124eb66dab9fdb7860027eff8711510299d61199" datatype="html">
+        <source>Contents for section 5</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">546,559</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="44d5b7341dd485c27b6fcd9f63f1fe347d476cd0" datatype="html">
+        <source>0.7</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">569,575</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="c759fe6ead2190881b676b4f761d982d564458bf" datatype="html">
+        <source>1.0</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">598,602</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="1883d926206505a430a26bb23219f426cf2cf7e3" datatype="html">
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">631,652</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="692bb3a56932a6ff4c2e821c4c6408f6220a18aa" datatype="html">
+        <source>This document contains information which is proprietary to the REINFORCE Consortium. Neither this document nor the information contained herein shall be used, duplicated or communicated by any means to a third party, in whole or parts, except with the prior consent of the REINFORCE Consortium.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">663,676</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="09599ba088f9bd29b8dbf8e1a61166cba8af948d" datatype="html">
+        <source>Table of contents</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">686,690</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="a00bf4fc830fe67aa2ecc660cea67bf10610ff9f" datatype="html">
+        <source>1. SOFTWARE DESCRIPTION</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">700,706</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="4cc51de580ea5634f09a14d4299cbe733b01d336" datatype="html">
+        <source>2. OPENING THE SOFTWARE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">720,725</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="6282e122b0c0945daba201b788c9b466cad2ae7a" datatype="html">
+        <source> The other is the shortcut Shift+W. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">724,729</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="2bdfa49e81375b7c3e4f898f15bf911d9a09701e" datatype="html">
+        <source>2.1. QUICK START GUIDE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">733,736</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="bb1e5e2f44c13f16c6299ec7f7b1bfc563d431d3" datatype="html">
+        <source>Both methods have the same results.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">735,740</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="45ccccc15d7870556e7c212e2d82b7c547833063" datatype="html">
+        <source>2.2. HOME PAGE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">743,749</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="73fe5d702c66d5316e0ee8b573460ef31cd47664" datatype="html">
+        <source> A way the user can store the sound from the data provided to sonoUno is the “Save Sound” feature (Image 13). T In order to save the sound, the user has to press the save sound item on the File menu
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">751,764</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f9d0beccb53f07239e2029bca548f78e9adb8ff5" datatype="html">
+        <source>2.3. TESTING SONOUNO WEB</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">755,762</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="00b791523a3721935983fcf5ec98210c2747f7ce" datatype="html">
+        <source>2.4. THINGS TO KEEP IN MIND</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">767,771</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="606441f0909095c42d1f44ad1a396eeafaac55c3" datatype="html">
+        <source> The software will process the sound corresponding to the actual data displayed in the plot but with some standard sound configuration and then store it in your computer on a .wav file (image 14).
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">771,782</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="47fb2afe99ad388978e5f14e195e8de46a3fe423" datatype="html">
+        <source>3.0 OPENING A FILE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">778,782</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="9252790b32ed058d8748fee5e0f7ebd938b93fa2" datatype="html">
+        <source>3.1 MARK AND DELETE ALL MARKS BUTTON</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">792,796</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="24ff5f8115dcdedf674479ac43b919c8cd35c065" datatype="html">
+        <source>The process to save the sound depends on the data file and can take some minutes.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">792,799</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="8465066279fcc0d48b78e5da968c1cfd1b1ffae1" datatype="html">
+        <source>4. SAVE FILES</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">806,810</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="4b8ae8aae7d6c320571b494ca9ab8edb796321f4" datatype="html">
+        <source>Before continuing with the save methods, remember that the software allows to do marks of interest on the data (Image 15), saving the coordinates inside an array, this topic is explained in the corresponding section. We mention it here because in the next lines the save marks method is described.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">812,829</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="57fa594cef6c06988c01417106de948c8ba718d3" datatype="html">
+        <source>5. EXIT THE SONOUNO</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">817,825</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="14ddea897abe68f0de0021acc6d0b829f9240506" datatype="html">
+        <source>6. FUNCTIONALITIES</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">835,840</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="137d3a957d825cdf65ef3a7c2b8bfbe9629f7db1" datatype="html">
+        <source> In order to save the values of the marks performed on the data array the user has to press the save markers item, placed on the File menu (Image 15).
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">843,852</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="401d7168841c1861d396a5d811bbe1ad9f6d3d53" datatype="html">
+        <source>6.1. ABSCISSAS POSITION</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">847,852</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="a51ddd765e330cb2f0859b22f9d0550cff4bb068" datatype="html">
+        <source>6.2. TEMPO SELECTION</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">861,866</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="cccdfef8beeeeb022b28e2f52659050bb3074683" datatype="html">
+        <source> The save marks option shows a pop-up window of the file system (Image 16) that allows the user to select the directory and the name of the text file. After saving them, the marks are deleted from the sonoUno and the plot (Image 17).
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">864,881</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="75fb37f89b9b8f347b7136a97aa25ec4243ec917" datatype="html">
+        <source>6.3. PLAY AND PAUSE BUTTON</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">878,882</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="2cc03a8a51be1eab21bbe224166fc69e2ddcde06" datatype="html">
+        <source>6.4. STOP BUTTON</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">892,896</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="0d7b42a3d1859617e565dc26bbfcee6a6d418f0e" datatype="html">
+        <source> The save markers option shows a similar pop-up window to the “save sound” feature, and then downloads the .csv file. The format of the name is the plot’s title plus “ markers.csv”.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">892,903</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f667af3668ddf47634d6b2d012fbdb24d0437dff" datatype="html">
+        <source>6.5. MARK POINT BUTTON</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">903,911</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="fc699711e2fac827195cc6697644cc6bf2dd4b9a" datatype="html">
+        <source> It&apos;s important to remember that the array of markers should have at least one marker in order for this to work properly.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">915,927</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="244db7c23c744d2d2c1a67cf0e17022febd23c1e" datatype="html">
+        <source>6.6. DELETE LAST MARK BUTTON</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">918,926</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="d9e92a8dab9a3e77dab42db3914f637fd4df3075" datatype="html">
+        <source>7. PLOT AND SOUND CONFIGURATIONS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">938,944</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="395c757e97a9ae1afbf4108e8af9876aea10cf2d" datatype="html">
+        <source>The resulting files in your downloads folders should look something like in Image 18. The original .csv file with the provided data, a .csv file with the markers and a .wav file with the sound.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">940,953</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="d1e727d2712418b4cc90689f1f395596aaf92542" datatype="html">
+        <source>7.1 SOUND CONFIGURATION</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">953,956</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="58c1db2958fd132d68002b0eeafb2ab4d22f8473" datatype="html">
+        <source>If the user opens the markers.csv file with a text editor the coordinates of that mark are going to be displayed with two columns separated by a comma corresponding to the x and y coordinates of that particular mark (Image 20).
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">963,980</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="b055b694cbe002d222bb1856b3c2f5dbb63a71fe" datatype="html">
+        <source>7.2. PLOT CONFIGURATIONS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">963,973</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="883212c7879d70c822ad0a46920fbceb99b8bb8e" datatype="html">
+        <source>7.2.1. STYLES OF THE DATA PLOT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">980,986</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="e8a1892d275b2d2454384264a2ed036b33344c07" datatype="html">
+        <source>And opening the wav file is going to start playing it in the default media player of your operating system, in the image a screenshot of the mac music player.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">991,999</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f3a4f1c23236061f5fcf9436ba07e36bc99dc1ae" datatype="html">
+        <source>7.2.2 MODIFYING THE TITLES.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">994,998</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="c1907e6ecb8225fb862d2eaeeabd9a644b0efd69" datatype="html">
+        <source>8.1 SHORTCUT KEYS-COMMENTS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1007,1010</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="43d663fb4de1d043bfab5680297e458466b8ea9a" datatype="html">
+        <source>Back to index</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1008,1011</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="6588c292ca3b81fd1f19d7b39addd5c6e07cf486" datatype="html">
+        <source>List of Images</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1019,1021</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="8060df7ab824355be5201b4e32eefb4ee896531d" datatype="html">
+        <source>5. Exit the sonoUno</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1019,1024</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="c976bae052ce21e15c88f24c6709c9722015af7c" datatype="html">
+        <source>IMAGE 01 THE IMAGE SHOWS FIREFOX BROWSER AND THE WEB LANDING PAGE OF SONOUNO</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1032,1040</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="0d31e307aa1ddd14f1c57847784d75bf9b4aff92" datatype="html">
+        <source> Being web based, exiting sonoUno is as simple as closing your current tab hitting the “X” at the end of the tabs title. The default shortcut for most browsers is Ctrl+W or Cmd+W depending on your operating system, this may vary.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1035,1047</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="1315b2ef188541274d58db85422ad455450b944e" datatype="html">
+        <source>IMAGE 02 THE IMAGE SHOWS FIREFOX BROWSER AND THE QUICKSTART GUIDE OF SONOUNO</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1047,1051</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="7387aabff65be6fb467d6d5bbc0c3cd9e37429a2" datatype="html">
+        <source> Important: Be sure to store every piece of data you want to save before closing the tab to avoid data loss.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1054,1058</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="a50b6c4c1e484dbac53ff4c734ee4500e540d4ca" datatype="html">
+        <source>IMAGE 03 SONOUNO HOME PAGE. PLOT AREA AND MENU.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1056,1061</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="61d60b83d79a74847af25b15e6a0e611218f9573" datatype="html">
+        <source> You can also quit sonoUno by closing your browser, just keep in mind that you are going to close every other tab opened at the time.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1067,1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="d0ce1030da97c13d2d2e1537bbd3ddd552f4feba" datatype="html">
+        <source>IMAGE 04 SONOUNO HOME PAGE. PLOT AREA FUNCTIONALITIES AND ABSCISSA AND TEMPO SLIDERS. BELLOW, MATH FUNCTIONS BAR AND BELLOW THAT BAR, SOUND AND PLOT CONFIGURATION BUTTONS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="fbc73df0ff25b7029fefb5f70ba74e348bd204c9" datatype="html">
+        <source>IMAGE 05 SONOUNO HOME PAGE. SOUND FUNCTIONALITIES AND CONFIGURATIONS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="7302cd3aeb11fc49d6701f7890d3c2fe9049acab" datatype="html">
+        <source>6. Functionalities</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="54e2dbeb4e3853d8b0b76febe0ec848711abc65f" datatype="html">
+        <source>IMAGE 06 SONOUNO HOME PAGE. PLOT FUNCTIONALITIES AND CONFIGURATIONS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="1fcffe7807e070b771cc735cd31f6986f7c53a60" datatype="html">
+        <source>6.1. Abscissas position</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f66735d8bc772483cb2a6ab04d4850f6834807f2" datatype="html">
+        <source>IMAGE 07 SONOUNOWEB SAMPLE DATA MENU</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="30ac9fbb2e5b735d1370b14585825c32e6a29394" datatype="html">
+        <source> The slider of abscissa position allows the user to shift the point of data being played (Image 21). The slider shows the posicion (with a number) and also is possible to move it wuth the keyboard arrows if the mouse is on this button .
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="d29aa0e109cba358d7e0be74d5f029aad6857c33" datatype="html">
+        <source>IMAGE 08 SHOWS THE ITEMS ON THE MENU FILE AND THE FOCUS OF THE KEYBOARD IS ON THE OPEN ITEM.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="8b260ecd98322e6ad108d95425926a118a5bdce5" datatype="html">
+        <source> Image 21 Shows the slider, while being selected is possible to move it left and right with your keyboard arrows
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="0edaacc035e1071c37f0e5b556ec4d6ebff3c3c4" datatype="html">
+        <source>IMAGE 09 POP-UP WINDOW OF THE FILE EXPLORER, SHOWN AFTER SELECTING THE ITEM.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="e1e61a95b406b82e5ee4bdd94a3bfef4581be83c" datatype="html">
+        <source>IMAGE 10 THE SONOUNO FRAMEWORK WITH THE GRAPH OF THE IMPORTED DATA, IN THIS CASE A GW GLITCH.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="fad1f979be4fe0f9e2b1f8c69662738b8260a25c" datatype="html">
+        <source> Image 22 As you can see the percentage of the “Abscissa Position Slider” corresponds to the position of the black line on the plot.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="29d099d78c955a806df779662669e0497703be2b" datatype="html">
+        <source>IMAGE 11 SHOWS THE ITEMS ON THE MENU FILE AND THE FOCUS OF THE KEYBOARD IS ON THE OPEN ITEM.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="5630aa5005c5aad5bf9fc7ec59b34d7a8b2413f6" datatype="html">
+        <source> The abscissa position can be modified before, during and after the reproduction of the data. If the reproduction is in progress, after change the reproduction continues from the new set value.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="db8267511adb253577c48f7f8ce28de818c8be51" datatype="html">
+        <source>IMAGE 12 POP-UP WINDOW OF THE FILE EXPLORER, SHOWN AFTER SELECTING THE ITEM.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="5308b060550b5eaadfcc417432daa14ce1e9435f" datatype="html">
+        <source>IMAGE 13 THE SONOUNO FRAMEWORK WITH THE GRAPH OF THE IMPORTED DATA FROM THE WAV FILE.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="51de4824c3b7f913b6c04e2543af55edee097a31" datatype="html">
+        <source>6.2. Tempo selection</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="7e6f5991aa395433e8e4e05aa08e60b65d2733b9" datatype="html">
+        <source>IMAGE 14 SHOWS THE ITEMS ON THE MENU FILE.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="6b0ebc684ca9381070a118e15c9841ce8bf7ecdf" datatype="html">
+        <source> This slider controls the duration of each tone. The range goes from 0% to 100%, being 100 the shortest and 0 the longest time.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="eb721ec48e22d3ab20a95444906befdc32fefc3d" datatype="html">
+        <source>IMAGE 15 POP-UP WINDOW OF THE FILE EXPLORER, SHOWN AFTER SELECTING THE ITEM.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="b631b4415660b383177728e57a940143f425dc2d" datatype="html">
+        <source> It’s placed under the plot and to the right of the abscissa slider (Image 23). The operation is analogous to the abscissa position slider.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="d32fba286500495cdb6cdcbcd1b9082e6d1c61d0" datatype="html">
+        <source>IMAGE 16 THE SONOUNO FRAMEWORK WITH THE GRAPH OF THE IMPORTED DATA FROM THE WAV FILE.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="43c2f2b5eb7c096106e4e3f900839848a88cc778" datatype="html">
+        <source> Image 23 The tempo slider is on the bottom right of the image.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="5ef290bf1f649700bff6fdfeb221e1131460ba69" datatype="html">
+        <source>IMAGE 17 DISPLAYS THE SONOUNO INTERFACE WITH AN OPENED DATA FILE, IN THE PLOT THERE IS ONE VERTICAL BLACK LINE (POSITION OF THE PLAYING COORDINATE) AND SEVERAL BLUE CIRCLES MARKING POINTS OF INTEREST ON THE GRAPH.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="8bcaeecc621d428859a2d9672b9611f39736f154" datatype="html">
+        <source>6.3. Play and Pause button</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="561a56e9cc5531ba5783e94be38d917bfe82cc22" datatype="html">
+        <source>IMAGE 18 DISPLAYS THE SONOUNO INTERFACE WITH AN OPENED DATA FILE. AT THE TOP MENU, THE OUTPUT BUTTON DISPLAYS THE SAVE SOUND, SAVE MARKERS , SAVE PLOT POSSIBILITIES.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="1000f3ce52288ea8e7cfc65e80b218b37345b5cb" datatype="html">
+        <source> It’s the first button under the graph (Image 24). When pressed, it changes its name to “Pause” and starts the reproduction of the data, the vertical black line and the abscissa position slider start to go forward, indicating the coordinates of the data being played.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="7f6f5637a9cfe9dfe85b6f40c872c03241607671" datatype="html">
+        <source>IMAGE 19 SHOWS THE FILE MENU OPENED IN THE NAVIGATION BAR AND THE SAVE SOUND OPTION SELECTED</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="98a473ccde9aa90138ef84be47684ca4fc63a4aa" datatype="html">
+        <source> Image 24 The play button is found on the bottom left of the image, under the graph, being the first button
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="5bc774f46d6be846c5260066d02dbc4830c1b08c" datatype="html">
+        <source>IMAGE 20 SHOWS THE POP UP PANEL THAT OPENS AFTER PRESSING SAVE SOUND FOR A MAC. IF NO POP-UP IS OPENED, YOU MAY HAVE CHECKED THE AUTO DOWNLOAD OPTION ON YOUR BROWSER AND YOUR FILE SHOULD BE IN YOUR DOWNLOADS FOLDER.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="18cbd91fa8caffb0a036ec377137be24b9491e96" datatype="html">
+        <source> Another way to start the reproduction is with the shortcut key ”Shift+P”. This way of interacting differs from the previous two, because when pressed produces the effect directly, without modifying the keyboard focus.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="e71bc008741f39ff97bc809aff388cf87a1aa6c9" datatype="html">
+        <source>IMAGE 21 SHOWS THE SAVE MARKERS OPTION FOCUSED ON THE FILE MENU.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="68c9eb2407389f5c8f67928503e437e6707799fb" datatype="html">
+        <source>IMAGE 22 POP-UP WINDOW OF THE COMPUTER FILE SYSTEM SAVING THE MARKERS CSV FILE (MAC OS)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="e9b99b0f73ebb614709e4ac4336b0fd8a4076f39" datatype="html">
+        <source> To pause the reproduction of the data you have to press the same button or the same shortcut key, this action maintains the vertical red line position to be able to resume it later with the play button.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="6fdb50c16d4a0da5548a5ff02a57716eb01ba924" datatype="html">
+        <source>IMAGE 23 THE INTERFACE IS SHOWN BEFORE AND AFTER CLICKING THE “SAVE MARKERS” BUTTON. THE PLAY BAR IS KEPT IN PLACE BUT MARKERS ARE ERASED AFTER SAVING THEM TO A CSV FILE (UBUNTU OS)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="aa85d1730282a82d488ef16767f2df6196010143" datatype="html">
+        <source>6.4. Stop button</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="9737d9a97e434695abe1b9b42e2b4f7fe86eb57f" datatype="html">
+        <source>IMAGE 24 DATA SAVED FROM SONOUNO WEB</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="99aedc397d21802f2ef218aa6d160bf19a45afa4" datatype="html">
+        <source>IMAGE 25 A VIEW OF THE FILE EXPLORER AND BOTH, MARKERS AND AUDIO FILES OPENED.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="d0bb8c4c08560b12da64c5a0eecdbdb54368d6ff" datatype="html">
+        <source> Its function is to stop the reproduction and restart the process, which means that it sets the abscissa position to zero and deletes the vertical red line from the plot (Image 25). Another way to stop the reproduction is with the shortcut key ‘Shift+S’. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="ba7fb71f7b6567a045ae18cd6f03ed56a5589c0d" datatype="html">
+        <source>IMAGE 26 A VIEW OF THE SAVED “MARKERS.CSV” FILE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="1d58b69b16f3e23ae41aa72a2217f1e375b2a85b" datatype="html">
+        <source> Image 25 The stop button is placed next to the Play button.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="7bbfa8483c7f222172a95190d26e7d770059160b" datatype="html">
+        <source>IMAGE 27 SHOWS THE SLIDER, WHILE BEING SELECTED IS POSSIBLE TO MOVE IT LEFT AND RIGHT WITH YOUR KEYBOARD ARROWS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="90d27f24886607a07961d1e149acc0f11bf02f7a" datatype="html">
+        <source>IMAGE 28 AS YOU CAN SEE THE PERCENTAGE OF THE “ABSCISSA POSITION SLIDER” CORRESPONDS TO THE POSITION OF THE BLACK LINE ON THE PLOT.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="ac8f44a320901ac164c0131c141dc2d1133797bc" datatype="html">
+        <source>6.5. Mark point button</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="9f9dd3ae5ad6c524bce3a22a7e93571471c1d0a2" datatype="html">
+        <source>IMAGE 29 THE TEMPO SLIDER IS ON THE BOTTOM RIGHT OF THE IMAGE.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="2ad0349b09fca5de540b13abd6a4a6ca80545b44" datatype="html">
+        <source> This button allows the user to mark a specific point from the data. When the button is pressed sonoUno saves the current position on a vector and displays it on the graph with a symbol. (Image 26)
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="fc21c41bdd565cc9c38b57452b0a46b833bec52b" datatype="html">
+        <source>IMAGE 30 THE PLAY BUTTON IS FOUND ON THE BOTTOM LEFT OF THE IMAGE, UNDER THE GRAPH, BEING THE FIRST BUTTON</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="3608bdfcd1fef0bf3e6c06e39b9cd91f61bd799e" datatype="html">
+        <source> Image 26 The mark point button is found under the graph, next to the stop button.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="efd528d72f35b9f38c5aa5a449eecf970552fd75" datatype="html">
+        <source>IMAGE 31 THE STOP BUTTON IS PLACED NEXT TO THE PLAY BUTTON.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="34b6cfc89c56d5744dec069596b0c59db4fe472f" datatype="html">
+        <source> In parallel, the user can mark a point on the graph with the shortcut key ‘Shift+M’. The shortcut has the same effect as pressing the button but without modifying the keyboard focus.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="c0f60503b559bda8bc921984eba19b5dbc85bd56" datatype="html">
+        <source>IMAGE 32 THE MARK POINT BUTTON IS FOUND UNDER THE GRAPH, NEXT TO THE STOP BUTTON.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="53cc67dd505e1715d223e09bd3c81d1215a0f18c" datatype="html">
+        <source>IMAGE 33 THE DELETE LAST MARK BUTTON IS FOUND ON THE BOTTOM RIGHT OF THE GRAPH SECTION. IT’S THE FOURTH BUTTON FROM LEFT TO RIGHT.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="1d31fc6826dc76544946a7ba93861af6a4c69034" datatype="html">
+        <source>6.6. Delete last mark button</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="d9073879f9d1a7508a1b6f5f9a8be910ea99778f" datatype="html">
+        <source>IMAGE 34 BELOW ABSCISSA, TEMPO AND MATH SLIDERS ARE USER MODIFIABLE CONFIGURATIONS FOR SOUND AND PLOT.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="ec9f52bbcbe05515f7dc850e5a6802cd58c71599" datatype="html">
+        <source> This functionality allows the user to erase the last mark made with the mark point element. It’s useful when the user has made a mark without intention or the place is incorrect. The button is placed beneath the graph, it’s the fourth button, next to the mark point button (Image 27).
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="667c2ecaa69b0dedf789073ec619f9cd63b40c95" datatype="html">
+        <source>IMAGE 35 A SLIDER ALLOWS TO MODIFY THE FREQUENCY</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="397700e1e706ce76ca1fbe97cb727494a8d47fcc" datatype="html">
+        <source> Another way to erase the last mark point is with the shortcut key ‘Shift+D’.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="18b486f9fc12fc1c143be9d2400c333869ee70ee" datatype="html">
+        <source>IMAGE 36 A SLIDER ALLOWS TO MODIFY THE VOLUME OF THE SOUND AND THE SOUND TYPE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="a9a96f181f7270c09c24d27a9d99d4b2e27c9b4e" datatype="html">
+        <source>IMAGE 37 ADVANCED SOUND CONFIGURATION</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="04a112ef0a5a220c24980f89a2e85a62957a0a0d" datatype="html">
+        <source>7. Plot and Sound Configurations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="36818341727698fe38e018888ed357fd7793dbb1" datatype="html">
+        <source>IMAGE 38 SHOWS THE BASIC PLOT CONFIGURATION SECTION</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f686a9a8ecb3e8816c2301776f10862d0c65e6d3" datatype="html">
+        <source> SonoUno web allows the user to adjust some sound and plot settings,these options are at the bottom of the page (Image 28).
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="370490252e8bcb34f4c983b3f5658fe55059ef07" datatype="html">
+        <source>IMAGE 39 THE STYLE SECTION OF THE PLOT CONFIGURATION COUNTS WITH THREE COMBO BOXES THAT ALLOWS USERS TO SELECT FROM A LIST OF DIFFERENT OPTIONS TO MODIFY THE WAY THE GRAPH LOOKS.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="b9914f7fccc63602d07986772b76c328de20dc6d" datatype="html">
+        <source>IMAGE 40 THE LINE STYLE ELEMENT IS A DROP-DOWN LIST WITH FOUR DIFFERENT STYLES.IN THE IMAGE THE DASH-DOT LINE OPTION IS SELECTED.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="d4e70835ef6bc23a51dcd1884318d0c79d93a109" datatype="html">
+        <source>7.1. Sound configuration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="8a99f055a364f82513467a358da1543734f4a5c5" datatype="html">
+        <source> The location of the sound configurations is on the bottom left of the page </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="8d72ebd4b12b0178ae50c22177ca83d6fe718ade" datatype="html">
+        <source>IMAGE 41 THE MARKER STYLE ELEMENT IS A DROP-DOWN LIST, WHERE THERE ARE DIFFERENT OPTIONS. IN THE IMAGE THE DIAMOND MARKER STYLE IS SELECTED.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="49509304067937e76d20bf5d380149ff3f98a02c" datatype="html">
+        <source>The sound configuration can be divided into 3 distincts parts. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="6c4ed9e72eb2e100bafd61f5abf6dde9b3b10340" datatype="html">
+        <source>IMAGE 42 THE COLOR STYLE ELEMENT IS A DROP-DOWN LIST, WHERE THERE ARE SEVEN OPTIONS. IN THE IMAGE THE ORANGE COLOR STYLE IS SELECTED. IN ADDITION, THE DOTTED LINE STYLE AND CIRCLE MARKER HAVE BEEN CHOSEN.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="23f3d7bde7f496bc742d3e3f07192be335a25d88" datatype="html">
+        <source> frequency range and sound types selection (Image 29), </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="8962f802c49b83c73b9fb2ebae4715a56a667253" datatype="html">
+        <source>IMAGE 43 PLOT AND AXES NAMES</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="1c98b59caecb25502067b0952cb9b124990431a8" datatype="html">
+        <source> volume and buttons to set logarithmic scale and continuous sound (Image 30), </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="b5ff49f061cac667f3d277899d9ce0e5f2ac78d8" datatype="html">
+        <source>IMAGE 44 NEW COLOR AND PLOT AND AXES NAMES</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="ff4862bafd7ebf708a746be76c5162416d657de7" datatype="html">
+        <source> advanced functions configuration, which includes the logarithmic scale, discrete or continuous sound and envelop (Image 31) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="ae56f3c754887b7f216a6f0adc0f1484c72e2dd6" datatype="html">
+        <source>IMAGE 45 PREDEFINED MATHEMATICAL FUNCTIONS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="4782609ea808d6122d245701fa0743b7e8198a25" datatype="html">
+        <source> A checkbox allows for the selection of frequency mapping and the two sliders beneath it modify the minimum and maximum frequency used in the variable mapping.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="dd60620273528e65980d5045aaad51d04aa9dfea" datatype="html">
+        <source>IMAGE 46 MODAL WINDOW WITH THE PEAK FINDER SETTINGS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="b6e364ff1d5e8fa19edb5abd2df29eb40dfcf177" datatype="html">
+        <source>List of Tables</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f9ec60060c7e17eef3389809cfa733f8e418375a" datatype="html">
+        <source> The next combo box, with a list, allows the user to choose between some sound types to use. These sounds are not intended to sound like real instruments, but rather just loosely recall those instrument’s sounds in order to present the user with some distinguishable options.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="72784266266926ee37540d1aeb90f49e4fb6abc1" datatype="html">
+        <source>Table 1</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="5414ddfba2bffa10093f3c52392d2ac0e5c7963c" datatype="html">
+        <source>TERMINOLOGY</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="fb0907bec8eba0b9bca1ea045a60b40a4b9561f9" datatype="html">
+        <source>The Advanced Sound Configurations includes the configuration of envelope filters (Image 31). A checkbox is used to enable and disable the filter. After checking it you can use the attack, decay, sustain and release sliders to modify the resulting sound. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="09e45492da40524764775db2017f1d5b2c90128b" datatype="html">
+        <source>Terminology/Acronym</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="eec715de352a6b114713b30b640d319fa78207a0" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="a3df54befe5c6d8bf6277289c784278a20205d2c" datatype="html">
+        <source>NOTE: All the sliders inside the mapping configuration must be enabled and disabled with check boxes, this is to ensure a better navigation with the screen reader and a lower memory overload. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="7a4947e80cd662ff26cb9cd24d856e36e01b1054" datatype="html">
+        <source>CNRS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="3d77767512bab66c32dec3da1abfbf31083dca6c" datatype="html">
+        <source>Centre National De La Recherche Scientifique</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="5c90bea6956aa21d4cdd87a0a01e343db4c4f2fe" datatype="html">
+        <source>CSA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="adbedcc3a8d608dacb3c23ee3045e3dab4b400a6" datatype="html">
+        <source>7.2. Plot configurations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="c73017d963eb1575610486eedf96daf17a81206f" datatype="html">
+        <source>Coordination and Support Action</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="acfd3b5d4f4c96885e4878339921c9f2ba83f690" datatype="html">
+        <source> The plot configurations are located on the bottom right of the page. This tool is divided in.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="fe0ea18ea913d5c3b04d8100a6e2a5fd3e2b4e89" datatype="html">
+        <source>DoA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="7478f6d92b99b496f25786a0d4b06d69764a85fa" datatype="html">
+        <source> basic: title of the plot, name of the axes (Image 32), </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="6c1c67cc12f4d336aceaf61986719039ac0bcb96" datatype="html">
+        <source>Description of Action</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="dcd59b86651d13d477dbd6ad05b97a3e88111414" datatype="html">
+        <source> advanced configurations: line, marker and color styles (Image 33): </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="59a6ea39682645d7078914b1eda33d04a1634ee0" datatype="html">
+        <source>EA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="2c88ca1274b167bf5bbc9d21178125287419892c" datatype="html">
+        <source>Ellinogermanik i Agogi Scholi Panagea</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="3cd9a11819953954be04d11acca59092adf51af3" datatype="html">
+        <source> If you wish, you can also change the titles of the different parts of the graph. These are simple text boxes with the name that is actually displayed and you can choose to edit the name that is displayed or erase and type a new one. (No need to type enter after modifying it.)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="e6df4aee6d16fd861ea5b2658ff5bfeafe969778" datatype="html">
+        <source>EC</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="719aa27ec65bf313943d4a961ffadcc77f885715" datatype="html">
+        <source>European Commission</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="1e5223ff99573a568f7e62ef2e05e17ff47d22fa" datatype="html">
+        <source>EGO</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="928e421e705292d063b1cc07572acf31defdc77a" datatype="html">
+        <source>7.2.1. Styles of the data plot</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="4a761dc9d5586a54f77f7e806543455728d7cd4b" datatype="html">
+        <source>European Gravitational Observatory</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="c8c8dec4ce193d9775d8d0f51e069f75606d3cb8" datatype="html">
+        <source> On the plot configuration panel, after the line style label, is placed the drop-down list box with five options of style, which are: solid line, dashed line, dash-dot line and dotted line. In the example of the Image 34 the dash-dot line style is shown, with blue color and without markers.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="fdb261b2a7032a0f0850bdb7b80259033860674c" datatype="html">
+        <source>EU</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="d2a702d6ee70938598e84ce9a95db0e7584e849d" datatype="html">
+        <source>European Union</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="2a72a0ed96532d8f7c20b59b1f91fe5954d4d186" datatype="html">
+        <source> The marker style option works analogously to the “line style”. It’s found just below the line style and offers some marker options: X, Circle, Star and diamond.In the Image 35 is used the Diamond down marker, with the dotted line style.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="5adeb9003803c815e710bc8ce75f7a74a2ab8830" datatype="html">
+        <source>GA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="2579369b55315135b4e28accd63a1433b1bf370e" datatype="html">
+        <source>Grant Agreement to the project</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="3201e700ef7b41f8096ea54dbfd68dfb23d13de3" datatype="html">
+        <source> Next to the color style label, is placed the drop-down list with five colors: blue, orange, red, green and yellow.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="7ba680605159c0d67d477903270731f2963f9ecc" datatype="html">
+        <source>IASA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="9b052fb680547ca29f587f3d932706934dc2d97f" datatype="html">
+        <source>Institute of Accelerating Systems and Applications</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="5c2101b1282d9aa322fb0533e1af32fb615abfb2" datatype="html">
+        <source>7.2.2. Modifying the titles.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="6fa6f4e4b5e82ea21a3a078bd750f284d27ff649" datatype="html">
+        <source>KPI</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="a0cd96806830abfd43a92ad72a0c08c9dfa4f7ad" datatype="html">
+        <source>Key Performance Indicator</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="ba1cca27dc20733dd9e9446230b6d74177fe629c" datatype="html">
+        <source> To modify the title just edit the text inside the text box next to the label of the title you want to edit (Image 37). The changes apply immediately after every keystroke and there&apos;s no need to type “enter” after editing it (Image 38)
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="76e3e3e21ffad4097c1eea2a30812d43dbeba024" datatype="html">
+        <source>LC</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="3d5e77b28e397c2fabf71be0479e073f6afa7dfc" datatype="html">
+        <source>8. Mathematical Functions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="1e80520dcea2531ad5dce6b1c7a14bbb49eeb3aa" datatype="html">
+        <source>The Lisbon Council For Economic</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="83abdfe63a3ee1cfc179a2d2d2e67f08edceefa9" datatype="html">
+        <source>The last version of sonoUno web includes the possibility to apply predefined mathematical functions, such as logarithm, square and smooth (Image 39), to the data. It is the first approach to the next step, which will allow you to use any function</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="b7cccfe9ea6b904bf5a95671df399cb4f43e939e" datatype="html">
+        <source>OU</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="5ebbd90e47470dacdbe6206291cea052efe6f498" datatype="html">
+        <source>8.1 Peak finder</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="0cfb2d0d1e08d81405529a754a87b63cdd4424fa" datatype="html">
+        <source>The Open University</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="65925f919e1a3c95cc2a7940587bc751c225ee49" datatype="html">
+        <source>REA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="b73c1c071587e8e226e97fd0e89ae900525c094f" datatype="html">
+        <source>This function allows you to mark the peaks in the graph. For the intents of this function a peak is defined by the value that is bigger than the previous and next values and that also checks with the condition of being above the average of the graph plus a value calculated by the spread between the highest and lowest value multiplied by the sensitivity percentage </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="efdffc214ac38d044b0e9069c19796b8c479c4d4" datatype="html">
+        <source>Research Executive Agency</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="903e4373adf6a25085ccc4cb06843a9955a28a26" datatype="html">
+        <source>REINFORCE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="af37d76ca88092c69c1f5829832a2d44590fe50c" datatype="html">
+        <source>The settings window counts with a sensitivity slider that you can set to the value that best works for the current data. A button for cleaning the peaks and a button to add them like markers on the graph. Once you have marked them on the graph you can previsualize the effects of the changes on the slider.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="ad0a53dd999a25cffbf479680dc5cf3fb04cbb65" datatype="html">
+        <source>REsearch Infrastructure FOR Citizens in Europe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="2f96a3ac7b22f6a364bcf06dbb9c556ce4dab929" datatype="html">
+        <source>UOXF</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="8efa60a038951dec743329a2b9c79a036cd30694" datatype="html">
+        <source>For closing the modal window you can click the &quot;Close&quot; button on the bottom left, the X besides the title or you can press the Escape key on your keyboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="150980542a96dae25d24ac85b9500ce67d4e36c3" datatype="html">
+        <source>University of Oxford</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f781be1c9083002f1b09a6bfacc8d27bedac188a" datatype="html">
+        <source>WP</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="d0d4c2fb9a75331c927fe19cd660adc1b58e4216" datatype="html">
+        <source>8.2 Logarithmic</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="4f86e74d51a1a399914b3e5aa52429f63d02aecb" datatype="html">
+        <source>This function allows you to apply the common logarithmic to every value on the data set and updates the graph accordingly.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="9e210449fc610e801829957e2989a1e9eebff387" datatype="html">
+        <source>ZSI</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="c05ac95b87fa8c638fb40bc849dc6fa32265a52c" datatype="html">
+        <source>8.3 Quadratic</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="933450a54ae12d1392aca000a555e1878097a15e" datatype="html">
+        <source>Zentrum Fur Soziale Innovation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="54e8935aee322b523ffd7a84d9301c7d409d0eec" datatype="html">
+        <source>This function allows you to update every value in the data set with its square and update the graph.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="37ad4fefedb52b7f4df547519b0e6a6765adde3b" datatype="html">
+        <source>1. Software description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="ff7e25d4081cede1e7bb4cab9b2e4c49dc8ac27d" datatype="html">
+        <source>8.4 Smooth</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="69a03e45129840d262be748b5f37444af91546ec" datatype="html">
+        <source> SonoUno is a sonification software for astronomical data presented on a table (txt or csv files). The software is being developed based on the study of other software (Sonification Sandbox, MathTrax and xSonify) and standards of accessibility like the ISO 9241-171:2008 (Guidance on software accessibility) and the Web Accessibility Initiative – Accessible Rich Internet Applications (WAI-ARIA) guidelines. In order to develop the first approach of a graphical user interface, we perform a theoretical framework based on bibliography of user cases, focused on blind and visually impa people.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="3a8194b40ed8d8538a2412f7cdc2a371161614c2" datatype="html">
+        <source>This function allows you to use a moving average data smoothing with the gate value indicating the average of how many values are used. By this you mitigate the impacts of short fluctuations. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="ef7e8410030028cdf7446724fd455e6d2bc14a2c" datatype="html">
+        <source> The development framework is Angular which promotes modularity, in order to do collaborative work. Being this version of SonoUno web based, is accessible from nearly any platform; the development team worked with this aim in mind. The main goal of SonoUno is to allow the user to open data files (txt or csv extension), show the plot and sonify the data. At the moment, the sonification is performed by variation of pitch and the sonification settings allow to change the volume and the timbre.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="85ca18b654b757e2627cf1da9d442aeb7cdb836e" datatype="html">
+        <source> Additionally, SonoUno allows users to select a specific range of data on the ‘x’ axis, mark and save points of interest in the data, apply predefined mathematical functions (for example, logarithm and square) and manipulate the data arrays with an Octave interface. In the settings section, the user can configure the plot and some features of the sound.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="0d2bebe342fad68e957728a03b42cae2c0d5a41d" datatype="html">
+        <source> Finally, the software allows the user to save the plot, a text file with the points marked on the data and a csv file with the plotted data.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f6a29fcb1418a1077f26af95a0ecdb023d9b5200" datatype="html">
+        <source>2. Opening the software</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="4c40efb9cbda9a878aa65e7d947abb6a176b77f5" datatype="html">
+        <source> Being a web based application accessing to sonoUno it’s as easy as to type the url on your preferred browser:
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="0d671f732379a8da22bfdfc10a1e36701d7bf3f1" datatype="html">
+        <source>http://190.15.198.99:8083/</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="2f3374b26e663c2ddede0d2f0e02592cfe3b44bd" datatype="html">
+        <source>This link opens the landing page for the web version of sonoUno</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="0b3ed282c1631008d47d7a59ff5ae1bdf6b51495" datatype="html">
+        <source>  Angular’s support extends to the latest Edge, Firefox, Chrome and Safari versions, so it’s advised to update your browser. (Image 1). If after entering the url you don’t get the sonoUno’s homepage first check:
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="e1eba3eb312d785fce062d76531c39f0d9244edb" datatype="html">
+        <source>Check that you have typed the correct url.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="bc4e45a65f5814c36ceea6845c32359a0c6f161e" datatype="html">
+        <source>Check your network connection and access to the internet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f94cee6db413a2cc7236aad880c295a11f3f8555" datatype="html">
+        <source> If after that you still can’t establish a connection send a message to the development team via e-mail:
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="55f3c281af95ea1c89a5520b125b6e23df41f88a" datatype="html">
+        <source>sonounoteam@gmail.com</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="0a81c85472a322ad7ef31d26bee434c28b04f686" datatype="html">
+        <source>At the landing page it is possible to select between HOME and QUICK START and also decide if not to show this page again.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="7ca1ae10b61aabfb4a1433d15cb85379fbd41504" datatype="html">
+        <source>2.1. QUICK START Guide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="1339268bf27c5ebad345a03349ef046d57e05210" datatype="html">
+        <source>The recommendation is for the new users to go first to the QUICK START (Figure 2), where a short explanation of each section of the web interface (on the screen) and functionalities settings by default are detailed.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="112739440c9e7f546e969a05ea19f0fa8af05888" datatype="html">
+        <source>2.2. Home page</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="0dbb7e3ff9e472b0d9b0a175ef8327fe8ef2ca61" datatype="html">
+        <source>The home page of sonoUno greets you with four distinct sections:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="455670d1beeed5edf7b8f2c2c948b33dd696b941" datatype="html">
+        <source> The navigation bar with the access to the File functionalities; Input/Output functions, Sample data and the access to the Help and the Quickstart guides. This design was based on a user case study (Image 3) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f17b8f7da7bede155cd5295054c7193e4f22f96c" datatype="html">
+        <source> The graph has four buttons to control “Play/Pause”, “Stop”, “Mark Point” and “Delete Mark” and two sliders to control the abscissa position and the tempo (Image 4). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="a9554b00f2c72644beab661f87e800f1c801e5fb" datatype="html">
+        <source> Below the sliders, a MathFunctions bar permits selecting between simple mathematical functions to apply to the data (Image 4) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="b05aa5d015884a0607ce9ac80f814f1d3c43bcae" datatype="html">
+        <source> The sound configuration section has the tools to modify the way audio is processed, if you press on this button you will see all the Sound configuration options (Image 5). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="1532bb456b46a9b68cc9814587c8cc7bc840ee99" datatype="html">
+        <source>The plot configuration section allows you to modify the way the data is displayed in the graph, if you press on this button you will see all the Plot configuration options (Image 6). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="42d8b1f3617d605856b1d408a4b9e6e8cd3a79b2" datatype="html">
+        <source> Every section will be explained in detail in further chapters of this help guide.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f035a1d8bf4a21d5e4325c4a23953667704f226d" datatype="html">
+        <source>2.3. Testing sonoUno web</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="8eb183bcac5f4c72240239138650489c4bd91a0f" datatype="html">
+        <source> You can start testing the SonoUno functionalities with the sample data that&apos;s provided under the dropdown menu “Sample Data”. Just select any of the options under this menu to get the data (Image 7) automatically loaded on your graph area and the audio be ready to play.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="e3b6169e58f227e609225be811d30240b1e63cee" datatype="html">
+        <source>In order to listen to the graph just press the button “Play” under the graph. You should see an orange bar moving from left to right indicating the progress on the data being played and hear the pitch variations matching the data.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f087a84ec124421010f6985dc76dff104c84c275" datatype="html">
+        <source> If you can see the black bar moving but still no sound comes out from your headphones or speakers:
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="37bfe5254e9161a3754c95d98a11458c91541ae1" datatype="html">
+        <source>Check your speakers or headphones connection to your PC.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="4f31249bc603ff39c4a479ef2b1d1acc1ed6770c" datatype="html">
+        <source>Check your sound configuration: volume level and mute.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="e1cc62929512863bf78f4d0944813ac5b6cc9657" datatype="html">
+        <source> Check if your browser has blocked the sound reproduction and that the tab is not muted. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="bbb3e95ec07293cc445cd935644d875e28bac7b4" datatype="html">
+        <source> If the problems continue or you have another problem, please inform this to the developer team.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="583537ae433f2860ad8752e73c23c31e21ee42f5" datatype="html">
+        <source>2.4. Things to keep in mind</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="ebbdedbb7dcba41d80ebf1b5baee26c9ca7ff605" datatype="html">
+        <source> Some widgets, like warnings or confirmation buttons may be in your browser configured language. Otherwise, the software language is always English. In the future the team is looking forward to unifying the languages. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="698232ea8f9ea32767554ad655c44b16990be247" datatype="html">
+        <source> In the files to import the first column must have continuous values, it is used as a coordinate dependent axis. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="92d30e342ed8c7c9dc232bd3e43a06c554455a4b" datatype="html">
+        <source> All screenshots and images shown are for illustration purposes only, the real image can change a little depending on the web browser. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="844d954ac5b0b6c2a487add6b310b74ec2092121" datatype="html">
+        <source>3.0. Opening a file</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f3edf1ba42f0abc10850068fb6817dd93a0cbd0c" datatype="html">
+        <source> You can open files for three different reasons, you can open a csv with data to be displayed and played by sonouno, you could add a wav file to get the data from its envelope or you could add markers that you have previously saved for that data set.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="3191fc52b241b053080a4ef43eb94fbca26cd2c0" datatype="html">
+        <source>3.1. Opening a Data file</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="0ea9bedf1ea381db1b895712af5417f13c0fe020" datatype="html">
+        <source> To open a .csv or .txt file with a new data set, you can use the option &quot;Data CSV” under the Input dropdown menu (Image 8). This action will open a pop-up window with your operating system’s file explorer (Image 9), where you can search and open any data file.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="95c14e404d187ed92aa6c0ff19c0e88e3bb8d8c8" datatype="html">
+        <source> When you have the data file selected, press the button Open or the Enter key. The sonoUno will generate the graph (Image 10) and update the abscissa’s slide bar. Everything is ready, pressing the “Play” button should start the reproduction. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="d23fb64ab56b94011ac391a61ddd32d81b298a21" datatype="html">
+        <source>3.2. Opening a WAV file</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="31cb044df908eb468d91cf7cb2d0abdc83d74ad9" datatype="html">
+        <source> You can open a wav file and get the dataset from its envelope. You can access the functionality under the Input dropdown Menu, and just like in the CSV file, the system file browser will pop up and you&apos;ll be able to select the file and load it.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="99991052fd9984f8186313adb455673c60bf3b84" datatype="html">
+        <source> A .wav file has a sampling rate, defined by the amount of values recorded in a second, by now we are calculating the envelope values by the square root of the average of a set amount of values. In the near future we will be adding the possibility of modifying the gate of values for that average, until then it&apos;s set to 5.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="4bafb1ce745ad7fea755d66a276e4fc8e9eec121" datatype="html">
+        <source> After uploading the wav file, the envelope of the file will be loaded to the graph as a . Everything is ready, pressing the “Play” button should start the reproduction. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="a95b2fbefd7547d584cdcf04b6f3c941fe578178" datatype="html">
+        <source>3.3. Opening a markers saved file</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="66e124570005daf048a1a04e9e73642c9172bcb2" datatype="html">
+        <source> You can easily export the list of markers that you add to your given data set via the export markers option, now we will talk about how you can easily import that saved data to apply it again to the data set. You can access the functionality under the Input dropdown Menu, and after clicking in the Markers CSV option you can import the file that you have saved. As it&apos;s the web version of SonoUno it will most likely be on your Downloads folder.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="433fbc7d7846cf46d5b03a4b63526f55d4eb24e9" datatype="html">
+        <source> After loading the markers the graph should be updated with the list of markers that you have uploaded, in this case we have only three but you can save and later import as many as you want. It&apos;s important to insist that this functionality should be used with the data set where the markers taken, the points of the graph are saved in absolute numbers and not relative to their positions on the plot, loading the markers on another data set with a different range or functions could result in errors and most certainly in failures and unexpected behaviors.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="c59a9a6b113cbc166e77c77f75351d9f6a8fd409" datatype="html">
+        <source>3.4. Mark and Delete all marks button</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="6b042191925a238ddff2144ce44e10ffe0a6995f" datatype="html">
+        <source> Before starting with this functionality, we must explain that the sonoUno allows the user to mark points of interest on the data, and store the coordinates on a vector or file. These marks are shown with a diverse amount of user selectable symbols over the plot (Image 11).
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="b3657c2b2754025d548eed2808122ff31bbf56ae" datatype="html">
+        <source> The functionality of the “Delete Mark” button placed under the graph (Image11), is to erase the last added mark point on the data.
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="7a1d71c078a49bea1541e6ecd20149895852886c" datatype="html">
+        <source>4. Save files</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="6f55254c3eb0cbf6832f9a283356c2c069af27fb" datatype="html">
+        <source> There are two ways to save files
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="b1f9ff008a7bcf206841a1218be874ae770678f5" datatype="html">
+        <source> In the dropdown menu, the option “Output” deploys the list of options to save: Sound, Marked Points, Plot (from top to bottom) (Image 12). <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div class=&quot;border&quot;&gt;"/><x id="TAG_IMG" ctype="image" equiv-text="&lt;img class=&apos;achicar&apos; src=&quot;/assets/images/imagen12.png&quot; alt=&quot;image&quot; /&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p class=&quot;epigrafe&quot;&gt;"/>Image 12 Displays the sonoUno interface with an opened data file. At the top Menu, the Output button displays the Save Sound, Save Markers , Save Plot possibilities. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.html</context>
+          <context context-type="linenumber">1071,705</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="444cbda349836d641083e5e125b8239929f20325" datatype="html">
+        <source>SONOUNO</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="3bb3096f77a5c4a64500afe691d28bd577f6fca2" datatype="html">
+        <source>QUICKSTART</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="1c099eb4497e6a730dc055c7c6504377c712bdcd" datatype="html">
+        <source>Project Title</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="3bd5a58218e30b3f083ad8a555cc91927f86e54d" datatype="html">
+        <source>REsearch INfrastructures FOR Citizens in Europe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="727feb4335fdd249360b01594fcc92ad1c4183f8" datatype="html">
+        <source>Project Acronym</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="5fd1c3f2c04fd941769e733a061d2b00ce5ffe17" datatype="html">
+        <source>Grant Agreement No.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="8f41c5621c5b559c6495484a65c64b82f789c7b6" datatype="html">
+        <source>872859</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="efe655cf5ac8961ea1c2e5607c05f6c7f8ee0e56" datatype="html">
+        <source>Start Date of Project</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="2bda605769fc778700489b7b0fb503cc2540f010" datatype="html">
+        <source>01.12.2019</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="25678dbfb34b77db3eb2af71d999f28a2e9a1778" datatype="html">
+        <source>Duration of Project</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="c9af8749de0ebbd769180e257fd801aca693ed5e" datatype="html">
+        <source>36 Months</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="34ce4b3094503987c918cdfa9e4dcc432ef0869a" datatype="html">
+        <source>Project Website</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="3184f11765618921a0ae5f7f7cbfde34cdf293ce" datatype="html">
+        <source>www.reinforceeu.eu</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="54f79f1e658dd1320d8386839767fff040543290" datatype="html">
+        <source>User Manual: Printable version</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="4218943b613cff26ad35dd71056335209d43d6bd" datatype="html">
+        <source>Printable version</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="f655bcfeb241e0607474d720bba443174d109a0f" datatype="html">
+        <source><x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button type=&quot;button&quot; class=&quot;btn btn-sonouno ml-2&quot;&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+          href=&quot;./assets/REINFORCE - D7.1 - Sonification Platform and Training Courses v1.pdf&quot; download&gt;"/> Download PDF<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/help/help.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Help</note>
+      </trans-unit>
+      <trans-unit id="0d5ddcb168feb92d262a289536c5c206cd668b68" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;text-decoration: underline&quot;&gt;"/>D<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>ELETE MARK </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">207,201</context>
+        </context-group>
+        <note priority="1" from="description">delete Mark point</note>
+      </trans-unit>
+      <trans-unit id="01325d4bb349ec4af219af96a34fd1ea675efaf4" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;text-decoration: underline&quot;&gt;"/>R<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>ESET PLOT RANGE </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">216,206</context>
+        </context-group>
+        <note priority="1" from="description">reset plot range</note>
+      </trans-unit>
+      <trans-unit id="e0033d12392fa0aeffede4454e4b1fc15c5eea04" datatype="html">
+        <source>ABSCISSA POSITION</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">221,227</context>
+        </context-group>
+        <note priority="1" from="description">SlidersTag</note>
+      </trans-unit>
+      <trans-unit id="61113c9fbaa9a1ca765677cc476b54b30fa3a088" datatype="html">
+        <source>TEMPO</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">236,241</context>
+        </context-group>
+        <note priority="1" from="description">SlidersTag</note>
+      </trans-unit>
+      <trans-unit id="70309f834da209774e19e74d1a76549f93b79b5b" datatype="html">
+        <source> MATH FUNCTIONS </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">249,255</context>
+        </context-group>
+        <note priority="1" from="description">Colapsable title</note>
+      </trans-unit>
+      <trans-unit id="8e1399effb7361166f0d6d196999f34ad48e6265" datatype="html">
+        <source> PEAK FINDER </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">263,269</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ec9617978695a8d3441d140a7136e281d8874b72" datatype="html">
+        <source> LOGARITHMIC </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">278,282</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="68805d9f251992d117ea4f305f4fb03dac1085cb" datatype="html">
+        <source> QUADRATIC </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">291,296</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3411442c4ff98f91ad301d6891dcc4edb9e13101" datatype="html">
+        <source> SMOOTH </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">305,308</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="efb0d9289c9987db9f29933cd9a5fb5b467c7554" datatype="html">
+        <source>SET MAX FREQUENCY</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">312,316</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="57d326b3c417027f0f2e0a2a78b3f4a7bfb596a6" datatype="html">
+        <source>SMOOTH GATE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">316,318</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="796e42bec8a6996607cf1f3e80235b86d695804a" datatype="html">
+        <source>Volume</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">324,327</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="30872b75ada8c5eebd8bed296a4302f7a2856f41" datatype="html">
+        <source> SOUND CONFIGURATION </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">327,334</context>
+        </context-group>
+        <note priority="1" from="description">collapsable title</note>
+      </trans-unit>
+      <trans-unit id="80b61cda34d582ce7895a731790102d3e553caf1" datatype="html">
+        <source>SELECT SOUND TYPE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">335,339</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fa7dbcf62e7872a918340c0d1f4edca004b3302c" datatype="html">
+        <source> SET FRECUENCY MAPPING </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">341,345</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="18ac3bd941c3bbfd3de365a0e64e7faf1ab98079" datatype="html">
+        <source>SINE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">345,350</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bebdf742510dadbfcca2aae102b9080125e0b2ff" datatype="html">
+        <source>SET MIN FREQUENCY</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">354,357</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="af065d8c50623be8cd06d1332bf9bd0b6a85edb5" datatype="html">
+        <source>SYNTHWAVE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">356,362</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ddb51473e13c548bb2aea5069a59cb910cdc0ea2" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ minFreq }}"/> Hz</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">364,305</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f03514aaf1f6e876a62c70c291385bced22f6260" datatype="html">
+        <source>FLUTE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">368,373</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2d62aa56f483b8c7c782ce9e656bf21aec159c13" datatype="html">
+        <source>PIANO</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">381,383</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="db57e5cd931b73f2eff43779922d437231dad929" datatype="html">
+        <source>CELESTA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">391,396</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8a8f94f33d725c735ca8e49bd860eb1d592e1864" datatype="html">
+        <source> ADVANCED SOUND CONFIGURATION </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">405,416</context>
+        </context-group>
+        <note priority="1" from="description">collapsable title</note>
+      </trans-unit>
+      <trans-unit id="226ac48781d70646de6fc6c4b046ed9e6605992c" datatype="html">
+        <source> ADSR </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">424,429</context>
+        </context-group>
+        <note priority="1" from="description">Attack, decay,sustain release</note>
+      </trans-unit>
+      <trans-unit id="23d1a8d0ff6cabb62187f9a9dab4142567efb466" datatype="html">
+        <source> SOUND ENVELOPE CONFIG. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">436,440</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5f543be7629bfe5b52152fb7dba65c8d8d6b1c6b" datatype="html">
+        <source>ATTACK</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">447,452</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="31a955b88323f9ae95648f4d61738499f4abc6d1" datatype="html">
+        <source>DECAY</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">459,464</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1050ef3935d014a06cfa307d28b1eb875d8f4435" datatype="html">
+        <source>SUSTAIN</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">471,475</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bd15530d0b09f6a3b8f1d4eecd25624ce2058a57" datatype="html">
+        <source>RELEASE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">483,489</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ae037a6d9b92feb3b477570fc94cf0e0ef56e35f" datatype="html">
+        <source> SET LOGARITHMIC SCALE </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">496,502</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="028dcc4890adefc7cd4a1807d8a4272686998077" datatype="html">
+        <source> SET CONTINUOUS SOUND </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">508,514</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d8c71c9353bd609a06eead6190012e3f5900bffb" datatype="html">
+        <source> PLOT CONFIGURATION </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">521,531</context>
+        </context-group>
+        <note priority="1" from="description">collapsable title</note>
+      </trans-unit>
+      <trans-unit id="8a9cd7239878abfb6755f7a0cbd7f50627b40dd9" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;text-decoration: underline&quot;&gt;"/>F<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>LIP ABSCISSA AXIS </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">532,521</context>
+        </context-group>
+        <note priority="1" from="description">Flip Y Axis</note>
+      </trans-unit>
+      <trans-unit id="58ae6e0d3ee4f3f90b76c108d609d7ad3f895bab" datatype="html">
+        <source>SENSITIVITY</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">535,541</context>
+        </context-group>
+        <note priority="1" from="description">SlidersTag</note>
+      </trans-unit>
+      <trans-unit id="bfa92354a9ff5f2736df51d27f69057bbe335b7f" datatype="html">
+        <source>GRAPH TITLE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">540,544</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b5df5ddab199b2d65f0c1057ad1d1ff479f78b40" datatype="html">
+        <source>ABSCISSA TITTLE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">556,565</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="90bffa2008e08e3b410b70aabc96be2969cc6b2a" datatype="html">
+        <source>ORDINATE TITTLE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">579,587</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7037ad02e53b0b373719368b4e677069193c3a82" datatype="html">
+        <source> ADVANCED PLOT CONFIGURATION </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">603,611</context>
+        </context-group>
+        <note priority="1" from="description">collapsable title</note>
+      </trans-unit>
+      <trans-unit id="4582dfdac8b7397fe97c49c1d85a245d5c8222ce" datatype="html">
+        <source> GRAYSCALE PLOT </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">622,628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c86c66a32daa24372955803da571451aa4384e10" datatype="html">
+        <source> GRID OPTIONS </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a330ffb8b7490ab4972b4520e5815111320f1af3" datatype="html">
+        <source>LINE STYLE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8a427cb3fd7dd4c45f6caeb1490a4c19c8830f91" datatype="html">
+        <source>SOLID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="72cd5a3e6955be9611f188cd72fd46add323f4d5" datatype="html">
+        <source>DASH</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a717432727db8d4a31bd1a9c1a54a260320cce1f" datatype="html">
+        <source>DOT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2a2df06ec2e37d0b4770280d5cc5f8f6826d9774" datatype="html">
+        <source>DASH-DOT</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="53e6bd921c2e97a82d116e010cea101fe32d64fd" datatype="html">
+        <source>NONE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d65dfab5c935839e3fbeb61cd3867837049287f8" datatype="html">
+        <source>LINE MODE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="92b68af34a1a9e6fc4ef624ad010d5c0b99a3801" datatype="html">
+        <source>LINES</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="12ff76ebc131a5338a7783835bd542a55df9dde6" datatype="html">
+        <source>POINTS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52d2d541061dbfb7a20037fb3302de790397277f" datatype="html">
+        <source>LINE+POINTS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e5af214e532cb90d73e97f2d0d76de27177aabb3" datatype="html">
+        <source>POINT STYLE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eb652ec6e5b2ef867985722c158224053cca15ab" datatype="html">
+        <source>X</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+        <note priority="1" from="description">simbolo del marcador</note>
+      </trans-unit>
+      <trans-unit id="9c20cfbb1a704e53ce51e8f02b3e1cb7a4101a44" datatype="html">
+        <source>STAR</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b551fb7e3b4a1f7181419c700760593dfab372f5" datatype="html">
+        <source>CIRCLE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="80baa013a403bb44d223e13038e470748c10b0da" datatype="html">
+        <source>DIAMOND</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9e2beb66be3458e01e65b2aedba70a7028edd1ef" datatype="html">
+        <source>COLOR STYLE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4f878b79dcd70b0326508ba040b9cf6d5323f5b9" datatype="html">
+        <source>ORANGE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8d535c6449d295dc8ae45ebc8bb19a824fb8ae96" datatype="html">
+        <source>BLUE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="37dd5cace461c7126683d182b72f0939377023d6" datatype="html">
+        <source>RED</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3b0d0d9b8da672c3ca6a479351407e177fd42565" datatype="html">
+        <source>GREEN</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7f0715059a88de1a0d91fbe76637f67b933ed985" datatype="html">
+        <source>YELLOW</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="43cbeceb38255efe8bef4cb2053068d361558b63" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;text-decoration: underline&quot;&gt;"/>F<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>LIP ORDINATES AXIS </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.html</context>
+          <context context-type="linenumber">628,517</context>
+        </context-group>
+        <note priority="1" from="description">Flip X Axis</note>
+      </trans-unit>
+      <trans-unit id="71d21f9af5be3bd0f8c62973c5042f12c98cab0c" datatype="html">
+        <source> INPUT </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">40,44</context>
+        </context-group>
+        <note priority="1" from="description">Parte del modal</note>
+      </trans-unit>
+      <trans-unit id="9268fb9118827d29b88fb9044a428cfc54f9dc62" datatype="html">
+        <source> OUTPUT </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">60,75</context>
+        </context-group>
+        <note priority="1" from="description">Parte del modal</note>
+      </trans-unit>
+      <trans-unit id="c6c6d2be4ef9c78c8e54f8abd39131d9e68c5d8d" datatype="html">
+        <source> SAVE SOUND </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">89,101</context>
+        </context-group>
+        <note priority="1" from="description">Parte del modal</note>
+      </trans-unit>
+      <trans-unit id="c36be35a773271553b7b2408eb1cc2712d771d1b" datatype="html">
+        <source> SAVE MARKERS </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">122,131</context>
+        </context-group>
+        <note priority="1" from="description">Parte del modal</note>
+      </trans-unit>
+      <trans-unit id="85e1e383f03b2909a4b623c274bfa76a7e16b551" datatype="html">
+        <source> SAVE PLOT </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">152,160</context>
+        </context-group>
+        <note priority="1" from="description">Parte del modal</note>
+      </trans-unit>
+      <trans-unit id="c633bdf37ee30495b3e04e70c0098280ac4c5333" datatype="html">
+        <source> SAMPLE DATA </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">171,176</context>
+        </context-group>
+        <note priority="1" from="description">Parte del modal</note>
+      </trans-unit>
+      <trans-unit id="9d1c6402cd93b068c0e56f740d85b4ddc267c4ab" datatype="html">
+        <source> Glitch (1126409678.84375 TS) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">188,194</context>
+        </context-group>
+        <note priority="1" from="description">Parte del sampleData</note>
+      </trans-unit>
+      <trans-unit id="5797bc4ecdb6bbf4ba083a2c6c174fefc503010e" datatype="html">
+        <source> Sloan SDSSJ151806 </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">207,219</context>
+        </context-group>
+        <note priority="1" from="description">Parte del sampleData</note>
+      </trans-unit>
+      <trans-unit id="5dc522d922b1ba79256d77ed8338ef7ac39ac86c" datatype="html">
+        <source> EGO noise </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">242,254</context>
+        </context-group>
+        <note priority="1" from="description">Parte del sampleData</note>
+      </trans-unit>
+      <trans-unit id="ea75e1d59356bdbfd770da24c64db8341c62d867" datatype="html">
+        <source> Variable star </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">271,280</context>
+        </context-group>
+        <note priority="1" from="description">Parte del sampleData</note>
+      </trans-unit>
+      <trans-unit id="b12c22dc1d47e10698caae044a7c74d2b8803eec" datatype="html">
+        <source> sine </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">293,302</context>
+        </context-group>
+        <note priority="1" from="description">Parte del sampleData</note>
+      </trans-unit>
+      <trans-unit id="5bb29410e33f3f2f18dd1f5dac480a6b2a166f1a" datatype="html">
+        <source> Sawtooth </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">315,324</context>
+        </context-group>
+        <note priority="1" from="description">Parte del sampleData</note>
+      </trans-unit>
+      <trans-unit id="82b622b6bd8885af0c1c31bbbac98d4d4b452599" datatype="html">
+        <source> Triangle </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">341,355</context>
+        </context-group>
+        <note priority="1" from="description">Parte del sampleData</note>
+      </trans-unit>
+      <trans-unit id="04597a2ad02829588b83cff449f512dce4052699" datatype="html">
+        <source> Square </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">369,376</context>
+        </context-group>
+        <note priority="1" from="description">Parte del sampleData</note>
+      </trans-unit>
+      <trans-unit id="caa20492bdc5cf334ac94b639f5de6ac82362fa8" datatype="html">
+        <source> Ramp </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">398,410</context>
+        </context-group>
+        <note priority="1" from="description">Parte del sampleData</note>
+      </trans-unit>
+      <trans-unit id="028c9d53b8ee935b7591a59c9a3b4efe2c521066" datatype="html">
+        <source> HELP </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">423,432</context>
+        </context-group>
+        <note priority="1" from="description">Parte del modal</note>
+      </trans-unit>
+      <trans-unit id="d08e3ac2f80fbc937eacccd7cd5cf9764cebbba0" datatype="html">
+        <source> QUICKSTART </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">444,461</context>
+        </context-group>
+        <note priority="1" from="description">Parte del modal</note>
+      </trans-unit>
+      <trans-unit id="8ef78559f212ca57e2760152ccfb238dadd59b74" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;text-decoration: underline&quot;&gt;"/>M<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>ARK POINT </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inicio/inicio.component.ts</context>
+          <context context-type="linenumber">477</context>
+        </context-group>
+        <note priority="1" from="description">Mark point</note>
+      </trans-unit>
+      <trans-unit id="b2b03d5b46fefc5d31b5cedc51d64b33e2d3bb8c" datatype="html">
+        <source>sonoUno Web Interface</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/landing/landing.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">titulo</note>
+      </trans-unit>
+      <trans-unit id="64a41aca7814bd4d01ac1fa8eecdac76536c112a" datatype="html">
+        <source>SonoUno is a sonification software for astronomical data presented on a table, allowing the user to configure the generated plot and some features of the sound.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/landing/landing.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">descripcion</note>
+      </trans-unit>
+      <trans-unit id="dcf8f15418a05a2f5b06cfe12eecbb46e94b13e1" datatype="html">
+        <source>HOME</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/landing/landing.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">botonesLanding</note>
+      </trans-unit>
+      <trans-unit id="929defcaabf57323c40a48a88ff3bdf31c0000c8" datatype="html">
+        <source>QUICK START</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/landing/landing.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">botonesLanding</note>
+      </trans-unit>
+      <trans-unit id="76b5208847ecc01b95c7414c6ebd6116f6041b23" datatype="html">
+        <source><x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input type=&quot;checkbox&quot; [checked]=&quot;skippingLandingPage&quot; (change)=&quot;onCheckboxChanged($event)&quot; /&gt;"/> Do not show this landing page again. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/landing/landing.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">labelCheckbox</note>
+      </trans-unit>
+      <trans-unit id="49352c0f74bebc5d4a0aa418c512c91af3ae8fde" datatype="html">
+        <source>Quickstart Guide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/quickstart/quickstart.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">quickstart</note>
+      </trans-unit>
+      <trans-unit id="37fcd985a67d8bc6003ea2cef8a6093c971d3ebd" datatype="html">
+        <source>About the sound</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/quickstart/quickstart.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">quickstart</note>
+      </trans-unit>
+      <trans-unit id="58b736ad80b64535f68b05f2d3d3b7089ce57ee5" datatype="html">
+        <source>SonoUno counts with a default sound configuration, allowing you to load data and start playing the sonified data, if you want, you can always start twinkling around with the different values found in ‘Sound configuration’, allowing you to change the volume, minimum and maximum frequencies or the envelope filter settings. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/quickstart/quickstart.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">quickstart</note>
+      </trans-unit>
+      <trans-unit id="382ba41a385c27f864e257fd57070effdf9a29f9" datatype="html">
+        <source>About the data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/quickstart/quickstart.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">quickstart</note>
+      </trans-unit>
+      <trans-unit id="da2efe815b09be053bd9ce151dfa8ed901754802" datatype="html">
+        <source>To help you get started as fast as possible exploring sonoUno’s capabilities, sonoUno has a set of “Sample Data” under the ‘File’ dropdown menu. This will allow you to see how the data is processed and how the resulting screen looks like at the event of a successful data load. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/quickstart/quickstart.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">quickstart</note>
+      </trans-unit>
+      <trans-unit id="132b924b02860ee10ad183d85a1aa12bb59f60a4" datatype="html">
+        <source>About the plot</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/quickstart/quickstart.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">quickstart</note>
+      </trans-unit>
+      <trans-unit id="ea0065460c5520b329e81d89dde69b098304363f" datatype="html">
+        <source>When the page starts you should only see a blank plot and at the instant you load data it will be displayed at it. You can zoom in by clicking and dragging at a section of the graph or using the menu at the top-right corner of the plot. If you want to modify the color or the stroke of the lines, the color or shape of the markers or the tags on the plot you can do it in the ‘Plot configuration’ on the bottom right side of the page. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/quickstart/quickstart.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">quickstart</note>
+      </trans-unit>
+      <trans-unit id="fc21162b778e421e0ea2673ac3e184dd7df46f03" datatype="html">
+        <source>About managing data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/quickstart/quickstart.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">quickstart</note>
+      </trans-unit>
+      <trans-unit id="b524cf46d94d643f69dbb1a1f1286972e06f898d" datatype="html">
+        <source>You can add your ‘.csv’ (Comma Separated File) via the ‘Browse…’ option on the ‘File’ dropdown menu. The file can have one or two columns, the first being the Abscissa axis and the second the ordinate, in the case you only provide one column with data, each value would be assigned to the ordinate and an incremental value would be assigned to the abscissa value.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/quickstart/quickstart.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">quickstart</note>
+      </trans-unit>
+      <trans-unit id="5b8f0ff4568613221add1de712e3162d4af0c55b" datatype="html">
+        <source>About the markers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/quickstart/quickstart.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">quickstart</note>
+      </trans-unit>
+      <trans-unit id="e353c421faaa83ec4ad972e35ad06a7a7d220b74" datatype="html">
+        <source> Behind the plot you have four buttons, two very self explanatory to play and pause the reproduction of the sound, the ‘Mark point’ allows you to add markers at the point of reproduction of the data, this will be added to an array that you can download at the ‘File’ menu and the ‘Remove mark’ button that allows you to pop the last added mark point. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/quickstart/quickstart.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">quickstart</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

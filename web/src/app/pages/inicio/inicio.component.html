@@ -1,195 +1,634 @@
-<img class="img-fluid mt-5 mb-5" src="./assets/img/grafico.png">
+<nav class="justify-content-center navbar navbar-expand-lg navbar-dark bg-sonouno">
+  <!-- <a class="navbar-brand" href="#">SONOUNO</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <div class="nav-item dropdown mt-2 mr-md-3" data-toggle="tooltip" data-placement="bottom" title="INPUT DROPDOWN">
+        <div class="navlink dropdown-toggle cursorPointer" id="INPUT Actions" data-toggle="dropdown"
+          aria-haspopup="true" tabindex="0" id="menu-input" aria-expanded="false" i18n="Parte del modal">
+          INPUT
+        </div>
 
-<div class="row">
-    <div class="col-12 text-center mb-5">
-        <button class="btn btn-sonouno mr-5">PLAY</button>
-        <button class="btn btn-sonouno mr-5">STOP</button>
-        <button class="btn btn-sonouno mr-5">MARK POINT</button>
-        <button class="btn btn-sonouno mr-5">DELETE MARK</button>
+        <ul class="dropdown-menu p-3" aria-label="INPUT DROPDOWN " id="dropdown-input" role="group">
+          <li class="divider"></li>
+          <li>
+            <!-- <div>
+              <input type="file" (change)="onChange($event.target.files)" id="Input-file" tabindex="0"
+                class="nav-link ml-1" />
+
+              <label class="custom-file-label mt-2 ml-1" for="Input-file">Data CSV</label>
+            </div> -->
+            <div class="container-xxl containerInputField">
+              <div class="custom-file" id="customFile">
+                <input class="custom-file-input" type="file" (change)="onChange($event.target.files)" id="Input-file"
+                  tabindex="0">
+                <label class="custom-file-label" for="Input-file">
+                  Data CSV
+                </label>
+              </div>
+            </div>
+          </li>
+          <div class="dropdown-divider"></div>
+          <li>
+
+            <!-- <form class="form-inline">
+                <div class="mt-1 mb-1">
+                  <input type="file" (change)="loadWAV($event.target.files)" class="nav-link ml-1" id="Input-file-Wav"
+                    tabindex="0" />
+                </div>
+                <label class="mt-3 ml-1 custom-file-label" for="Input-file-Wav">Data WAV</label>
+              </form> -->
+            <div class="container-xxl containerInputField">
+              <div class="custom-file">
+                <input type="file" (change)="loadWAV($event.target.files)" class="custom-file-input" id="Input-file-Wav"
+                  tabindex="0">
+                <label class="custom-file-label" for="Input-file-Wav">
+                  Data WAV
+                </label>
+              </div>
+            </div>
+
+
+          </li>
+          <div class="dropdown-divider"></div>
+          <li>
+
+            <!-- <form class="form-inline">
+                <div class="mt-1 mb-1">
+                  <input type="file" (change)="loadMarkers($event.target.files)" class="nav-link ml-1"
+                    id="Input-file-markers" tabindex="0" />
+                </div>
+                <label class="mt-3 ml-1 custom-file-label" for="Input-file-markers">Markers CSV</label>
+              </form> -->
+            <div class="container-xxl containerInputField">
+              <div class="custom-file">
+                <input (change)="loadMarkers($event.target.files)" class="custom-file-input" id="exampleInputFile"
+                  id="Input-file-markers" tabindex="0">
+                <label class="custom-file-label" for="Input-file-markers">
+                  Markers CSV
+                </label>
+              </div>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-item dropdown mt-2 mr-md-3" data-toggle="tooltip" data-placement="bottom" title="OUTPUT DROPDOWN">
+        <div class="navlink dropdown-toggle cursorPointer" id="OUTPUT Actions" data-toggle="dropdown"
+          aria-haspopup="true" tabindex="0" id="menu-otuput" aria-expanded="false" i18n="Parte del modal">
+          OUTPUT
+        </div>
+        <ul class="dropdown-menu collapseInside" aria-label="OUTPUT DROPDOWN " id="dropdown-output" role="group">
+          <li class="btn dropdown-item btn-sonouno" tabindex="0" (click)="grabarArchivo()" id="SaveSound button"
+            i18n="Parte del modal">
+            SAVE SOUND
+          </li>
+          <li class="btn dropdown-item btn-sonouno" tabindex="0" (click)="descargarMarcadores()" id="SaveMarkers button"
+            i18n="Parte del modal">
+            SAVE MARKERS
+          </li>
+          <li class="btn dropdown-item btn-sonouno" tabindex="0" (click)="guardarImagen()" id="SavePlot button"
+            i18n="Parte del modal">
+            SAVE PLOT
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-item dropdown mt-2 mr-lg-2" data-toggle="tooltip" data-placement="bottom"
+        title="SAMPLE DATA DROPDOWN">
+        <div class="navlink dropdown-toggle cursorPointer" id="SAMPLE DATA" data-toggle="dropdown" aria-haspopup="true"
+          tabindex="0" id="menu-sample-data" aria-expanded="false" i18n="Parte del modal">
+          SAMPLE DATA
+        </div>
+        <ul class="dropdown-menu" aria-label="Sample Data Dropdown " id="dropdown-sample-data" role="group">
+          <li>
+            <button type="button" tabindex="0" aria-label="Glitch" class="btn btn-sonouno mt-3"
+              (click)="leerSampleData('1')" i18n="Parte del sampleData">
+              Glitch (1126409678.84375 TS)
+            </button>
+          </li>
+          <li>
+            <button type="button" tabindex="0" aria-label="Sloan" class="btn btn-sonouno mt-3"
+              (click)="leerSampleData('3')" i18n="Parte del sampleData">
+              Sloan SDSSJ151806
+            </button>
+          </li>
+          <li>
+            <button type="button" tabindex="0" aria-label="Ego" class="btn btn-sonouno mt-3"
+              (click)="leerSampleData('4')" i18n="Parte del sampleData">
+              EGO noise
+            </button>
+          </li>
+          <li>
+            <button type="button" tabindex="0" aria-label="Variable Star" class="btn btn-sonouno mt-3"
+              (click)="leerSampleData('5')" i18n="Parte del sampleData">
+              Variable star
+            </button>
+          </li>
+          <li>
+            <button type="button" tabindex="0" aria-label="Sample audio" class="btn btn-sonouno mt-3"
+              (click)="leerSampleData('6')" i18n="Parte del sampleData">
+              Sample audio
+            </button>
+          </li>
+          <li>
+            <button type="button" tabindex="0" aria-label="SINEWAVE" class="btn btn-sonouno mt-3"
+              (click)="leerSampleData('7')" i18n="Parte del sampleData">
+              sine
+            </button>
+          </li>
+          <li>
+            <button type="button" tabindex="0" aria-label="Sawtooth" class="btn btn-sonouno mt-3"
+              (click)="leerSampleData('8')" i18n="Parte del sampleData">
+              Sawtooth
+            </button>
+          </li>
+
+          <li>
+            <button type="button" tabindex="0" aria-label="Triangle" class="btn btn-sonouno mt-3"
+              (click)="leerSampleData('9')" i18n="Parte del sampleData">
+              Triangle
+            </button>
+          </li>
+
+          <li>
+            <button type="button" tabindex="0" aria-label="Sawtooth" class="btn btn-sonouno mt-3"
+              (click)="leerSampleData('10')" i18n="Parte del sampleData">
+              Square
+            </button>
+          </li>
+          <li>
+            <button type="button" tabindex="0" aria-label="Sawtooth" class="btn btn-sonouno mt-3"
+              (click)="leerSampleData('11')" i18n="Parte del sampleData">
+              Ramp
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!--a class="nav-link active mr-5" href="#">DATA DISPLAY</a>
+	   <a class="nav-link active mr-5" href="#">DATA OPERATIONS</a>
+	   <a class="nav-link active mr-5" href="#">PANELS</a>
+	   <a class="nav-link active mr-5" href="#">SETINGS</a-->
+      <div class="nav-link active float-right cursorPointer" data-toggle="tooltip" data-placement="bottom"
+        title="HELP GUIDE LINK" routerLink="/help" tabindex="0" id="HELP LINK" i18n="Parte del modal">
+        HELP
+      </div>
+
+      <div class="nav-link active float-right cursorPointer" data-toggle="tooltip" data-placement="bottom"
+        title="QUICKSTART GUIDE LINK" routerLink="/quickstart" tabindex="0" id="QUICKSTART LINK" i18n="Parte del modal">
+        QUICKSTART
+      </div>
     </div>
+  </div>
+</nav>
+
+<plotly-plot divId="mainPlot" tabindex="-1" focusable="false" aria-hidden="true" id="grafico" [data]="data"
+  [layout]="layout" (relayout)="zoom()" [config]="{ displayModeBar: false }">
+</plotly-plot>
+<div class="row " id="row" aria-label="Play Options Row">
+  <div class="col-12 text-center mb-5 Reproduction flex-sm-column">
+    <button class="btn btn-sonouno " aria-label="Play Shortcut P" (click)="PlayPause()" tabindex="0">
+      <span style="text-decoration: underline">P</span>{{ !play ? "LAY" : "AUSE" }}
+    </button>
+    <button class="btn btn-sonouno " aria-label="Stop Shortcut S" (click)="Stop()" tabindex="0">
+      <span style="text-decoration: underline">S</span>TOP
+    </button>
+    <button class="btn btn-sonouno " aria-label="Add Marker Shortcut M" (click)="addMarcador()" tabindex="0"
+      id="mark point button" i18n="Mark point">
+      <span style="text-decoration: underline">M</span>ARK POINT
+    </button>
+    <button class="btn btn-sonouno " aria-label="Delete Marker Shortcut D" (click)="deleteMarcador()" tabindex="0"
+      id="delete mark point button" i18n="delete Mark point">
+      <span style="text-decoration: underline">D</span>ELETE MARK
+    </button>
+    <!-- Boton reset zoom -->
+    <button class="btn btn-sonouno " aria-label="Reset zoom Shortcut R" (click)="resetZoom()" tabindex="0"
+      id="reset zoom button" i18n="reset plot range">
+      <span style="text-decoration: underline">R</span>ESET PLOT RANGE
+    </button>
+  </div>
 </div>
 
-<div class="row mb-5">
-    <div class="col-5 bg-range mr-6 p-3 mr-2">
-
-        <form>
-            <div class="form-group">
-              <label class="rangeColor" for="formControlRange">ABSCISSA POSITION</label>
-              <input type="range" class="form-control-range" id="formControlRange">
-            </div>
-          </form>
-
-      </div>
-      <div class="col-1"></div>
-      <div class="col-5 bg-range float-right p-3">
-
-        <form>
-            <div class="form-group">
-              <label class="rangeColor" for="formControlRange">TEMPO</label>
-              <input type="range" class="form-control-range" id="formControlRange">
-            </div>
-          </form>
-
-      </div>
+<!-- FINAL ROW BOTONES -->
+<div class="md-form">
+  <input #box mdbInput type="text" name="text" (keyup.enter)="
+      onInputEnter(box.value); cliLastCommand = box.value; box.value = ''
+    " id="form1" class="form-control" />
+  <p>Last command: {{ cliLastCommand }}</p>
 </div>
 
-<div class="row mb-5">
-  <div class="col-5 bg-range mr-6 p-3 mr-2">
+<div class="row mb-5 justify-content-between">
+  <div class="col-12 text-center flex-sm-column">
+    <div class="form-group bg-range p-3">
+      <div class="d-flex justify-content-between">
+        <label class="rangeColor" for="formControlRange" i18n="SlidersTag">ABSCISSA POSITION</label>
+        <label class="rangeColor">{{ indiceGrafico.toFixed(1) }}%</label>
+      </div>
 
+      <input type="range" class="form-control-range mb-2" id="Slider Abscisa" aria-label="Abscisa Slider"
+        [(ngModel)]="indiceGrafico" (change)="sliderAbscisa()" />
+
+      <input #box mdbInput type="text" [(ngModel)]="indiceGrafico" (keyup.enter)="sliderAbscisa();"
+        class="form-control mb-2" />
+    </div>
+  </div>
+  <!-- <div class="col-1"></div> -->
+  <div class="col-12 text-center  flex-sm-column ">
+    <div class="form-group bg-range p-3">
+      <div class="d-flex justify-content-between">
+        <label class="rangeColor" for="formControlRange" i18n="SlidersTag">TEMPO</label>
+        <label class="rangeColor">{{ tempoSlider }}%</label>
+      </div>
+      <input type="range" class="form-control-range" id="Slider Tempo" aria-label="Tempo Slider"
+        [(ngModel)]="tempoSlider" (mouseup)="ToolbarPlay()" />
+      <input #box mdbInput type="text" [(ngModel)]="tempoSlider" (keyup.enter)="ToolbarPlay();" class="form-control" />
+    </div>
+  </div>
+</div>
+<div class="row m-1 mb-5 ">
+  <div class="col-12 bg-range p-3">
+    <button class="btn btn-sonouno " type="button" data-toggle="collapse" data-target="#collapseMathFunctions"
+      aria-expanded="false" aria-controls="collapseMathFunctions" i18n="Colapsable title">
+      MATH FUNCTIONS
+    </button>
+    <div id="collapseMathFunctions" class="collapse collapseInside">
+      <div class="col-12">
+        <button data-toggle="modal" data-target="#modalSampleData" tabindex="0" role="button"
+          class="btn btn-sonouno mt-3" id="Peak Finder button" aria-label="Peak Finder button" i18n>
+          PEAK FINDER
+        </button>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-sonouno mt-3" (click)="logarithmicData()" id="Logarithmic function button"
+          aria-label="Logarithmic function button" i18n>
+          LOGARITHMIC
+        </button>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-sonouno mt-3 mb-3" (click)="quadraticData()" id="Quadratic function button"
+          aria-label="Quadratic function button" i18n>
+          QUADRATIC
+        </button>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-sonouno  mb-3" (click)="smoothData()" id="Moving average smoothing button"
+          aria-label="Moving average smoothing button" i18n>
+          SMOOTH
+        </button>
+        <div class="row pb-2 justify-content-between p-3">
+          <label class="input-group-text col-sm-8 mb-2" i18n>SMOOTH GATE</label>
+          <div class="col-sm-4 p-0 ">
+            <input type="number" value="5" class="form-control" placeholder="GATE SMOOTH"
+              aria-label="MOVING AVERAGE GATE" [(ngModel)]="gate" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row m-1 mb-5 d-flex flex-column flex-wrap">
+  <div class=" col-sm-12 bg-range mr-6 p-3 mr-2  mb-3 ">
+    <button class="btn btn-sonouno " type="button" data-toggle="collapse" data-target="#collapseSoundConfiguration"
+      aria-expanded="false" aria-controls="collapseSoundConfiguration" i18n="collapsable title">
+      SOUND CONFIGURATION
+    </button>
+    <div id="collapseSoundConfiguration" class="collapse collapseInside p-2">
+      <div class="form-check mt-3">
+        <input class="form-check-input" type="checkbox" value="" id="Frecuency Mapping"
+          aria-label="Frequency Mapping checkbox" />
+        <label class="form-check-label" for="Frequency Mapping" i18n>
+          SET FRECUENCY MAPPING
+        </label>
+      </div>
+      <div>
+        <div class="form-group mt-3">
+          <label class="rangeColor" for="formControlRange" i18n>SET MIN FREQUENCY</label>
+          <label class="rangeColor right" i18n>{{ minFreq }} Hz</label>
+          <input type="range" class="form-control-range" id="Slider Min Frequency" aria-label="Min Frequency Slider"
+            [(ngModel)]="minFreqGraph" name="minFreqGraph" (mouseup)="setMinMax()" />
+          <input #box mdbInput type="text" [(ngModel)]="minFreqText" (keyup.enter)="setMinText();"
+            class="form-control" />
+        </div>
+      </div>
+      <div>
+        <div class="form-group mt-3">
+          <label class="rangeColor" for="formControlRange" i18n>SET MAX FREQUENCY</label>
+          <label class="rangeColor right">{{ maxFreq }} Hz</label>
+          <input type="range" class="form-control-range" id="Slider Max Frequency" aria-label="Max Frequency Slider"
+            [(ngModel)]="maxFreqGraph" name="maxFreq" (mouseup)="setMinMax()" />
+          <input #box mdbInput type="text" [(ngModel)]="maxFreqText" (keyup.enter)="setMaxText();"
+            class="form-control" />
+        </div>
+      </div>
       <form>
-          <div class="form-group">
-            <label class="rangeColor" for="formControlRange">SOUND CONFIGURATION</label><br><br>
-            <label class="rangeColor" for="formControlRange">Volume</label>
-            <input type="range" class="form-control-range" id="formControlRange">
-          </div>
-        </form>
-          
-          <div class="text-center">
-          <button class="btn btn-sonouno-white mt-3">SET LOGARITHMIC SCALE</button>
-          <button class="btn btn-sonouno-white mt-3">SET CONTINUOUS SOUND</button>
+        <div class="form-group mt-4">
+          <!-- <label class="rangeColor" for="formControlRange">SOUND CONFIGURATION</label> -->
+          <label class="rangeColor" for="formControlRange" i18n>Volume</label>
+          <label class="rangeColor right">{{ volumen }}%</label>
+          <input type="range" class="form-control-range" id="Slider Volume" aria-label="Volume slider"
+            [(ngModel)]="volumen" name="volumen" (mouseup)="sliderVolumen()" />
         </div>
+      </form>
 
-
+      <div class="form-check mt-3 background-white pt-3 pb-3 p-0">
+        <div class="input-group mb-3 flex-column flex-sm-row">
+          <div class="">
+            <label class="input-group-text input-group-textC" for="inputGroupSelect01" id="Select SOUND TYPE"
+              i18n>SELECT SOUND
+              TYPE</label>
+          </div>
+          <select (change)="seleccionarInstrumento($event.target.value)" class="custom-select custom-selectC"
+            id="sound type" aria-label="Select sound type" tabindex="0">
+            <option selected value="sine" i18n>SINE</option>
+            <option value="synthwave" i18n>SYNTHWAVE</option>
+            <option value="flute" i18n>FLUTE</option>
+            <option value="piano" i18n>PIANO</option>
+            <option value="celesta" i18n>CELESTA</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn btn-sonounoC mt-3 col-12" type="button" data-toggle="collapse"
+        data-target="#collapseAdvancedSoundConfiguration" aria-expanded="false"
+        aria-controls="collapseSoundConfiguration" i18n="collapsable title">
+        ADVANCED SOUND CONFIGURATION
+      </button>
+      <div id="collapseAdvancedSoundConfiguration" class="collapse">
+        <button class="btn btn-sonouno mt-3" type="button" data-toggle="collapse"
+          data-target="#collapseADSRConfiguration" aria-expanded="false" aria-controls="collapseSoundConfiguration"
+          i18n="Attack, decay,sustain release">
+          ADSR
+        </button>
+        <div id="collapseADSRConfiguration" class="collapse">
           <div class="form-check mt-3">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              SET FRECUENCY MAPPING
+            <input class="form-check-input" type="checkbox" value="" id="Envelope Filter Toggle"
+              aria-label="Envelope Filter Checkbox" [(ngModel)]="filtroEnabled" [ngModelOptions]="{ standalone: true }"
+              (change)="sliderADSR()" />
+            <label class="form-check-label" for="Envelope Filter Toggle" i18n>
+              SOUND ENVELOPE CONFIG.
             </label>
           </div>
-           <div>
-          <div class="form-check mt-3">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              SET MIN FRECUENCY
-            </label>
-          </div>
-        </div>
-        <div>
-          <div class="form-check mt-3">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              SET MAX FRECUENCY
-            </label>
-          </div>
-        </div>
-        <div class="form-check mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label" for="defaultCheck1">
-            SET FRECUENCY MAPPING
-          </label>
-        </div>
-        
-        <div class="form-check mt-3 background-white pt-3 pb-3 pl-5">
-          <div class="text-blue mt-3">
-            SELECT SOUND TYPE:
-          </div>
-          <br>
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label text-blue" for="defaultCheck1">
-            SINE
-          </label>
-          <br>
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label text-blue" for="defaultCheck1">
-            SYNTHWAVE
-          </label>
-          <br>
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label text-blue" for="defaultCheck1">
-            FLUTE
-          </label>
-          <br>
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label text-blue" for="defaultCheck1">
-            PIANO
-          </label>
-          <br>
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label text-blue" for="defaultCheck1">
-            CELESTA
-          </label>
-        </div>
 
-        <div class="form-check mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label" for="defaultCheck1">
-            SOUND ENVELOPE CONFIG.          
-          </label>
+          <form class="mt-5">
+            <div class="form-group">
+              <label class="rangeColor" for="formControlRange" i18n>ATTACK</label>
+              <label class="rangeColor right">{{ attack }}</label>
+              <input type="range" class="form-control-range" id="Slider Attack" aria-label="Attack Slider"
+                [(ngModel)]="attack" name="attack" (mouseup)="sliderADSR()" />
+            </div>
+          </form>
+          <form>
+            <div class="form-group">
+              <label class="rangeColor" for="formControlRange" i18n>DECAY</label>
+              <label class="rangeColor right">{{ decay }}</label>
+              <input type="range" class="form-control-range" id="Slider Decay" aria-label="Decay Slider"
+                [(ngModel)]="decay" name="decay" (mouseup)="sliderADSR()" />
+            </div>
+          </form>
+          <form>
+            <div class="form-group">
+              <label class="rangeColor" for="formControlRange" i18n>SUSTAIN</label>
+              <label class="rangeColor right">{{ sustain }}</label>
+              <input type="range" class="form-control-range" id="Slider sustain" aria-label="Sustain Slider"
+                [(ngModel)]="sustain" name="sustain" (mouseup)="sliderADSR()" />
+            </div>
+          </form>
+          <form>
+            <div class="form-group">
+              <label class="rangeColor" for="formControlRange" i18n>RELEASE</label>
+              <label class="rangeColor right">{{ release }}</label>
+              <input type="range" class="form-control-range" id="slider Release" aria-label="Release Slider"
+                [(ngModel)]="release" name="release" (mouseup)="sliderADSR()" />
+            </div>
+          </form>
         </div>
-
-        <form class="mt-5">
-          <div class="form-group">
-            <label class="rangeColor" for="formControlRange">ATTACK</label>
-            <input type="range" class="form-control-range" id="formControlRange">
-          </div>
-        </form>
-        <form>
-          <div class="form-group">
-            <label class="rangeColor" for="formControlRange">DECAY</label>
-            <input type="range" class="form-control-range" id="formControlRange">
-          </div>
-        </form>
-        <form>
-          <div class="form-group">
-            <label class="rangeColor" for="formControlRange">SUSTAIN</label>
-            <input type="range" class="form-control-range" id="formControlRange">
-          </div>
-        </form>
-        <form>
-          <div class="form-group">
-            <label class="rangeColor" for="formControlRange">RELEASE</label>
-            <input type="range" class="form-control-range" id="formControlRange">
-          </div>
-        </form>
-        
-
+        <div class="text-center">
+          <button class="btn btn-sonouno mt-3" (click)="logaritmico()" id="Logarithmic Scale button" i18n>
+            SET LOGARITHMIC SCALE
+          </button>
+          <button class="btn btn-sonouno mt-3" id="Continuous sound button" i18n>
+            SET CONTINUOUS SOUND
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="col-1"></div>
-    <div class="col-5 bg-range float-right p-3 heigth">
+  </div>
+  <div class="col-1"></div>
+  <div class=" col-sm-12 bg-range float-right p-3">
+    <button class="btn btn-sonouno " type="button" data-toggle="collapse" data-target="#collapsePlotConfiguration"
+      aria-expanded="false" aria-controls="collapsePlotConfiguration" i18n="collapsable title">
+      PLOT CONFIGURATION
+    </button>
+    <div id="collapsePlotConfiguration" class="collapse">
+      <!-- <div class="mt-4 mb-4">PLOT CONFIGURATION</div> -->
 
-      <div class="mt-4 mb-4">PLOT CONFIGURATION</div>
+      <div class="input-group mt-3 mb-3">
+        <label class="input-group-text input-group-textC" i18n>GRAPH TITLE</label>
+        <input type="text" class="form-control" placeholder="GRAPH TITLE" aria-label="Title input"
+          [(ngModel)]="graphTitle" (keyup)="handleTitles($event, '1')" />
+      </div>
+      <div class="input-group mb-3">
+        <label class="input-group-text input-group-textC" i18n>ABSCISSA TITTLE</label>
+        <input type="text" class="form-control" placeholder="ABSCISSA" aria-label="ABSCISSA TITTLE"
+          [(ngModel)]="abscissaTitle" (keyup)="handleTitles($event, '2')" />
+      </div>
 
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect01">LINE STYLE</label>
-          </div>
-          <select class="custom-select" id="inputGroupSelect01">
-            <option selected>SOLID LINE</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+      <div class="input-group mb-3">
+        <label class="input-group-text input-group-textC" i18n>ORDINATE TITTLE</label>
+        <input type="text" class="form-control" placeholder="ORDINATE" aria-label="ORDINATE TITTLE"
+          [(ngModel)]="ordinateTitle" (keyup)="handleTitles($event, '3')" />
+      </div>
+      <div class="form-check mt-3">
+        <input [(ngModel)]="displayGrid" class="form-check-input" type="checkbox" id="Display Grid"
+          aria-label="Display grid checkbox" (change)="grid()" />
+        <label class="form-check-label" for="Display grid">
+          DISPLAY GRID
+        </label>
+      </div>
+      <button class="btn btn-sonounoC mt-3 collapseInside col-12" type="button" data-toggle="collapse"
+        data-target="#collapseAdvancedPlotConfiguration" aria-expanded="false"
+        aria-controls="collapseSoundConfiguration" i18n="collapsable title">
+        ADVANCED PLOT CONFIGURATION
+      </button>
+      <div id="collapseAdvancedPlotConfiguration" class="collapse mt-3">
+        <div class="form-check mt-3 mb-3">
+          <input class="form-check-input" type="checkbox" value=false id="Grayscale Checkbox" [(ngModel)]="grayscale"
+            (change)="this.updateGraph();" />
+          <label class="form-check-label" for="Grayscale Checkbox" i18n>
+            GRAYSCALE PLOT
+          </label>
         </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect01">MAKER STYLE</label>
-          </div>
-          <select class="custom-select" id="inputGroupSelect01">
-            <option selected>ANY</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect01">COLOR STYLE</label>
-          </div>
-          <select class="custom-select" id="inputGroupSelect01">
-            <option selected>BLUE</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-
         <div class="form-check mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label" for="defaultCheck1">
+          <input class="form-check-input" type="checkbox" value="" id="Grid Options Checkbox" />
+          <label class="form-check-label" for="Grid Options Checkbox" i18n>
             GRID OPTIONS
           </label>
         </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text " for="inputGroupSelect01" i18n>LINE STYLE</label>
+          </div>
+          <select (change)="seleccionarTipoLinea($event.target.value)" class="custom-select" aria-label="Line XSelect"
+            id="Line Style">
+            <option selected value="solid" i18n>SOLID</option>
+            <option value="dash" i18n>DASH</option>
+            <option value="dot" i18n>DOT</option>
+            <option value="dashdot" i18n>DASH-DOT</option>
+            <option value="none" i18n>NONE</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01" i18n>LINE MODE</label>
+          </div>
+          <select (change)="seleccionarScatterType($event.target.value)" class="custom-select"
+            aria-label="LINE MODE select" id="LINE MODE">
+            <option selected value="lines" i18n>LINES</option>
+            <option value="markers" i18n>POINTS</option>
+            <option value="lines+markers" i18n>LINE+POINTS</option>
 
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01" i18n>POINT STYLE</label>
+          </div>
+          <select (change)="seleccionarMarkerStyle($event.target.value)" class="custom-select"
+            aria-label="Marker XSelect" id="Marker Style">
+            <option value="x" i18n="simbolo del marcador">X</option>
+            <option value="star-triangle-up" i18n>STAR</option>
+            <option selected value="" i18n>CIRCLE</option>
+            <option value="diamond" i18n>DIAMOND</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01" i18n>COLOR STYLE</label>
+          </div>
+          <select (change)="seleccionarColorLinea($event.target.value)" class="custom-select" aria-label="Color XSelect"
+            id="inputGroupSelect04">
+            <option selected value="#b55400" i18n>ORANGE</option>
+            <option value="#3B83BD" i18n>BLUE</option>
+            <option value="#FF3b3b" i18n>RED</option>
+            <option value="#3bFF3b" i18n>GREEN</option>
+            <option value="#e0e03b" i18n>YELLOW</option>
+          </select>
+        </div>
+        <button class="btn btn-sonouno mr-5" aria-label="Flip " (click)="flipXAxis()" tabindex="0" id="Flip X Axis"
+          i18n="Flip X Axis">
+          <span style="text-decoration: underline">F</span>LIP ORDINATES AXIS
+        </button>
+        <button class="btn btn-sonouno mr-5" aria-label="Flip " (click)="flipYAxis()" tabindex="0" id="Flip Y Axis"
+          i18n="Flip Y Axis">
+          <span style="text-decoration: underline">F</span>LIP ABSCISSA AXIS
+        </button>
+      </div>
     </div>
+  </div>
 </div>
+<div id="modalSampleData" class="modal fade" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header align-items-baseline gap-1">
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
+        <h4 class="modal-title">PEAK FINDER SETTINGS</h4>
+      </div>
+      <ul style="list-style-type: none" class="modal-body">
+        <li>
+          <div class="form-group">
+            <label class="rangeColorModal" for="formControlRange" i18n="SlidersTag">SENSITIVITY</label>
+            <label class="rangeColorModal right">{{ peakSensitivity.toFixed(1) }}%</label>
 
+            <input type="range" min="1" max="100" class="form-control-range" id="Slider peakSensitivity"
+              aria-label="peakSensitivity Slider" [(ngModel)]="peakSensitivity" (change)="updatePeaks()" />
+          </div>
+        </li>
+        <!-- <li>
+          <div class="form-group">
+            <label
+              class="rangeColorModal"
+              for="formControlRange"
+              i18n="SlidersTag"
+              >GATE</label
+            >
+            <label class="rangeColorModal right"
+              >{{ peakGate.toFixed(1) }}%</label
+            >
+
+            <input
+              type="range"
+              min="1" max="100"
+              class="form-control-range"
+              id="Slider peakGate"
+              aria-label="peakGate Slider"
+              [(ngModel)]="peakGate"
+              (change)="updatePeaks()"
+            />
+          </div>
+        </li>
+        <li>
+          <div class="form-group">
+            <label
+              class="rangeColorModal"
+              for="formControlRange"
+              i18n="SlidersTag"
+              >OFFSET</label
+            >
+            <label class="rangeColorModal right"
+              >{{ peakOffset.toFixed(1) }}%</label
+            >
+
+            <input
+              type="range"
+              min="1" max="100"
+              class="form-control-range"
+              id="Slider peakOffset"
+              aria-label="peakOffset Slider"
+              [(ngModel)]="peakOffset"
+              (change)="updatePeaks()"
+            />
+          </div>
+        </li> -->
+        <!-- <div class="form-check mt-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="SHOW GATE LIMITS"
+            aria-label="SHOW GATE LIMITS checkbox"
+            [(ngModel)]="gateGridTrigger"
+            (change)="updatePeaks()"
+          />
+          <label class="form-check-label" for="SHOW GATE LIMITS" i18n>
+            SHOW GATE LIMITS
+          </label>
+        </div> -->
+      </ul>
+      <div class="my-container modal-body">
+        <div class="row row-flex">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-sonouno col-xs-6 col-md-10" (click)="cleanPeaks()">
+              CLEAN PEAKS
+            </button>
+
+            <button type="button" class="btn btn-sonouno col-xs-6 col-md-10" (click)="peakFinder()">
+              MARK PEAKS
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sonouno mt-3" data-dismiss="modal">
+          CLOSE
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

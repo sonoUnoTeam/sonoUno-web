@@ -1,0 +1,33 @@
+/* a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #042556;
+    background-color: transparent;
+    text-decoration: none;
+  }
+.reinforce{
+    height: 200;
+    width: 600
+
+}
+.achicar{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 50vw;
+    max-height:50vh;
+}
+body{
+    background-color: #8d98a0;
+    font-family: 'Nunito', sans-serif;
+}
+.epigrafe{
+    font-size:small;
+    text-align:center;
+    font-style: italic;
+} */

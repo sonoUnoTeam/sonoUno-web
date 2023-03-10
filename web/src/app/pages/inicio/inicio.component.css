@@ -1,3 +1,65 @@
-.rangeColor{
+/* .rangeColor{
     color: white;
 }
+
+.myContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    height: 200px;
+}
+
+.row-flex {
+    width: 100%;
+}
+
+.modal-dialog {
+  position:fixed;
+  top:auto;
+  right:auto;
+  left:auto;
+  bottom:0;
+}  
+.rangeColorModal{
+  color: #042556;
+}
+a{
+    color: white;
+}
+
+.centrar-texto
+{
+    text-align: center;
+}
+.dropdown-menu{
+    background-color:#042556;
+
+}
+.right {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+  }
+.custom-file-label{
+  
+  display: block;
+  margin-right: 10%;
+  margin-top:  5px;
+}
+#skip a
+{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+#skip a:focus
+{
+  position:static;
+  width:auto;
+  height:auto;
+} */

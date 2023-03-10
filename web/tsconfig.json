@@ -7,10 +7,16 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "module": "esnext",
+    "module": "es2015",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
+    "paths": {
+      "path": [
+        "./node_modules/path-browserify"
+      ]
+    },
+    "skipLibCheck": true,
+    "target": "es5",
     "typeRoots": [
       "node_modules/@types"
     ],

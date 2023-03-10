@@ -1,0 +1,30 @@
+<plotly-plot [data]="data" [layout]="layout" ></plotly-plot>
+<div class="row">
+    <div class="col-12 text-center mb-5">
+      <button class="btn btn-sonouno mr-5" (click) ="PlayPause()" >{{!play ? 'Play' : 'Pause'}}</button>
+      <button class="btn btn-sonouno mr-5" (click)="Stop()">STOP</button>
+      <button class="btn btn-sonouno mr-5">MARK POINT</button>
+      <button class="btn btn-sonouno mr-5">DELETE MARK</button>
+    </div>
+  </div>
+  
+  <div class="row mb-5">
+    <div class="col-5 bg-range mr-6 p-3 mr-2">
+  
+        <div class="form-group">
+          <label class="rangeColor" for="formControlRange">ABSCISSA POSITION</label>
+          <input type="range" class="form-control-range" id="formControlRange" >
+        </div>
+  
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5 bg-range float-right p-3">
+  
+        <div class="form-group">
+          <label class="rangeColor" for="formControlRange">TEMPO</label>
+          <input type="range" class="form-control-range" id="formControlRange" [(ngModel)]="tempoSlider">
+        </div>
+  
+    </div>
+    
+  </div>
